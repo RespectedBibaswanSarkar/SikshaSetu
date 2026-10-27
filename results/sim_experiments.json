@@ -1,0 +1,83 @@
+{
+  "note": "ALL RESULTS ARE SIMULATED",
+  "n_students": 200,
+  "seeds": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "experiments": [
+    {
+      "exp_id": 0,
+      "policy": "random",
+      "mean_gain": 0.058752842991850324,
+      "questions_to_mastery": 17,
+      "retention": 0.6680554360692609
+    },
+    {
+      "exp_id": 1,
+      "policy": "fixed",
+      "mean_gain": 0.04859203383580239,
+      "questions_to_mastery": 34,
+      "retention": 0.7473356800297792
+    },
+    {
+      "exp_id": 2,
+      "policy": "greedy",
+      "mean_gain": 0.06460194333384554,
+      "questions_to_mastery": 16,
+      "retention": 0.805448921575459
+    },
+    {
+      "exp_id": 3,
+      "policy": "bkt",
+      "mean_gain": 0.04366523310390527,
+      "questions_to_mastery": 24,
+      "retention": 0.7203052669983611
+    },
+    {
+      "exp_id": 4,
+      "policy": "rl",
+      "mean_gain": 0.053912190653633174,
+      "questions_to_mastery": 34,
+      "retention": 0.6734277830861759
+    },
+    {
+      "exp_id": 5,
+      "policy": "random",
+      "mean_gain": 0.05863286240296884,
+      "questions_to_mastery": 31,
+      "retention": 0.8213986217196108
+    },
+    {
+      "exp_id": 6,
+      "policy": "fixed",
+      "mean_gain": 0.022774421131745,
+      "questions_to_mastery": 17,
+      "retention": 0.6251179453690753
+    },
+    {
+      "exp_id": 7,
+      "policy": "greedy",
+      "mean_gain": 0.05986311269721338,
+      "questions_to_mastery": 30,
+      "retention": 0.7903202875653963
+    },
+    {
+      "exp_id": 8,
+      "policy": "bkt",
+      "mean_gain": 0.06946022558544528,
+      "questions_to_mastery": 24,
+      "retention": 0.8220889172204364
+    },
+    {
+      "exp_id": 9,
+      "policy": "rl",
+      "mean_gain": 0.03504102431663153,
+      "questions_to_mastery": 21,
+      "retention": 0.6968876741559534
+    }
+  ]
+}

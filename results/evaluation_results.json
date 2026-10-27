@@ -1,0 +1,82 @@
+[
+  {
+    "policy": "random",
+    "seed": 1,
+    "mean_mastery_gain_per_20": 0.07364150812256948,
+    "questions_for_80pct": 50.0,
+    "diagnostic_mae": 0.1478206005518309,
+    "retention_after_gap": 0.75
+  },
+  {
+    "policy": "random",
+    "seed": 2,
+    "mean_mastery_gain_per_20": 0.07914226323629178,
+    "questions_for_80pct": 50.0,
+    "diagnostic_mae": 0.14444321258652038,
+    "retention_after_gap": 0.75
+  },
+  {
+    "policy": "fixed_curriculum",
+    "seed": 1,
+    "mean_mastery_gain_per_20": 0.07094543481568458,
+    "questions_for_80pct": 50.0,
+    "diagnostic_mae": 0.2231750309765895,
+    "retention_after_gap": 0.75
+  },
+  {
+    "policy": "fixed_curriculum",
+    "seed": 2,
+    "mean_mastery_gain_per_20": 0.07585905109075039,
+    "questions_for_80pct": 50.0,
+    "diagnostic_mae": 0.23153584573296673,
+    "retention_after_gap": 0.75
+  },
+  {
+    "policy": "greedy_lowest_mastery",
+    "seed": 1,
+    "mean_mastery_gain_per_20": 0.07686669066880421,
+    "questions_for_80pct": 50.0,
+    "diagnostic_mae": 0.10975200092417481,
+    "retention_after_gap": 0.75
+  },
+  {
+    "policy": "greedy_lowest_mastery",
+    "seed": 2,
+    "mean_mastery_gain_per_20": 0.08253273240121174,
+    "questions_for_80pct": 50.0,
+    "diagnostic_mae": 0.10629235557840559,
+    "retention_after_gap": 0.75
+  },
+  {
+    "policy": "bkt_only",
+    "seed": 1,
+    "mean_mastery_gain_per_20": 0.07686669066880421,
+    "questions_for_80pct": 50.0,
+    "diagnostic_mae": 0.10975200092417481,
+    "retention_after_gap": 0.75
+  },
+  {
+    "policy": "bkt_only",
+    "seed": 2,
+    "mean_mastery_gain_per_20": 0.08253273240121174,
+    "questions_for_80pct": 50.0,
+    "diagnostic_mae": 0.10629235557840559,
+    "retention_after_gap": 0.75
+  },
+  {
+    "policy": "rl_policy",
+    "seed": 1,
+    "mean_mastery_gain_per_20": 0.07450902872004792,
+    "questions_for_80pct": 50.0,
+    "diagnostic_mae": 0.24834406121810496,
+    "retention_after_gap": 0.75
+  },
+  {
+    "policy": "rl_policy",
+    "seed": 2,
+    "mean_mastery_gain_per_20": 0.07563542199164093,
+    "questions_for_80pct": 50.0,
+    "diagnostic_mae": 0.25210119893557714,
+    "retention_after_gap": 0.75
+  }
+]

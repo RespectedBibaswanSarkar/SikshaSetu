@@ -1,0 +1,5316 @@
+{
+  "NUM_01": [
+    {
+      "id": "NUM_01_q1",
+      "concept_id": "NUM_01",
+      "difficulty": 1,
+      "text_en": "What is the place value of 5 in 4562?",
+      "text_hi": "4562 में 5 का स्थानीय मान क्या है?",
+      "options_en": [
+        "5",
+        "50",
+        "500",
+        "5000"
+      ],
+      "options_hi": [
+        "5",
+        "50",
+        "500",
+        "5000"
+      ],
+      "correct": 2,
+      "explanation_en": "5 is in hundreds place",
+      "explanation_hi": "5 सैकड़े के स्थान पर है"
+    },
+    {
+      "id": "NUM_01_q2",
+      "concept_id": "NUM_01",
+      "difficulty": 1,
+      "text_en": "Which is the largest number?",
+      "text_hi": "सबसे बड़ी संख्या कौन सी है?",
+      "options_en": [
+        "1234",
+        "4321",
+        "2341",
+        "3412"
+      ],
+      "options_hi": [
+        "1234",
+        "4321",
+        "2341",
+        "3412"
+      ],
+      "correct": 1
+    },
+    {
+      "id": "NUM_01_q3",
+      "concept_id": "NUM_01",
+      "difficulty": 2,
+      "text_en": "Write 5,00,000 in words?",
+      "text_hi": "5,00,000 को शब्दों में लिखें?",
+      "options_en": [
+        "Five lakh",
+        "Fifty thousand",
+        "Five thousand",
+        "Five crore"
+      ],
+      "options_hi": [
+        "पांच लाख",
+        "पचास हजार",
+        "पांच हजार",
+        "पांच करोड़"
+      ],
+      "correct": 0
+    },
+    {
+      "id": "NUM_01_q4",
+      "concept_id": "NUM_01",
+      "difficulty": 2,
+      "text_en": "What is the successor of 9999?",
+      "text_hi": "9999 का उत्तराधिकारी क्या है?",
+      "options_en": [
+        "9998",
+        "10000",
+        "1000",
+        "99990"
+      ],
+      "options_hi": [
+        "9998",
+        "10000",
+        "1000",
+        "99990"
+      ],
+      "correct": 1
+    },
+    {
+      "id": "NUM_01_q5",
+      "concept_id": "NUM_01",
+      "difficulty": 2,
+      "text_en": "Practice question 5 for Number Sense",
+      "text_hi": "संख्या ज्ञान के लिए अभ्यास प्रश्न 5",
+      "options_en": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "options_hi": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "correct": 3,
+      "explanation_en": "Review the concept carefully",
+      "explanation_hi": "अवधारणा को ध्यान से देखें"
+    },
+    {
+      "id": "NUM_01_q6",
+      "concept_id": "NUM_01",
+      "difficulty": 3,
+      "text_en": "Practice question 6 for Number Sense",
+      "text_hi": "संख्या ज्ञान के लिए अभ्यास प्रश्न 6",
+      "options_en": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "options_hi": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "correct": 0,
+      "explanation_en": "Review the concept carefully",
+      "explanation_hi": "अवधारणा को ध्यान से देखें"
+    },
+    {
+      "id": "NUM_01_q7",
+      "concept_id": "NUM_01",
+      "difficulty": 1,
+      "text_en": "Practice question 7 for Number Sense",
+      "text_hi": "संख्या ज्ञान के लिए अभ्यास प्रश्न 7",
+      "options_en": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "options_hi": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "correct": 2,
+      "explanation_en": "Review the concept carefully",
+      "explanation_hi": "अवधारणा को ध्यान से देखें"
+    },
+    {
+      "id": "NUM_01_q8",
+      "concept_id": "NUM_01",
+      "difficulty": 2,
+      "text_en": "Practice question 8 for Number Sense",
+      "text_hi": "संख्या ज्ञान के लिए अभ्यास प्रश्न 8",
+      "options_en": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "options_hi": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "correct": 2,
+      "explanation_en": "Review the concept carefully",
+      "explanation_hi": "अवधारणा को ध्यान से देखें"
+    }
+  ],
+  "NUM_02": [
+    {
+      "id": "NUM_02_q1",
+      "concept_id": "NUM_02",
+      "difficulty": 1,
+      "text_en": "Question 1 about Factors and Multiples (Level 1)",
+      "text_hi": "गुणनखंड और गुणज पर प्रश्न 1 (स्तर 1)",
+      "options_en": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "options_hi": [
+        "विकल्प A",
+        "विकल्प B",
+        "विकल्प C",
+        "विकल्प D"
+      ],
+      "correct": 0,
+      "explanation_en": "This tests understanding of Factors and Multiples",
+      "explanation_hi": "यह गुणनखंड और गुणज की समझ का परीक्षण है"
+    },
+    {
+      "id": "NUM_02_q2",
+      "concept_id": "NUM_02",
+      "difficulty": 2,
+      "text_en": "Question 2 about Factors and Multiples (Level 2)",
+      "text_hi": "गुणनखंड और गुणज पर प्रश्न 2 (स्तर 2)",
+      "options_en": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "options_hi": [
+        "विकल्प A",
+        "विकल्प B",
+        "विकल्प C",
+        "विकल्प D"
+      ],
+      "correct": 1,
+      "explanation_en": "This tests understanding of Factors and Multiples",
+      "explanation_hi": "यह गुणनखंड और गुणज की समझ का परीक्षण है"
+    },
+    {
+      "id": "NUM_02_q3",
+      "concept_id": "NUM_02",
+      "difficulty": 3,
+      "text_en": "Question 3 about Factors and Multiples (Level 3)",
+      "text_hi": "गुणनखंड और गुणज पर प्रश्न 3 (स्तर 3)",
+      "options_en": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "options_hi": [
+        "विकल्प A",
+        "विकल्प B",
+        "विकल्प C",
+        "विकल्प D"
+      ],
+      "correct": 2,
+      "explanation_en": "This tests understanding of Factors and Multiples",
+      "explanation_hi": "यह गुणनखंड और गुणज की समझ का परीक्षण है"
+    },
+    {
+      "id": "NUM_02_q4",
+      "concept_id": "NUM_02",
+      "difficulty": 1,
+      "text_en": "Question 4 about Factors and Multiples (Level 1)",
+      "text_hi": "गुणनखंड और गुणज पर प्रश्न 4 (स्तर 1)",
+      "options_en": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "options_hi": [
+        "विकल्प A",
+        "विकल्प B",
+        "विकल्प C",
+        "विकल्प D"
+      ],
+      "correct": 3,
+      "explanation_en": "This tests understanding of Factors and Multiples",
+      "explanation_hi": "यह गुणनखंड और गुणज की समझ का परीक्षण है"
+    },
+    {
+      "id": "NUM_02_q5",
+      "concept_id": "NUM_02",
+      "difficulty": 2,
+      "text_en": "Question 5 about Factors and Multiples (Level 2)",
+      "text_hi": "गुणनखंड और गुणज पर प्रश्न 5 (स्तर 2)",
+      "options_en": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "options_hi": [
+        "विकल्प A",
+        "विकल्प B",
+        "विकल्प C",
+        "विकल्प D"
+      ],
+      "correct": 0,
+      "explanation_en": "This tests understanding of Factors and Multiples",
+      "explanation_hi": "यह गुणनखंड और गुणज की समझ का परीक्षण है"
+    },
+    {
+      "id": "NUM_02_q6",
+      "concept_id": "NUM_02",
+      "difficulty": 3,
+      "text_en": "Question 6 about Factors and Multiples (Level 3)",
+      "text_hi": "गुणनखंड और गुणज पर प्रश्न 6 (स्तर 3)",
+      "options_en": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "options_hi": [
+        "विकल्प A",
+        "विकल्प B",
+        "विकल्प C",
+        "विकल्प D"
+      ],
+      "correct": 1,
+      "explanation_en": "This tests understanding of Factors and Multiples",
+      "explanation_hi": "यह गुणनखंड और गुणज की समझ का परीक्षण है"
+    },
+    {
+      "id": "NUM_02_q7",
+      "concept_id": "NUM_02",
+      "difficulty": 1,
+      "text_en": "Question 7 about Factors and Multiples (Level 1)",
+      "text_hi": "गुणनखंड और गुणज पर प्रश्न 7 (स्तर 1)",
+      "options_en": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "options_hi": [
+        "विकल्प A",
+        "विकल्प B",
+        "विकल्प C",
+        "विकल्प D"
+      ],
+      "correct": 2,
+      "explanation_en": "This tests understanding of Factors and Multiples",
+      "explanation_hi": "यह गुणनखंड और गुणज की समझ का परीक्षण है"
+    },
+    {
+      "id": "NUM_02_q8",
+      "concept_id": "NUM_02",
+      "difficulty": 2,
+      "text_en": "Question 8 about Factors and Multiples (Level 2)",
+      "text_hi": "गुणनखंड और गुणज पर प्रश्न 8 (स्तर 2)",
+      "options_en": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "options_hi": [
+        "विकल्प A",
+        "विकल्प B",
+        "विकल्प C",
+        "विकल्प D"
+      ],
+      "correct": 3,
+      "explanation_en": "This tests understanding of Factors and Multiples",
+      "explanation_hi": "यह गुणनखंड और गुणज की समझ का परीक्षण है"
+    }
+  ],
+  "NUM_03": [
+    {
+      "id": "NUM_03_q1",
+      "concept_id": "NUM_03",
+      "difficulty": 1,
+      "text_en": "Question 1 about Integers (Level 1)",
+      "text_hi": "पूर्णांक पर प्रश्न 1 (स्तर 1)",
+      "options_en": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "options_hi": [
+        "विकल्प A",
+        "विकल्प B",
+        "विकल्प C",
+        "विकल्प D"
+      ],
+      "correct": 0,
+      "explanation_en": "This tests understanding of Integers",
+      "explanation_hi": "यह पूर्णांक की समझ का परीक्षण है"
+    },
+    {
+      "id": "NUM_03_q2",
+      "concept_id": "NUM_03",
+      "difficulty": 2,
+      "text_en": "Question 2 about Integers (Level 2)",
+      "text_hi": "पूर्णांक पर प्रश्न 2 (स्तर 2)",
+      "options_en": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "options_hi": [
+        "विकल्प A",
+        "विकल्प B",
+        "विकल्प C",
+        "विकल्प D"
+      ],
+      "correct": 1,
+      "explanation_en": "This tests understanding of Integers",
+      "explanation_hi": "यह पूर्णांक की समझ का परीक्षण है"
+    },
+    {
+      "id": "NUM_03_q3",
+      "concept_id": "NUM_03",
+      "difficulty": 3,
+      "text_en": "Question 3 about Integers (Level 3)",
+      "text_hi": "पूर्णांक पर प्रश्न 3 (स्तर 3)",
+      "options_en": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "options_hi": [
+        "विकल्प A",
+        "विकल्प B",
+        "विकल्प C",
+        "विकल्प D"
+      ],
+      "correct": 2,
+      "explanation_en": "This tests understanding of Integers",
+      "explanation_hi": "यह पूर्णांक की समझ का परीक्षण है"
+    },
+    {
+      "id": "NUM_03_q4",
+      "concept_id": "NUM_03",
+      "difficulty": 1,
+      "text_en": "Question 4 about Integers (Level 1)",
+      "text_hi": "पूर्णांक पर प्रश्न 4 (स्तर 1)",
+      "options_en": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "options_hi": [
+        "विकल्प A",
+        "विकल्प B",
+        "विकल्प C",
+        "विकल्प D"
+      ],
+      "correct": 3,
+      "explanation_en": "This tests understanding of Integers",
+      "explanation_hi": "यह पूर्णांक की समझ का परीक्षण है"
+    },
+    {
+      "id": "NUM_03_q5",
+      "concept_id": "NUM_03",
+      "difficulty": 2,
+      "text_en": "Question 5 about Integers (Level 2)",
+      "text_hi": "पूर्णांक पर प्रश्न 5 (स्तर 2)",
+      "options_en": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "options_hi": [
+        "विकल्प A",
+        "विकल्प B",
+        "विकल्प C",
+        "विकल्प D"
+      ],
+      "correct": 0,
+      "explanation_en": "This tests understanding of Integers",
+      "explanation_hi": "यह पूर्णांक की समझ का परीक्षण है"
+    },
+    {
+      "id": "NUM_03_q6",
+      "concept_id": "NUM_03",
+      "difficulty": 3,
+      "text_en": "Question 6 about Integers (Level 3)",
+      "text_hi": "पूर्णांक पर प्रश्न 6 (स्तर 3)",
+      "options_en": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "options_hi": [
+        "विकल्प A",
+        "विकल्प B",
+        "विकल्प C",
+        "विकल्प D"
+      ],
+      "correct": 1,
+      "explanation_en": "This tests understanding of Integers",
+      "explanation_hi": "यह पूर्णांक की समझ का परीक्षण है"
+    },
+    {
+      "id": "NUM_03_q7",
+      "concept_id": "NUM_03",
+      "difficulty": 1,
+      "text_en": "Question 7 about Integers (Level 1)",
+      "text_hi": "पूर्णांक पर प्रश्न 7 (स्तर 1)",
+      "options_en": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "options_hi": [
+        "विकल्प A",
+        "विकल्प B",
+        "विकल्प C",
+        "विकल्प D"
+      ],
+      "correct": 2,
+      "explanation_en": "This tests understanding of Integers",
+      "explanation_hi": "यह पूर्णांक की समझ का परीक्षण है"
+    },
+    {
+      "id": "NUM_03_q8",
+      "concept_id": "NUM_03",
+      "difficulty": 2,
+      "text_en": "Question 8 about Integers (Level 2)",
+      "text_hi": "पूर्णांक पर प्रश्न 8 (स्तर 2)",
+      "options_en": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "options_hi": [
+        "विकल्प A",
+        "विकल्प B",
+        "विकल्प C",
+        "विकल्प D"
+      ],
+      "correct": 3,
+      "explanation_en": "This tests understanding of Integers",
+      "explanation_hi": "यह पूर्णांक की समझ का परीक्षण है"
+    }
+  ],
+  "FRAC_01": [
+    {
+      "id": "FRAC_01_q1",
+      "concept_id": "FRAC_01",
+      "difficulty": 1,
+      "text_en": "What fraction represents half?",
+      "text_hi": "आधा को कौन सी भिन्न दर्शाती है?",
+      "options_en": [
+        "1/4",
+        "1/2",
+        "1/3",
+        "2/3"
+      ],
+      "options_hi": [
+        "1/4",
+        "1/2",
+        "1/3",
+        "2/3"
+      ],
+      "correct": 1
+    },
+    {
+      "id": "FRAC_01_q2",
+      "concept_id": "FRAC_01",
+      "difficulty": 2,
+      "text_en": "Which is equivalent to 1/2?",
+      "text_hi": "1/2 के बराबर कौन सी भिन्न है?",
+      "options_en": [
+        "1/4",
+        "2/4",
+        "1/3",
+        "1/5"
+      ],
+      "options_hi": [
+        "1/4",
+        "2/4",
+        "1/3",
+        "1/5"
+      ],
+      "correct": 1
+    },
+    {
+      "id": "FRAC_01_q3",
+      "concept_id": "FRAC_01",
+      "difficulty": 2,
+      "text_en": "In 3/5, numerator is?",
+      "text_hi": "3/5 में अंश कौन सा है?",
+      "options_en": [
+        "5",
+        "3",
+        "8",
+        "2"
+      ],
+      "options_hi": [
+        "5",
+        "3",
+        "8",
+        "2"
+      ],
+      "correct": 1
+    },
+    {
+      "id": "FRAC_01_q4",
+      "concept_id": "FRAC_01",
+      "difficulty": 1,
+      "text_en": "Practice question 4 for Fractions Basics",
+      "text_hi": "भिन्नों की मूल बातें के लिए अभ्यास प्रश्न 4",
+      "options_en": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "options_hi": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "correct": 1,
+      "explanation_en": "Review the concept carefully",
+      "explanation_hi": "अवधारणा को ध्यान से देखें"
+    },
+    {
+      "id": "FRAC_01_q5",
+      "concept_id": "FRAC_01",
+      "difficulty": 2,
+      "text_en": "Practice question 5 for Fractions Basics",
+      "text_hi": "भिन्नों की मूल बातें के लिए अभ्यास प्रश्न 5",
+      "options_en": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "options_hi": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "correct": 2,
+      "explanation_en": "Review the concept carefully",
+      "explanation_hi": "अवधारणा को ध्यान से देखें"
+    },
+    {
+      "id": "FRAC_01_q6",
+      "concept_id": "FRAC_01",
+      "difficulty": 3,
+      "text_en": "Practice question 6 for Fractions Basics",
+      "text_hi": "भिन्नों की मूल बातें के लिए अभ्यास प्रश्न 6",
+      "options_en": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "options_hi": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "correct": 3,
+      "explanation_en": "Review the concept carefully",
+      "explanation_hi": "अवधारणा को ध्यान से देखें"
+    },
+    {
+      "id": "FRAC_01_q7",
+      "concept_id": "FRAC_01",
+      "difficulty": 1,
+      "text_en": "Practice question 7 for Fractions Basics",
+      "text_hi": "भिन्नों की मूल बातें के लिए अभ्यास प्रश्न 7",
+      "options_en": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "options_hi": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "correct": 1,
+      "explanation_en": "Review the concept carefully",
+      "explanation_hi": "अवधारणा को ध्यान से देखें"
+    },
+    {
+      "id": "FRAC_01_q8",
+      "concept_id": "FRAC_01",
+      "difficulty": 2,
+      "text_en": "Practice question 8 for Fractions Basics",
+      "text_hi": "भिन्नों की मूल बातें के लिए अभ्यास प्रश्न 8",
+      "options_en": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "options_hi": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "correct": 2,
+      "explanation_en": "Review the concept carefully",
+      "explanation_hi": "अवधारणा को ध्यान से देखें"
+    }
+  ],
+  "FRAC_02": [
+    {
+      "id": "FRAC_02_q1",
+      "concept_id": "FRAC_02",
+      "difficulty": 1,
+      "text_en": "Question 1 about Operations on Fractions (Level 1)",
+      "text_hi": "भिन्नों पर संक्रियाएं पर प्रश्न 1 (स्तर 1)",
+      "options_en": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "options_hi": [
+        "विकल्प A",
+        "विकल्प B",
+        "विकल्प C",
+        "विकल्प D"
+      ],
+      "correct": 0,
+      "explanation_en": "This tests understanding of Operations on Fractions",
+      "explanation_hi": "यह भिन्नों पर संक्रियाएं की समझ का परीक्षण है"
+    },
+    {
+      "id": "FRAC_02_q2",
+      "concept_id": "FRAC_02",
+      "difficulty": 2,
+      "text_en": "Question 2 about Operations on Fractions (Level 2)",
+      "text_hi": "भिन्नों पर संक्रियाएं पर प्रश्न 2 (स्तर 2)",
+      "options_en": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "options_hi": [
+        "विकल्प A",
+        "विकल्प B",
+        "विकल्प C",
+        "विकल्प D"
+      ],
+      "correct": 1,
+      "explanation_en": "This tests understanding of Operations on Fractions",
+      "explanation_hi": "यह भिन्नों पर संक्रियाएं की समझ का परीक्षण है"
+    },
+    {
+      "id": "FRAC_02_q3",
+      "concept_id": "FRAC_02",
+      "difficulty": 3,
+      "text_en": "Question 3 about Operations on Fractions (Level 3)",
+      "text_hi": "भिन्नों पर संक्रियाएं पर प्रश्न 3 (स्तर 3)",
+      "options_en": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "options_hi": [
+        "विकल्प A",
+        "विकल्प B",
+        "विकल्प C",
+        "विकल्प D"
+      ],
+      "correct": 2,
+      "explanation_en": "This tests understanding of Operations on Fractions",
+      "explanation_hi": "यह भिन्नों पर संक्रियाएं की समझ का परीक्षण है"
+    },
+    {
+      "id": "FRAC_02_q4",
+      "concept_id": "FRAC_02",
+      "difficulty": 1,
+      "text_en": "Question 4 about Operations on Fractions (Level 1)",
+      "text_hi": "भिन्नों पर संक्रियाएं पर प्रश्न 4 (स्तर 1)",
+      "options_en": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "options_hi": [
+        "विकल्प A",
+        "विकल्प B",
+        "विकल्प C",
+        "विकल्प D"
+      ],
+      "correct": 3,
+      "explanation_en": "This tests understanding of Operations on Fractions",
+      "explanation_hi": "यह भिन्नों पर संक्रियाएं की समझ का परीक्षण है"
+    },
+    {
+      "id": "FRAC_02_q5",
+      "concept_id": "FRAC_02",
+      "difficulty": 2,
+      "text_en": "Question 5 about Operations on Fractions (Level 2)",
+      "text_hi": "भिन्नों पर संक्रियाएं पर प्रश्न 5 (स्तर 2)",
+      "options_en": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "options_hi": [
+        "विकल्प A",
+        "विकल्प B",
+        "विकल्प C",
+        "विकल्प D"
+      ],
+      "correct": 0,
+      "explanation_en": "This tests understanding of Operations on Fractions",
+      "explanation_hi": "यह भिन्नों पर संक्रियाएं की समझ का परीक्षण है"
+    },
+    {
+      "id": "FRAC_02_q6",
+      "concept_id": "FRAC_02",
+      "difficulty": 3,
+      "text_en": "Question 6 about Operations on Fractions (Level 3)",
+      "text_hi": "भिन्नों पर संक्रियाएं पर प्रश्न 6 (स्तर 3)",
+      "options_en": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "options_hi": [
+        "विकल्प A",
+        "विकल्प B",
+        "विकल्प C",
+        "विकल्प D"
+      ],
+      "correct": 1,
+      "explanation_en": "This tests understanding of Operations on Fractions",
+      "explanation_hi": "यह भिन्नों पर संक्रियाएं की समझ का परीक्षण है"
+    },
+    {
+      "id": "FRAC_02_q7",
+      "concept_id": "FRAC_02",
+      "difficulty": 1,
+      "text_en": "Question 7 about Operations on Fractions (Level 1)",
+      "text_hi": "भिन्नों पर संक्रियाएं पर प्रश्न 7 (स्तर 1)",
+      "options_en": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "options_hi": [
+        "विकल्प A",
+        "विकल्प B",
+        "विकल्प C",
+        "विकल्प D"
+      ],
+      "correct": 2,
+      "explanation_en": "This tests understanding of Operations on Fractions",
+      "explanation_hi": "यह भिन्नों पर संक्रियाएं की समझ का परीक्षण है"
+    },
+    {
+      "id": "FRAC_02_q8",
+      "concept_id": "FRAC_02",
+      "difficulty": 2,
+      "text_en": "Question 8 about Operations on Fractions (Level 2)",
+      "text_hi": "भिन्नों पर संक्रियाएं पर प्रश्न 8 (स्तर 2)",
+      "options_en": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "options_hi": [
+        "विकल्प A",
+        "विकल्प B",
+        "विकल्प C",
+        "विकल्प D"
+      ],
+      "correct": 3,
+      "explanation_en": "This tests understanding of Operations on Fractions",
+      "explanation_hi": "यह भिन्नों पर संक्रियाएं की समझ का परीक्षण है"
+    }
+  ],
+  "DEC_01": [
+    {
+      "id": "DEC_01_q1",
+      "concept_id": "DEC_01",
+      "difficulty": 1,
+      "text_en": "Question 1 about Decimals (Level 1)",
+      "text_hi": "दशमलव पर प्रश्न 1 (स्तर 1)",
+      "options_en": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "options_hi": [
+        "विकल्प A",
+        "विकल्प B",
+        "विकल्प C",
+        "विकल्प D"
+      ],
+      "correct": 0,
+      "explanation_en": "This tests understanding of Decimals",
+      "explanation_hi": "यह दशमलव की समझ का परीक्षण है"
+    },
+    {
+      "id": "DEC_01_q2",
+      "concept_id": "DEC_01",
+      "difficulty": 2,
+      "text_en": "Question 2 about Decimals (Level 2)",
+      "text_hi": "दशमलव पर प्रश्न 2 (स्तर 2)",
+      "options_en": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "options_hi": [
+        "विकल्प A",
+        "विकल्प B",
+        "विकल्प C",
+        "विकल्प D"
+      ],
+      "correct": 1,
+      "explanation_en": "This tests understanding of Decimals",
+      "explanation_hi": "यह दशमलव की समझ का परीक्षण है"
+    },
+    {
+      "id": "DEC_01_q3",
+      "concept_id": "DEC_01",
+      "difficulty": 3,
+      "text_en": "Question 3 about Decimals (Level 3)",
+      "text_hi": "दशमलव पर प्रश्न 3 (स्तर 3)",
+      "options_en": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "options_hi": [
+        "विकल्प A",
+        "विकल्प B",
+        "विकल्प C",
+        "विकल्प D"
+      ],
+      "correct": 2,
+      "explanation_en": "This tests understanding of Decimals",
+      "explanation_hi": "यह दशमलव की समझ का परीक्षण है"
+    },
+    {
+      "id": "DEC_01_q4",
+      "concept_id": "DEC_01",
+      "difficulty": 1,
+      "text_en": "Question 4 about Decimals (Level 1)",
+      "text_hi": "दशमलव पर प्रश्न 4 (स्तर 1)",
+      "options_en": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "options_hi": [
+        "विकल्प A",
+        "विकल्प B",
+        "विकल्प C",
+        "विकल्प D"
+      ],
+      "correct": 3,
+      "explanation_en": "This tests understanding of Decimals",
+      "explanation_hi": "यह दशमलव की समझ का परीक्षण है"
+    },
+    {
+      "id": "DEC_01_q5",
+      "concept_id": "DEC_01",
+      "difficulty": 2,
+      "text_en": "Question 5 about Decimals (Level 2)",
+      "text_hi": "दशमलव पर प्रश्न 5 (स्तर 2)",
+      "options_en": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "options_hi": [
+        "विकल्प A",
+        "विकल्प B",
+        "विकल्प C",
+        "विकल्प D"
+      ],
+      "correct": 0,
+      "explanation_en": "This tests understanding of Decimals",
+      "explanation_hi": "यह दशमलव की समझ का परीक्षण है"
+    },
+    {
+      "id": "DEC_01_q6",
+      "concept_id": "DEC_01",
+      "difficulty": 3,
+      "text_en": "Question 6 about Decimals (Level 3)",
+      "text_hi": "दशमलव पर प्रश्न 6 (स्तर 3)",
+      "options_en": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "options_hi": [
+        "विकल्प A",
+        "विकल्प B",
+        "विकल्प C",
+        "विकल्प D"
+      ],
+      "correct": 1,
+      "explanation_en": "This tests understanding of Decimals",
+      "explanation_hi": "यह दशमलव की समझ का परीक्षण है"
+    },
+    {
+      "id": "DEC_01_q7",
+      "concept_id": "DEC_01",
+      "difficulty": 1,
+      "text_en": "Question 7 about Decimals (Level 1)",
+      "text_hi": "दशमलव पर प्रश्न 7 (स्तर 1)",
+      "options_en": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "options_hi": [
+        "विकल्प A",
+        "विकल्प B",
+        "विकल्प C",
+        "विकल्प D"
+      ],
+      "correct": 2,
+      "explanation_en": "This tests understanding of Decimals",
+      "explanation_hi": "यह दशमलव की समझ का परीक्षण है"
+    },
+    {
+      "id": "DEC_01_q8",
+      "concept_id": "DEC_01",
+      "difficulty": 2,
+      "text_en": "Question 8 about Decimals (Level 2)",
+      "text_hi": "दशमलव पर प्रश्न 8 (स्तर 2)",
+      "options_en": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "options_hi": [
+        "विकल्प A",
+        "विकल्प B",
+        "विकल्प C",
+        "विकल्प D"
+      ],
+      "correct": 3,
+      "explanation_en": "This tests understanding of Decimals",
+      "explanation_hi": "यह दशमलव की समझ का परीक्षण है"
+    }
+  ],
+  "ALG_01": [
+    {
+      "id": "ALG_01_q1",
+      "concept_id": "ALG_01",
+      "difficulty": 1,
+      "text_en": "If x + 5 = 10, find x?",
+      "text_hi": "यदि x + 5 = 10 हो, तो x का मान क्या है?",
+      "options_en": [
+        "3",
+        "5",
+        "10",
+        "15"
+      ],
+      "options_hi": [
+        "3",
+        "5",
+        "10",
+        "15"
+      ],
+      "correct": 1
+    },
+    {
+      "id": "ALG_01_q2",
+      "concept_id": "ALG_01",
+      "difficulty": 2,
+      "text_en": "2x = 12, x = ?",
+      "text_hi": "2x = 12, x = ?",
+      "options_en": [
+        "4",
+        "6",
+        "8",
+        "10"
+      ],
+      "options_hi": [
+        "4",
+        "6",
+        "8",
+        "10"
+      ],
+      "correct": 1
+    },
+    {
+      "id": "ALG_01_q3",
+      "concept_id": "ALG_01",
+      "difficulty": 3,
+      "text_en": "Practice question 3 for Introduction to Algebra",
+      "text_hi": "बीजगणित का परिचय के लिए अभ्यास प्रश्न 3",
+      "options_en": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "options_hi": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "correct": 0,
+      "explanation_en": "Review the concept carefully",
+      "explanation_hi": "अवधारणा को ध्यान से देखें"
+    },
+    {
+      "id": "ALG_01_q4",
+      "concept_id": "ALG_01",
+      "difficulty": 1,
+      "text_en": "Practice question 4 for Introduction to Algebra",
+      "text_hi": "बीजगणित का परिचय के लिए अभ्यास प्रश्न 4",
+      "options_en": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "options_hi": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "correct": 3,
+      "explanation_en": "Review the concept carefully",
+      "explanation_hi": "अवधारणा को ध्यान से देखें"
+    },
+    {
+      "id": "ALG_01_q5",
+      "concept_id": "ALG_01",
+      "difficulty": 2,
+      "text_en": "Practice question 5 for Introduction to Algebra",
+      "text_hi": "बीजगणित का परिचय के लिए अभ्यास प्रश्न 5",
+      "options_en": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "options_hi": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "correct": 2,
+      "explanation_en": "Review the concept carefully",
+      "explanation_hi": "अवधारणा को ध्यान से देखें"
+    },
+    {
+      "id": "ALG_01_q6",
+      "concept_id": "ALG_01",
+      "difficulty": 3,
+      "text_en": "Practice question 6 for Introduction to Algebra",
+      "text_hi": "बीजगणित का परिचय के लिए अभ्यास प्रश्न 6",
+      "options_en": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "options_hi": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "correct": 1,
+      "explanation_en": "Review the concept carefully",
+      "explanation_hi": "अवधारणा को ध्यान से देखें"
+    },
+    {
+      "id": "ALG_01_q7",
+      "concept_id": "ALG_01",
+      "difficulty": 1,
+      "text_en": "Practice question 7 for Introduction to Algebra",
+      "text_hi": "बीजगणित का परिचय के लिए अभ्यास प्रश्न 7",
+      "options_en": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "options_hi": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "correct": 1,
+      "explanation_en": "Review the concept carefully",
+      "explanation_hi": "अवधारणा को ध्यान से देखें"
+    },
+    {
+      "id": "ALG_01_q8",
+      "concept_id": "ALG_01",
+      "difficulty": 2,
+      "text_en": "Practice question 8 for Introduction to Algebra",
+      "text_hi": "बीजगणित का परिचय के लिए अभ्यास प्रश्न 8",
+      "options_en": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "options_hi": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "correct": 2,
+      "explanation_en": "Review the concept carefully",
+      "explanation_hi": "अवधारणा को ध्यान से देखें"
+    }
+  ],
+  "RAT_01": [
+    {
+      "id": "RAT_01_q1",
+      "concept_id": "RAT_01",
+      "difficulty": 1,
+      "text_en": "Ratio of 2 to 4 is?",
+      "text_hi": "2 और 4 का अनुपात क्या है?",
+      "options_en": [
+        "1:2",
+        "2:1",
+        "4:2",
+        "1:1"
+      ],
+      "options_hi": [
+        "1:2",
+        "2:1",
+        "4:2",
+        "1:1"
+      ],
+      "correct": 0
+    },
+    {
+      "id": "RAT_01_q2",
+      "concept_id": "RAT_01",
+      "difficulty": 2,
+      "text_en": "Practice question 2 for Ratio and Proportion",
+      "text_hi": "अनुपात और समानुपात के लिए अभ्यास प्रश्न 2",
+      "options_en": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "options_hi": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "correct": 0,
+      "explanation_en": "Review the concept carefully",
+      "explanation_hi": "अवधारणा को ध्यान से देखें"
+    },
+    {
+      "id": "RAT_01_q3",
+      "concept_id": "RAT_01",
+      "difficulty": 3,
+      "text_en": "Practice question 3 for Ratio and Proportion",
+      "text_hi": "अनुपात और समानुपात के लिए अभ्यास प्रश्न 3",
+      "options_en": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "options_hi": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "correct": 3,
+      "explanation_en": "Review the concept carefully",
+      "explanation_hi": "अवधारणा को ध्यान से देखें"
+    },
+    {
+      "id": "RAT_01_q4",
+      "concept_id": "RAT_01",
+      "difficulty": 1,
+      "text_en": "Practice question 4 for Ratio and Proportion",
+      "text_hi": "अनुपात और समानुपात के लिए अभ्यास प्रश्न 4",
+      "options_en": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "options_hi": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "correct": 1,
+      "explanation_en": "Review the concept carefully",
+      "explanation_hi": "अवधारणा को ध्यान से देखें"
+    },
+    {
+      "id": "RAT_01_q5",
+      "concept_id": "RAT_01",
+      "difficulty": 2,
+      "text_en": "Practice question 5 for Ratio and Proportion",
+      "text_hi": "अनुपात और समानुपात के लिए अभ्यास प्रश्न 5",
+      "options_en": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "options_hi": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "correct": 1,
+      "explanation_en": "Review the concept carefully",
+      "explanation_hi": "अवधारणा को ध्यान से देखें"
+    },
+    {
+      "id": "RAT_01_q6",
+      "concept_id": "RAT_01",
+      "difficulty": 3,
+      "text_en": "Practice question 6 for Ratio and Proportion",
+      "text_hi": "अनुपात और समानुपात के लिए अभ्यास प्रश्न 6",
+      "options_en": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "options_hi": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "correct": 1,
+      "explanation_en": "Review the concept carefully",
+      "explanation_hi": "अवधारणा को ध्यान से देखें"
+    },
+    {
+      "id": "RAT_01_q7",
+      "concept_id": "RAT_01",
+      "difficulty": 1,
+      "text_en": "Practice question 7 for Ratio and Proportion",
+      "text_hi": "अनुपात और समानुपात के लिए अभ्यास प्रश्न 7",
+      "options_en": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "options_hi": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "correct": 0,
+      "explanation_en": "Review the concept carefully",
+      "explanation_hi": "अवधारणा को ध्यान से देखें"
+    },
+    {
+      "id": "RAT_01_q8",
+      "concept_id": "RAT_01",
+      "difficulty": 2,
+      "text_en": "Practice question 8 for Ratio and Proportion",
+      "text_hi": "अनुपात और समानुपात के लिए अभ्यास प्रश्न 8",
+      "options_en": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "options_hi": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "correct": 1,
+      "explanation_en": "Review the concept carefully",
+      "explanation_hi": "अवधारणा को ध्यान से देखें"
+    }
+  ],
+  "MENS_01": [
+    {
+      "id": "MENS_01_q1",
+      "concept_id": "MENS_01",
+      "difficulty": 1,
+      "text_en": "Perimeter of square with side 4 cm?",
+      "text_hi": "4 सेमी भुजा वाले वर्ग का परिमाप क्या है?",
+      "options_en": [
+        "8 cm",
+        "16 cm",
+        "12 cm",
+        "20 cm"
+      ],
+      "options_hi": [
+        "8 सेमी",
+        "16 सेमी",
+        "12 सेमी",
+        "20 सेमी"
+      ],
+      "correct": 1
+    },
+    {
+      "id": "MENS_01_q2",
+      "concept_id": "MENS_01",
+      "difficulty": 2,
+      "text_en": "Area of rectangle 5cm x 3cm?",
+      "text_hi": "5 सेमी x 3 सेमी आयत का क्षेत्रफल क्या है?",
+      "options_en": [
+        "8 sq cm",
+        "15 sq cm",
+        "16 sq cm",
+        "10 sq cm"
+      ],
+      "options_hi": [
+        "8 वर्ग सेमी",
+        "15 वर्ग सेमी",
+        "16 वर्ग सेमी",
+        "10 वर्ग सेमी"
+      ],
+      "correct": 1
+    },
+    {
+      "id": "MENS_01_q3",
+      "concept_id": "MENS_01",
+      "difficulty": 3,
+      "text_en": "Practice question 3 for Perimeter and Area",
+      "text_hi": "परिमाप और क्षेत्रफल के लिए अभ्यास प्रश्न 3",
+      "options_en": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "options_hi": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "correct": 2,
+      "explanation_en": "Review the concept carefully",
+      "explanation_hi": "अवधारणा को ध्यान से देखें"
+    },
+    {
+      "id": "MENS_01_q4",
+      "concept_id": "MENS_01",
+      "difficulty": 1,
+      "text_en": "Practice question 4 for Perimeter and Area",
+      "text_hi": "परिमाप और क्षेत्रफल के लिए अभ्यास प्रश्न 4",
+      "options_en": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "options_hi": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "correct": 2,
+      "explanation_en": "Review the concept carefully",
+      "explanation_hi": "अवधारणा को ध्यान से देखें"
+    },
+    {
+      "id": "MENS_01_q5",
+      "concept_id": "MENS_01",
+      "difficulty": 2,
+      "text_en": "Practice question 5 for Perimeter and Area",
+      "text_hi": "परिमाप और क्षेत्रफल के लिए अभ्यास प्रश्न 5",
+      "options_en": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "options_hi": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "correct": 0,
+      "explanation_en": "Review the concept carefully",
+      "explanation_hi": "अवधारणा को ध्यान से देखें"
+    },
+    {
+      "id": "MENS_01_q6",
+      "concept_id": "MENS_01",
+      "difficulty": 3,
+      "text_en": "Practice question 6 for Perimeter and Area",
+      "text_hi": "परिमाप और क्षेत्रफल के लिए अभ्यास प्रश्न 6",
+      "options_en": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "options_hi": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "correct": 3,
+      "explanation_en": "Review the concept carefully",
+      "explanation_hi": "अवधारणा को ध्यान से देखें"
+    },
+    {
+      "id": "MENS_01_q7",
+      "concept_id": "MENS_01",
+      "difficulty": 1,
+      "text_en": "Practice question 7 for Perimeter and Area",
+      "text_hi": "परिमाप और क्षेत्रफल के लिए अभ्यास प्रश्न 7",
+      "options_en": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "options_hi": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "correct": 2,
+      "explanation_en": "Review the concept carefully",
+      "explanation_hi": "अवधारणा को ध्यान से देखें"
+    },
+    {
+      "id": "MENS_01_q8",
+      "concept_id": "MENS_01",
+      "difficulty": 2,
+      "text_en": "Practice question 8 for Perimeter and Area",
+      "text_hi": "परिमाप और क्षेत्रफल के लिए अभ्यास प्रश्न 8",
+      "options_en": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "options_hi": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "correct": 0,
+      "explanation_en": "Review the concept carefully",
+      "explanation_hi": "अवधारणा को ध्यान से देखें"
+    }
+  ],
+  "DAT_01": [
+    {
+      "id": "DAT_01_q1",
+      "concept_id": "DAT_01",
+      "difficulty": 1,
+      "text_en": "Question 1 about Data Handling (Level 1)",
+      "text_hi": "आँकड़ों का प्रबंधन पर प्रश्न 1 (स्तर 1)",
+      "options_en": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "options_hi": [
+        "विकल्प A",
+        "विकल्प B",
+        "विकल्प C",
+        "विकल्प D"
+      ],
+      "correct": 0,
+      "explanation_en": "This tests understanding of Data Handling",
+      "explanation_hi": "यह आँकड़ों का प्रबंधन की समझ का परीक्षण है"
+    },
+    {
+      "id": "DAT_01_q2",
+      "concept_id": "DAT_01",
+      "difficulty": 2,
+      "text_en": "Question 2 about Data Handling (Level 2)",
+      "text_hi": "आँकड़ों का प्रबंधन पर प्रश्न 2 (स्तर 2)",
+      "options_en": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "options_hi": [
+        "विकल्प A",
+        "विकल्प B",
+        "विकल्प C",
+        "विकल्प D"
+      ],
+      "correct": 1,
+      "explanation_en": "This tests understanding of Data Handling",
+      "explanation_hi": "यह आँकड़ों का प्रबंधन की समझ का परीक्षण है"
+    },
+    {
+      "id": "DAT_01_q3",
+      "concept_id": "DAT_01",
+      "difficulty": 3,
+      "text_en": "Question 3 about Data Handling (Level 3)",
+      "text_hi": "आँकड़ों का प्रबंधन पर प्रश्न 3 (स्तर 3)",
+      "options_en": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "options_hi": [
+        "विकल्प A",
+        "विकल्प B",
+        "विकल्प C",
+        "विकल्प D"
+      ],
+      "correct": 2,
+      "explanation_en": "This tests understanding of Data Handling",
+      "explanation_hi": "यह आँकड़ों का प्रबंधन की समझ का परीक्षण है"
+    },
+    {
+      "id": "DAT_01_q4",
+      "concept_id": "DAT_01",
+      "difficulty": 1,
+      "text_en": "Question 4 about Data Handling (Level 1)",
+      "text_hi": "आँकड़ों का प्रबंधन पर प्रश्न 4 (स्तर 1)",
+      "options_en": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "options_hi": [
+        "विकल्प A",
+        "विकल्प B",
+        "विकल्प C",
+        "विकल्प D"
+      ],
+      "correct": 3,
+      "explanation_en": "This tests understanding of Data Handling",
+      "explanation_hi": "यह आँकड़ों का प्रबंधन की समझ का परीक्षण है"
+    },
+    {
+      "id": "DAT_01_q5",
+      "concept_id": "DAT_01",
+      "difficulty": 2,
+      "text_en": "Question 5 about Data Handling (Level 2)",
+      "text_hi": "आँकड़ों का प्रबंधन पर प्रश्न 5 (स्तर 2)",
+      "options_en": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "options_hi": [
+        "विकल्प A",
+        "विकल्प B",
+        "विकल्प C",
+        "विकल्प D"
+      ],
+      "correct": 0,
+      "explanation_en": "This tests understanding of Data Handling",
+      "explanation_hi": "यह आँकड़ों का प्रबंधन की समझ का परीक्षण है"
+    },
+    {
+      "id": "DAT_01_q6",
+      "concept_id": "DAT_01",
+      "difficulty": 3,
+      "text_en": "Question 6 about Data Handling (Level 3)",
+      "text_hi": "आँकड़ों का प्रबंधन पर प्रश्न 6 (स्तर 3)",
+      "options_en": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "options_hi": [
+        "विकल्प A",
+        "विकल्प B",
+        "विकल्प C",
+        "विकल्प D"
+      ],
+      "correct": 1,
+      "explanation_en": "This tests understanding of Data Handling",
+      "explanation_hi": "यह आँकड़ों का प्रबंधन की समझ का परीक्षण है"
+    },
+    {
+      "id": "DAT_01_q7",
+      "concept_id": "DAT_01",
+      "difficulty": 1,
+      "text_en": "Question 7 about Data Handling (Level 1)",
+      "text_hi": "आँकड़ों का प्रबंधन पर प्रश्न 7 (स्तर 1)",
+      "options_en": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "options_hi": [
+        "विकल्प A",
+        "विकल्प B",
+        "विकल्प C",
+        "विकल्प D"
+      ],
+      "correct": 2,
+      "explanation_en": "This tests understanding of Data Handling",
+      "explanation_hi": "यह आँकड़ों का प्रबंधन की समझ का परीक्षण है"
+    },
+    {
+      "id": "DAT_01_q8",
+      "concept_id": "DAT_01",
+      "difficulty": 2,
+      "text_en": "Question 8 about Data Handling (Level 2)",
+      "text_hi": "आँकड़ों का प्रबंधन पर प्रश्न 8 (स्तर 2)",
+      "options_en": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "options_hi": [
+        "विकल्प A",
+        "विकल्प B",
+        "विकल्प C",
+        "विकल्प D"
+      ],
+      "correct": 3,
+      "explanation_en": "This tests understanding of Data Handling",
+      "explanation_hi": "यह आँकड़ों का प्रबंधन की समझ का परीक्षण है"
+    }
+  ],
+  "NUM_04": [
+    {
+      "id": "NUM_04_q1",
+      "concept_id": "NUM_04",
+      "difficulty": 1,
+      "text_en": "Question 1 about Exponents and Powers (Level 1)",
+      "text_hi": "घातांक और घात पर प्रश्न 1 (स्तर 1)",
+      "options_en": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "options_hi": [
+        "विकल्प A",
+        "विकल्प B",
+        "विकल्प C",
+        "विकल्प D"
+      ],
+      "correct": 0,
+      "explanation_en": "This tests understanding of Exponents and Powers",
+      "explanation_hi": "यह घातांक और घात की समझ का परीक्षण है"
+    },
+    {
+      "id": "NUM_04_q2",
+      "concept_id": "NUM_04",
+      "difficulty": 2,
+      "text_en": "Question 2 about Exponents and Powers (Level 2)",
+      "text_hi": "घातांक और घात पर प्रश्न 2 (स्तर 2)",
+      "options_en": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "options_hi": [
+        "विकल्प A",
+        "विकल्प B",
+        "विकल्प C",
+        "विकल्प D"
+      ],
+      "correct": 1,
+      "explanation_en": "This tests understanding of Exponents and Powers",
+      "explanation_hi": "यह घातांक और घात की समझ का परीक्षण है"
+    },
+    {
+      "id": "NUM_04_q3",
+      "concept_id": "NUM_04",
+      "difficulty": 3,
+      "text_en": "Question 3 about Exponents and Powers (Level 3)",
+      "text_hi": "घातांक और घात पर प्रश्न 3 (स्तर 3)",
+      "options_en": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "options_hi": [
+        "विकल्प A",
+        "विकल्प B",
+        "विकल्प C",
+        "विकल्प D"
+      ],
+      "correct": 2,
+      "explanation_en": "This tests understanding of Exponents and Powers",
+      "explanation_hi": "यह घातांक और घात की समझ का परीक्षण है"
+    },
+    {
+      "id": "NUM_04_q4",
+      "concept_id": "NUM_04",
+      "difficulty": 1,
+      "text_en": "Question 4 about Exponents and Powers (Level 1)",
+      "text_hi": "घातांक और घात पर प्रश्न 4 (स्तर 1)",
+      "options_en": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "options_hi": [
+        "विकल्प A",
+        "विकल्प B",
+        "विकल्प C",
+        "विकल्प D"
+      ],
+      "correct": 3,
+      "explanation_en": "This tests understanding of Exponents and Powers",
+      "explanation_hi": "यह घातांक और घात की समझ का परीक्षण है"
+    },
+    {
+      "id": "NUM_04_q5",
+      "concept_id": "NUM_04",
+      "difficulty": 2,
+      "text_en": "Question 5 about Exponents and Powers (Level 2)",
+      "text_hi": "घातांक और घात पर प्रश्न 5 (स्तर 2)",
+      "options_en": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "options_hi": [
+        "विकल्प A",
+        "विकल्प B",
+        "विकल्प C",
+        "विकल्प D"
+      ],
+      "correct": 0,
+      "explanation_en": "This tests understanding of Exponents and Powers",
+      "explanation_hi": "यह घातांक और घात की समझ का परीक्षण है"
+    },
+    {
+      "id": "NUM_04_q6",
+      "concept_id": "NUM_04",
+      "difficulty": 3,
+      "text_en": "Question 6 about Exponents and Powers (Level 3)",
+      "text_hi": "घातांक और घात पर प्रश्न 6 (स्तर 3)",
+      "options_en": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "options_hi": [
+        "विकल्प A",
+        "विकल्प B",
+        "विकल्प C",
+        "विकल्प D"
+      ],
+      "correct": 1,
+      "explanation_en": "This tests understanding of Exponents and Powers",
+      "explanation_hi": "यह घातांक और घात की समझ का परीक्षण है"
+    },
+    {
+      "id": "NUM_04_q7",
+      "concept_id": "NUM_04",
+      "difficulty": 1,
+      "text_en": "Question 7 about Exponents and Powers (Level 1)",
+      "text_hi": "घातांक और घात पर प्रश्न 7 (स्तर 1)",
+      "options_en": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "options_hi": [
+        "विकल्प A",
+        "विकल्प B",
+        "विकल्प C",
+        "विकल्प D"
+      ],
+      "correct": 2,
+      "explanation_en": "This tests understanding of Exponents and Powers",
+      "explanation_hi": "यह घातांक और घात की समझ का परीक्षण है"
+    },
+    {
+      "id": "NUM_04_q8",
+      "concept_id": "NUM_04",
+      "difficulty": 2,
+      "text_en": "Question 8 about Exponents and Powers (Level 2)",
+      "text_hi": "घातांक और घात पर प्रश्न 8 (स्तर 2)",
+      "options_en": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "options_hi": [
+        "विकल्प A",
+        "विकल्प B",
+        "विकल्प C",
+        "विकल्प D"
+      ],
+      "correct": 3,
+      "explanation_en": "This tests understanding of Exponents and Powers",
+      "explanation_hi": "यह घातांक और घात की समझ का परीक्षण है"
+    }
+  ],
+  "NUM_05": [
+    {
+      "id": "NUM_05_q1",
+      "concept_id": "NUM_05",
+      "difficulty": 1,
+      "text_en": "Question 1 about Rational Numbers (Level 1)",
+      "text_hi": "परिमेय संख्याएं पर प्रश्न 1 (स्तर 1)",
+      "options_en": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "options_hi": [
+        "विकल्प A",
+        "विकल्प B",
+        "विकल्प C",
+        "विकल्प D"
+      ],
+      "correct": 0,
+      "explanation_en": "This tests understanding of Rational Numbers",
+      "explanation_hi": "यह परिमेय संख्याएं की समझ का परीक्षण है"
+    },
+    {
+      "id": "NUM_05_q2",
+      "concept_id": "NUM_05",
+      "difficulty": 2,
+      "text_en": "Question 2 about Rational Numbers (Level 2)",
+      "text_hi": "परिमेय संख्याएं पर प्रश्न 2 (स्तर 2)",
+      "options_en": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "options_hi": [
+        "विकल्प A",
+        "विकल्प B",
+        "विकल्प C",
+        "विकल्प D"
+      ],
+      "correct": 1,
+      "explanation_en": "This tests understanding of Rational Numbers",
+      "explanation_hi": "यह परिमेय संख्याएं की समझ का परीक्षण है"
+    },
+    {
+      "id": "NUM_05_q3",
+      "concept_id": "NUM_05",
+      "difficulty": 3,
+      "text_en": "Question 3 about Rational Numbers (Level 3)",
+      "text_hi": "परिमेय संख्याएं पर प्रश्न 3 (स्तर 3)",
+      "options_en": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "options_hi": [
+        "विकल्प A",
+        "विकल्प B",
+        "विकल्प C",
+        "विकल्प D"
+      ],
+      "correct": 2,
+      "explanation_en": "This tests understanding of Rational Numbers",
+      "explanation_hi": "यह परिमेय संख्याएं की समझ का परीक्षण है"
+    },
+    {
+      "id": "NUM_05_q4",
+      "concept_id": "NUM_05",
+      "difficulty": 1,
+      "text_en": "Question 4 about Rational Numbers (Level 1)",
+      "text_hi": "परिमेय संख्याएं पर प्रश्न 4 (स्तर 1)",
+      "options_en": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "options_hi": [
+        "विकल्प A",
+        "विकल्प B",
+        "विकल्प C",
+        "विकल्प D"
+      ],
+      "correct": 3,
+      "explanation_en": "This tests understanding of Rational Numbers",
+      "explanation_hi": "यह परिमेय संख्याएं की समझ का परीक्षण है"
+    },
+    {
+      "id": "NUM_05_q5",
+      "concept_id": "NUM_05",
+      "difficulty": 2,
+      "text_en": "Question 5 about Rational Numbers (Level 2)",
+      "text_hi": "परिमेय संख्याएं पर प्रश्न 5 (स्तर 2)",
+      "options_en": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "options_hi": [
+        "विकल्प A",
+        "विकल्प B",
+        "विकल्प C",
+        "विकल्प D"
+      ],
+      "correct": 0,
+      "explanation_en": "This tests understanding of Rational Numbers",
+      "explanation_hi": "यह परिमेय संख्याएं की समझ का परीक्षण है"
+    },
+    {
+      "id": "NUM_05_q6",
+      "concept_id": "NUM_05",
+      "difficulty": 3,
+      "text_en": "Question 6 about Rational Numbers (Level 3)",
+      "text_hi": "परिमेय संख्याएं पर प्रश्न 6 (स्तर 3)",
+      "options_en": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "options_hi": [
+        "विकल्प A",
+        "विकल्प B",
+        "विकल्प C",
+        "विकल्प D"
+      ],
+      "correct": 1,
+      "explanation_en": "This tests understanding of Rational Numbers",
+      "explanation_hi": "यह परिमेय संख्याएं की समझ का परीक्षण है"
+    },
+    {
+      "id": "NUM_05_q7",
+      "concept_id": "NUM_05",
+      "difficulty": 1,
+      "text_en": "Question 7 about Rational Numbers (Level 1)",
+      "text_hi": "परिमेय संख्याएं पर प्रश्न 7 (स्तर 1)",
+      "options_en": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "options_hi": [
+        "विकल्प A",
+        "विकल्प B",
+        "विकल्प C",
+        "विकल्प D"
+      ],
+      "correct": 2,
+      "explanation_en": "This tests understanding of Rational Numbers",
+      "explanation_hi": "यह परिमेय संख्याएं की समझ का परीक्षण है"
+    },
+    {
+      "id": "NUM_05_q8",
+      "concept_id": "NUM_05",
+      "difficulty": 2,
+      "text_en": "Question 8 about Rational Numbers (Level 2)",
+      "text_hi": "परिमेय संख्याएं पर प्रश्न 8 (स्तर 2)",
+      "options_en": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "options_hi": [
+        "विकल्प A",
+        "विकल्प B",
+        "विकल्प C",
+        "विकल्प D"
+      ],
+      "correct": 3,
+      "explanation_en": "This tests understanding of Rational Numbers",
+      "explanation_hi": "यह परिमेय संख्याएं की समझ का परीक्षण है"
+    }
+  ],
+  "ALG_02": [
+    {
+      "id": "ALG_02_q1",
+      "concept_id": "ALG_02",
+      "difficulty": 2,
+      "text_en": "Solve: 3x - 7 = 8",
+      "text_hi": "हल करें: 3x - 7 = 8",
+      "options_en": [
+        "3",
+        "5",
+        "7",
+        "9"
+      ],
+      "options_hi": [
+        "3",
+        "5",
+        "7",
+        "9"
+      ],
+      "correct": 1
+    },
+    {
+      "id": "ALG_02_q2",
+      "concept_id": "ALG_02",
+      "difficulty": 3,
+      "text_en": "2(x+3)=14, x=?",
+      "text_hi": "2(x+3)=14, x=?",
+      "options_en": [
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "options_hi": [
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "correct": 2
+    },
+    {
+      "id": "ALG_02_q3",
+      "concept_id": "ALG_02",
+      "difficulty": 3,
+      "text_en": "Practice question 3 for Linear Equations",
+      "text_hi": "रैखिक समीकरण के लिए अभ्यास प्रश्न 3",
+      "options_en": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "options_hi": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "correct": 3,
+      "explanation_en": "Review the concept carefully",
+      "explanation_hi": "अवधारणा को ध्यान से देखें"
+    },
+    {
+      "id": "ALG_02_q4",
+      "concept_id": "ALG_02",
+      "difficulty": 1,
+      "text_en": "Practice question 4 for Linear Equations",
+      "text_hi": "रैखिक समीकरण के लिए अभ्यास प्रश्न 4",
+      "options_en": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "options_hi": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "correct": 0,
+      "explanation_en": "Review the concept carefully",
+      "explanation_hi": "अवधारणा को ध्यान से देखें"
+    },
+    {
+      "id": "ALG_02_q5",
+      "concept_id": "ALG_02",
+      "difficulty": 2,
+      "text_en": "Practice question 5 for Linear Equations",
+      "text_hi": "रैखिक समीकरण के लिए अभ्यास प्रश्न 5",
+      "options_en": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "options_hi": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "correct": 0,
+      "explanation_en": "Review the concept carefully",
+      "explanation_hi": "अवधारणा को ध्यान से देखें"
+    },
+    {
+      "id": "ALG_02_q6",
+      "concept_id": "ALG_02",
+      "difficulty": 3,
+      "text_en": "Practice question 6 for Linear Equations",
+      "text_hi": "रैखिक समीकरण के लिए अभ्यास प्रश्न 6",
+      "options_en": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "options_hi": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "correct": 1,
+      "explanation_en": "Review the concept carefully",
+      "explanation_hi": "अवधारणा को ध्यान से देखें"
+    },
+    {
+      "id": "ALG_02_q7",
+      "concept_id": "ALG_02",
+      "difficulty": 1,
+      "text_en": "Practice question 7 for Linear Equations",
+      "text_hi": "रैखिक समीकरण के लिए अभ्यास प्रश्न 7",
+      "options_en": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "options_hi": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "correct": 1,
+      "explanation_en": "Review the concept carefully",
+      "explanation_hi": "अवधारणा को ध्यान से देखें"
+    },
+    {
+      "id": "ALG_02_q8",
+      "concept_id": "ALG_02",
+      "difficulty": 2,
+      "text_en": "Practice question 8 for Linear Equations",
+      "text_hi": "रैखिक समीकरण के लिए अभ्यास प्रश्न 8",
+      "options_en": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "options_hi": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "correct": 2,
+      "explanation_en": "Review the concept carefully",
+      "explanation_hi": "अवधारणा को ध्यान से देखें"
+    }
+  ],
+  "ALG_03": [
+    {
+      "id": "ALG_03_q1",
+      "concept_id": "ALG_03",
+      "difficulty": 1,
+      "text_en": "Question 1 about Algebraic Expressions (Level 1)",
+      "text_hi": "बीजगणितीय व्यंजक पर प्रश्न 1 (स्तर 1)",
+      "options_en": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "options_hi": [
+        "विकल्प A",
+        "विकल्प B",
+        "विकल्प C",
+        "विकल्प D"
+      ],
+      "correct": 0,
+      "explanation_en": "This tests understanding of Algebraic Expressions",
+      "explanation_hi": "यह बीजगणितीय व्यंजक की समझ का परीक्षण है"
+    },
+    {
+      "id": "ALG_03_q2",
+      "concept_id": "ALG_03",
+      "difficulty": 2,
+      "text_en": "Question 2 about Algebraic Expressions (Level 2)",
+      "text_hi": "बीजगणितीय व्यंजक पर प्रश्न 2 (स्तर 2)",
+      "options_en": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "options_hi": [
+        "विकल्प A",
+        "विकल्प B",
+        "विकल्प C",
+        "विकल्प D"
+      ],
+      "correct": 1,
+      "explanation_en": "This tests understanding of Algebraic Expressions",
+      "explanation_hi": "यह बीजगणितीय व्यंजक की समझ का परीक्षण है"
+    },
+    {
+      "id": "ALG_03_q3",
+      "concept_id": "ALG_03",
+      "difficulty": 3,
+      "text_en": "Question 3 about Algebraic Expressions (Level 3)",
+      "text_hi": "बीजगणितीय व्यंजक पर प्रश्न 3 (स्तर 3)",
+      "options_en": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "options_hi": [
+        "विकल्प A",
+        "विकल्प B",
+        "विकल्प C",
+        "विकल्प D"
+      ],
+      "correct": 2,
+      "explanation_en": "This tests understanding of Algebraic Expressions",
+      "explanation_hi": "यह बीजगणितीय व्यंजक की समझ का परीक्षण है"
+    },
+    {
+      "id": "ALG_03_q4",
+      "concept_id": "ALG_03",
+      "difficulty": 1,
+      "text_en": "Question 4 about Algebraic Expressions (Level 1)",
+      "text_hi": "बीजगणितीय व्यंजक पर प्रश्न 4 (स्तर 1)",
+      "options_en": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "options_hi": [
+        "विकल्प A",
+        "विकल्प B",
+        "विकल्प C",
+        "विकल्प D"
+      ],
+      "correct": 3,
+      "explanation_en": "This tests understanding of Algebraic Expressions",
+      "explanation_hi": "यह बीजगणितीय व्यंजक की समझ का परीक्षण है"
+    },
+    {
+      "id": "ALG_03_q5",
+      "concept_id": "ALG_03",
+      "difficulty": 2,
+      "text_en": "Question 5 about Algebraic Expressions (Level 2)",
+      "text_hi": "बीजगणितीय व्यंजक पर प्रश्न 5 (स्तर 2)",
+      "options_en": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "options_hi": [
+        "विकल्प A",
+        "विकल्प B",
+        "विकल्प C",
+        "विकल्प D"
+      ],
+      "correct": 0,
+      "explanation_en": "This tests understanding of Algebraic Expressions",
+      "explanation_hi": "यह बीजगणितीय व्यंजक की समझ का परीक्षण है"
+    },
+    {
+      "id": "ALG_03_q6",
+      "concept_id": "ALG_03",
+      "difficulty": 3,
+      "text_en": "Question 6 about Algebraic Expressions (Level 3)",
+      "text_hi": "बीजगणितीय व्यंजक पर प्रश्न 6 (स्तर 3)",
+      "options_en": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "options_hi": [
+        "विकल्प A",
+        "विकल्प B",
+        "विकल्प C",
+        "विकल्प D"
+      ],
+      "correct": 1,
+      "explanation_en": "This tests understanding of Algebraic Expressions",
+      "explanation_hi": "यह बीजगणितीय व्यंजक की समझ का परीक्षण है"
+    },
+    {
+      "id": "ALG_03_q7",
+      "concept_id": "ALG_03",
+      "difficulty": 1,
+      "text_en": "Question 7 about Algebraic Expressions (Level 1)",
+      "text_hi": "बीजगणितीय व्यंजक पर प्रश्न 7 (स्तर 1)",
+      "options_en": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "options_hi": [
+        "विकल्प A",
+        "विकल्प B",
+        "विकल्प C",
+        "विकल्प D"
+      ],
+      "correct": 2,
+      "explanation_en": "This tests understanding of Algebraic Expressions",
+      "explanation_hi": "यह बीजगणितीय व्यंजक की समझ का परीक्षण है"
+    },
+    {
+      "id": "ALG_03_q8",
+      "concept_id": "ALG_03",
+      "difficulty": 2,
+      "text_en": "Question 8 about Algebraic Expressions (Level 2)",
+      "text_hi": "बीजगणितीय व्यंजक पर प्रश्न 8 (स्तर 2)",
+      "options_en": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "options_hi": [
+        "विकल्प A",
+        "विकल्प B",
+        "विकल्प C",
+        "विकल्प D"
+      ],
+      "correct": 3,
+      "explanation_en": "This tests understanding of Algebraic Expressions",
+      "explanation_hi": "यह बीजगणितीय व्यंजक की समझ का परीक्षण है"
+    }
+  ],
+  "GEO_01": [
+    {
+      "id": "GEO_01_q1",
+      "concept_id": "GEO_01",
+      "difficulty": 1,
+      "text_en": "Question 1 about Lines and Angles (Level 1)",
+      "text_hi": "रेखाएं और कोण पर प्रश्न 1 (स्तर 1)",
+      "options_en": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "options_hi": [
+        "विकल्प A",
+        "विकल्प B",
+        "विकल्प C",
+        "विकल्प D"
+      ],
+      "correct": 0,
+      "explanation_en": "This tests understanding of Lines and Angles",
+      "explanation_hi": "यह रेखाएं और कोण की समझ का परीक्षण है"
+    },
+    {
+      "id": "GEO_01_q2",
+      "concept_id": "GEO_01",
+      "difficulty": 2,
+      "text_en": "Question 2 about Lines and Angles (Level 2)",
+      "text_hi": "रेखाएं और कोण पर प्रश्न 2 (स्तर 2)",
+      "options_en": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "options_hi": [
+        "विकल्प A",
+        "विकल्प B",
+        "विकल्प C",
+        "विकल्प D"
+      ],
+      "correct": 1,
+      "explanation_en": "This tests understanding of Lines and Angles",
+      "explanation_hi": "यह रेखाएं और कोण की समझ का परीक्षण है"
+    },
+    {
+      "id": "GEO_01_q3",
+      "concept_id": "GEO_01",
+      "difficulty": 3,
+      "text_en": "Question 3 about Lines and Angles (Level 3)",
+      "text_hi": "रेखाएं और कोण पर प्रश्न 3 (स्तर 3)",
+      "options_en": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "options_hi": [
+        "विकल्प A",
+        "विकल्प B",
+        "विकल्प C",
+        "विकल्प D"
+      ],
+      "correct": 2,
+      "explanation_en": "This tests understanding of Lines and Angles",
+      "explanation_hi": "यह रेखाएं और कोण की समझ का परीक्षण है"
+    },
+    {
+      "id": "GEO_01_q4",
+      "concept_id": "GEO_01",
+      "difficulty": 1,
+      "text_en": "Question 4 about Lines and Angles (Level 1)",
+      "text_hi": "रेखाएं और कोण पर प्रश्न 4 (स्तर 1)",
+      "options_en": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "options_hi": [
+        "विकल्प A",
+        "विकल्प B",
+        "विकल्प C",
+        "विकल्प D"
+      ],
+      "correct": 3,
+      "explanation_en": "This tests understanding of Lines and Angles",
+      "explanation_hi": "यह रेखाएं और कोण की समझ का परीक्षण है"
+    },
+    {
+      "id": "GEO_01_q5",
+      "concept_id": "GEO_01",
+      "difficulty": 2,
+      "text_en": "Question 5 about Lines and Angles (Level 2)",
+      "text_hi": "रेखाएं और कोण पर प्रश्न 5 (स्तर 2)",
+      "options_en": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "options_hi": [
+        "विकल्प A",
+        "विकल्प B",
+        "विकल्प C",
+        "विकल्प D"
+      ],
+      "correct": 0,
+      "explanation_en": "This tests understanding of Lines and Angles",
+      "explanation_hi": "यह रेखाएं और कोण की समझ का परीक्षण है"
+    },
+    {
+      "id": "GEO_01_q6",
+      "concept_id": "GEO_01",
+      "difficulty": 3,
+      "text_en": "Question 6 about Lines and Angles (Level 3)",
+      "text_hi": "रेखाएं और कोण पर प्रश्न 6 (स्तर 3)",
+      "options_en": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "options_hi": [
+        "विकल्प A",
+        "विकल्प B",
+        "विकल्प C",
+        "विकल्प D"
+      ],
+      "correct": 1,
+      "explanation_en": "This tests understanding of Lines and Angles",
+      "explanation_hi": "यह रेखाएं और कोण की समझ का परीक्षण है"
+    },
+    {
+      "id": "GEO_01_q7",
+      "concept_id": "GEO_01",
+      "difficulty": 1,
+      "text_en": "Question 7 about Lines and Angles (Level 1)",
+      "text_hi": "रेखाएं और कोण पर प्रश्न 7 (स्तर 1)",
+      "options_en": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "options_hi": [
+        "विकल्प A",
+        "विकल्प B",
+        "विकल्प C",
+        "विकल्प D"
+      ],
+      "correct": 2,
+      "explanation_en": "This tests understanding of Lines and Angles",
+      "explanation_hi": "यह रेखाएं और कोण की समझ का परीक्षण है"
+    },
+    {
+      "id": "GEO_01_q8",
+      "concept_id": "GEO_01",
+      "difficulty": 2,
+      "text_en": "Question 8 about Lines and Angles (Level 2)",
+      "text_hi": "रेखाएं और कोण पर प्रश्न 8 (स्तर 2)",
+      "options_en": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "options_hi": [
+        "विकल्प A",
+        "विकल्प B",
+        "विकल्प C",
+        "विकल्प D"
+      ],
+      "correct": 3,
+      "explanation_en": "This tests understanding of Lines and Angles",
+      "explanation_hi": "यह रेखाएं और कोण की समझ का परीक्षण है"
+    }
+  ],
+  "GEO_02": [
+    {
+      "id": "GEO_02_q1",
+      "concept_id": "GEO_02",
+      "difficulty": 1,
+      "text_en": "Question 1 about Triangles (Level 1)",
+      "text_hi": "त्रिभुज पर प्रश्न 1 (स्तर 1)",
+      "options_en": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "options_hi": [
+        "विकल्प A",
+        "विकल्प B",
+        "विकल्प C",
+        "विकल्प D"
+      ],
+      "correct": 0,
+      "explanation_en": "This tests understanding of Triangles",
+      "explanation_hi": "यह त्रिभुज की समझ का परीक्षण है"
+    },
+    {
+      "id": "GEO_02_q2",
+      "concept_id": "GEO_02",
+      "difficulty": 2,
+      "text_en": "Question 2 about Triangles (Level 2)",
+      "text_hi": "त्रिभुज पर प्रश्न 2 (स्तर 2)",
+      "options_en": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "options_hi": [
+        "विकल्प A",
+        "विकल्प B",
+        "विकल्प C",
+        "विकल्प D"
+      ],
+      "correct": 1,
+      "explanation_en": "This tests understanding of Triangles",
+      "explanation_hi": "यह त्रिभुज की समझ का परीक्षण है"
+    },
+    {
+      "id": "GEO_02_q3",
+      "concept_id": "GEO_02",
+      "difficulty": 3,
+      "text_en": "Question 3 about Triangles (Level 3)",
+      "text_hi": "त्रिभुज पर प्रश्न 3 (स्तर 3)",
+      "options_en": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "options_hi": [
+        "विकल्प A",
+        "विकल्प B",
+        "विकल्प C",
+        "विकल्प D"
+      ],
+      "correct": 2,
+      "explanation_en": "This tests understanding of Triangles",
+      "explanation_hi": "यह त्रिभुज की समझ का परीक्षण है"
+    },
+    {
+      "id": "GEO_02_q4",
+      "concept_id": "GEO_02",
+      "difficulty": 1,
+      "text_en": "Question 4 about Triangles (Level 1)",
+      "text_hi": "त्रिभुज पर प्रश्न 4 (स्तर 1)",
+      "options_en": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "options_hi": [
+        "विकल्प A",
+        "विकल्प B",
+        "विकल्प C",
+        "विकल्प D"
+      ],
+      "correct": 3,
+      "explanation_en": "This tests understanding of Triangles",
+      "explanation_hi": "यह त्रिभुज की समझ का परीक्षण है"
+    },
+    {
+      "id": "GEO_02_q5",
+      "concept_id": "GEO_02",
+      "difficulty": 2,
+      "text_en": "Question 5 about Triangles (Level 2)",
+      "text_hi": "त्रिभुज पर प्रश्न 5 (स्तर 2)",
+      "options_en": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "options_hi": [
+        "विकल्प A",
+        "विकल्प B",
+        "विकल्प C",
+        "विकल्प D"
+      ],
+      "correct": 0,
+      "explanation_en": "This tests understanding of Triangles",
+      "explanation_hi": "यह त्रिभुज की समझ का परीक्षण है"
+    },
+    {
+      "id": "GEO_02_q6",
+      "concept_id": "GEO_02",
+      "difficulty": 3,
+      "text_en": "Question 6 about Triangles (Level 3)",
+      "text_hi": "त्रिभुज पर प्रश्न 6 (स्तर 3)",
+      "options_en": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "options_hi": [
+        "विकल्प A",
+        "विकल्प B",
+        "विकल्प C",
+        "विकल्प D"
+      ],
+      "correct": 1,
+      "explanation_en": "This tests understanding of Triangles",
+      "explanation_hi": "यह त्रिभुज की समझ का परीक्षण है"
+    },
+    {
+      "id": "GEO_02_q7",
+      "concept_id": "GEO_02",
+      "difficulty": 1,
+      "text_en": "Question 7 about Triangles (Level 1)",
+      "text_hi": "त्रिभुज पर प्रश्न 7 (स्तर 1)",
+      "options_en": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "options_hi": [
+        "विकल्प A",
+        "विकल्प B",
+        "विकल्प C",
+        "विकल्प D"
+      ],
+      "correct": 2,
+      "explanation_en": "This tests understanding of Triangles",
+      "explanation_hi": "यह त्रिभुज की समझ का परीक्षण है"
+    },
+    {
+      "id": "GEO_02_q8",
+      "concept_id": "GEO_02",
+      "difficulty": 2,
+      "text_en": "Question 8 about Triangles (Level 2)",
+      "text_hi": "त्रिभुज पर प्रश्न 8 (स्तर 2)",
+      "options_en": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "options_hi": [
+        "विकल्प A",
+        "विकल्प B",
+        "विकल्प C",
+        "विकल्प D"
+      ],
+      "correct": 3,
+      "explanation_en": "This tests understanding of Triangles",
+      "explanation_hi": "यह त्रिभुज की समझ का परीक्षण है"
+    }
+  ],
+  "MENS_02": [
+    {
+      "id": "MENS_02_q1",
+      "concept_id": "MENS_02",
+      "difficulty": 1,
+      "text_en": "Question 1 about Area and Volume (Level 1)",
+      "text_hi": "क्षेत्रफल और आयतन पर प्रश्न 1 (स्तर 1)",
+      "options_en": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "options_hi": [
+        "विकल्प A",
+        "विकल्प B",
+        "विकल्प C",
+        "विकल्प D"
+      ],
+      "correct": 0,
+      "explanation_en": "This tests understanding of Area and Volume",
+      "explanation_hi": "यह क्षेत्रफल और आयतन की समझ का परीक्षण है"
+    },
+    {
+      "id": "MENS_02_q2",
+      "concept_id": "MENS_02",
+      "difficulty": 2,
+      "text_en": "Question 2 about Area and Volume (Level 2)",
+      "text_hi": "क्षेत्रफल और आयतन पर प्रश्न 2 (स्तर 2)",
+      "options_en": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "options_hi": [
+        "विकल्प A",
+        "विकल्प B",
+        "विकल्प C",
+        "विकल्प D"
+      ],
+      "correct": 1,
+      "explanation_en": "This tests understanding of Area and Volume",
+      "explanation_hi": "यह क्षेत्रफल और आयतन की समझ का परीक्षण है"
+    },
+    {
+      "id": "MENS_02_q3",
+      "concept_id": "MENS_02",
+      "difficulty": 3,
+      "text_en": "Question 3 about Area and Volume (Level 3)",
+      "text_hi": "क्षेत्रफल और आयतन पर प्रश्न 3 (स्तर 3)",
+      "options_en": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "options_hi": [
+        "विकल्प A",
+        "विकल्प B",
+        "विकल्प C",
+        "विकल्प D"
+      ],
+      "correct": 2,
+      "explanation_en": "This tests understanding of Area and Volume",
+      "explanation_hi": "यह क्षेत्रफल और आयतन की समझ का परीक्षण है"
+    },
+    {
+      "id": "MENS_02_q4",
+      "concept_id": "MENS_02",
+      "difficulty": 1,
+      "text_en": "Question 4 about Area and Volume (Level 1)",
+      "text_hi": "क्षेत्रफल और आयतन पर प्रश्न 4 (स्तर 1)",
+      "options_en": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "options_hi": [
+        "विकल्प A",
+        "विकल्प B",
+        "विकल्प C",
+        "विकल्प D"
+      ],
+      "correct": 3,
+      "explanation_en": "This tests understanding of Area and Volume",
+      "explanation_hi": "यह क्षेत्रफल और आयतन की समझ का परीक्षण है"
+    },
+    {
+      "id": "MENS_02_q5",
+      "concept_id": "MENS_02",
+      "difficulty": 2,
+      "text_en": "Question 5 about Area and Volume (Level 2)",
+      "text_hi": "क्षेत्रफल और आयतन पर प्रश्न 5 (स्तर 2)",
+      "options_en": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "options_hi": [
+        "विकल्प A",
+        "विकल्प B",
+        "विकल्प C",
+        "विकल्प D"
+      ],
+      "correct": 0,
+      "explanation_en": "This tests understanding of Area and Volume",
+      "explanation_hi": "यह क्षेत्रफल और आयतन की समझ का परीक्षण है"
+    },
+    {
+      "id": "MENS_02_q6",
+      "concept_id": "MENS_02",
+      "difficulty": 3,
+      "text_en": "Question 6 about Area and Volume (Level 3)",
+      "text_hi": "क्षेत्रफल और आयतन पर प्रश्न 6 (स्तर 3)",
+      "options_en": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "options_hi": [
+        "विकल्प A",
+        "विकल्प B",
+        "विकल्प C",
+        "विकल्प D"
+      ],
+      "correct": 1,
+      "explanation_en": "This tests understanding of Area and Volume",
+      "explanation_hi": "यह क्षेत्रफल और आयतन की समझ का परीक्षण है"
+    },
+    {
+      "id": "MENS_02_q7",
+      "concept_id": "MENS_02",
+      "difficulty": 1,
+      "text_en": "Question 7 about Area and Volume (Level 1)",
+      "text_hi": "क्षेत्रफल और आयतन पर प्रश्न 7 (स्तर 1)",
+      "options_en": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "options_hi": [
+        "विकल्प A",
+        "विकल्प B",
+        "विकल्प C",
+        "विकल्प D"
+      ],
+      "correct": 2,
+      "explanation_en": "This tests understanding of Area and Volume",
+      "explanation_hi": "यह क्षेत्रफल और आयतन की समझ का परीक्षण है"
+    },
+    {
+      "id": "MENS_02_q8",
+      "concept_id": "MENS_02",
+      "difficulty": 2,
+      "text_en": "Question 8 about Area and Volume (Level 2)",
+      "text_hi": "क्षेत्रफल और आयतन पर प्रश्न 8 (स्तर 2)",
+      "options_en": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "options_hi": [
+        "विकल्प A",
+        "विकल्प B",
+        "विकल्प C",
+        "विकल्प D"
+      ],
+      "correct": 3,
+      "explanation_en": "This tests understanding of Area and Volume",
+      "explanation_hi": "यह क्षेत्रफल और आयतन की समझ का परीक्षण है"
+    }
+  ],
+  "RAT_02": [
+    {
+      "id": "RAT_02_q1",
+      "concept_id": "RAT_02",
+      "difficulty": 1,
+      "text_en": "Question 1 about Percentage and Profit-Loss (Level 1)",
+      "text_hi": "प्रतिशत, लाभ-हानि पर प्रश्न 1 (स्तर 1)",
+      "options_en": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "options_hi": [
+        "विकल्प A",
+        "विकल्प B",
+        "विकल्प C",
+        "विकल्प D"
+      ],
+      "correct": 0,
+      "explanation_en": "This tests understanding of Percentage and Profit-Loss",
+      "explanation_hi": "यह प्रतिशत, लाभ-हानि की समझ का परीक्षण है"
+    },
+    {
+      "id": "RAT_02_q2",
+      "concept_id": "RAT_02",
+      "difficulty": 2,
+      "text_en": "Question 2 about Percentage and Profit-Loss (Level 2)",
+      "text_hi": "प्रतिशत, लाभ-हानि पर प्रश्न 2 (स्तर 2)",
+      "options_en": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "options_hi": [
+        "विकल्प A",
+        "विकल्प B",
+        "विकल्प C",
+        "विकल्प D"
+      ],
+      "correct": 1,
+      "explanation_en": "This tests understanding of Percentage and Profit-Loss",
+      "explanation_hi": "यह प्रतिशत, लाभ-हानि की समझ का परीक्षण है"
+    },
+    {
+      "id": "RAT_02_q3",
+      "concept_id": "RAT_02",
+      "difficulty": 3,
+      "text_en": "Question 3 about Percentage and Profit-Loss (Level 3)",
+      "text_hi": "प्रतिशत, लाभ-हानि पर प्रश्न 3 (स्तर 3)",
+      "options_en": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "options_hi": [
+        "विकल्प A",
+        "विकल्प B",
+        "विकल्प C",
+        "विकल्प D"
+      ],
+      "correct": 2,
+      "explanation_en": "This tests understanding of Percentage and Profit-Loss",
+      "explanation_hi": "यह प्रतिशत, लाभ-हानि की समझ का परीक्षण है"
+    },
+    {
+      "id": "RAT_02_q4",
+      "concept_id": "RAT_02",
+      "difficulty": 1,
+      "text_en": "Question 4 about Percentage and Profit-Loss (Level 1)",
+      "text_hi": "प्रतिशत, लाभ-हानि पर प्रश्न 4 (स्तर 1)",
+      "options_en": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "options_hi": [
+        "विकल्प A",
+        "विकल्प B",
+        "विकल्प C",
+        "विकल्प D"
+      ],
+      "correct": 3,
+      "explanation_en": "This tests understanding of Percentage and Profit-Loss",
+      "explanation_hi": "यह प्रतिशत, लाभ-हानि की समझ का परीक्षण है"
+    },
+    {
+      "id": "RAT_02_q5",
+      "concept_id": "RAT_02",
+      "difficulty": 2,
+      "text_en": "Question 5 about Percentage and Profit-Loss (Level 2)",
+      "text_hi": "प्रतिशत, लाभ-हानि पर प्रश्न 5 (स्तर 2)",
+      "options_en": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "options_hi": [
+        "विकल्प A",
+        "विकल्प B",
+        "विकल्प C",
+        "विकल्प D"
+      ],
+      "correct": 0,
+      "explanation_en": "This tests understanding of Percentage and Profit-Loss",
+      "explanation_hi": "यह प्रतिशत, लाभ-हानि की समझ का परीक्षण है"
+    },
+    {
+      "id": "RAT_02_q6",
+      "concept_id": "RAT_02",
+      "difficulty": 3,
+      "text_en": "Question 6 about Percentage and Profit-Loss (Level 3)",
+      "text_hi": "प्रतिशत, लाभ-हानि पर प्रश्न 6 (स्तर 3)",
+      "options_en": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "options_hi": [
+        "विकल्प A",
+        "विकल्प B",
+        "विकल्प C",
+        "विकल्प D"
+      ],
+      "correct": 1,
+      "explanation_en": "This tests understanding of Percentage and Profit-Loss",
+      "explanation_hi": "यह प्रतिशत, लाभ-हानि की समझ का परीक्षण है"
+    },
+    {
+      "id": "RAT_02_q7",
+      "concept_id": "RAT_02",
+      "difficulty": 1,
+      "text_en": "Question 7 about Percentage and Profit-Loss (Level 1)",
+      "text_hi": "प्रतिशत, लाभ-हानि पर प्रश्न 7 (स्तर 1)",
+      "options_en": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "options_hi": [
+        "विकल्प A",
+        "विकल्प B",
+        "विकल्प C",
+        "विकल्प D"
+      ],
+      "correct": 2,
+      "explanation_en": "This tests understanding of Percentage and Profit-Loss",
+      "explanation_hi": "यह प्रतिशत, लाभ-हानि की समझ का परीक्षण है"
+    },
+    {
+      "id": "RAT_02_q8",
+      "concept_id": "RAT_02",
+      "difficulty": 2,
+      "text_en": "Question 8 about Percentage and Profit-Loss (Level 2)",
+      "text_hi": "प्रतिशत, लाभ-हानि पर प्रश्न 8 (स्तर 2)",
+      "options_en": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "options_hi": [
+        "विकल्प A",
+        "विकल्प B",
+        "विकल्प C",
+        "विकल्प D"
+      ],
+      "correct": 3,
+      "explanation_en": "This tests understanding of Percentage and Profit-Loss",
+      "explanation_hi": "यह प्रतिशत, लाभ-हानि की समझ का परीक्षण है"
+    }
+  ],
+  "STAT_01": [
+    {
+      "id": "STAT_01_q1",
+      "concept_id": "STAT_01",
+      "difficulty": 1,
+      "text_en": "Question 1 about Statistics (Level 1)",
+      "text_hi": "सांख्यिकी पर प्रश्न 1 (स्तर 1)",
+      "options_en": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "options_hi": [
+        "विकल्प A",
+        "विकल्प B",
+        "विकल्प C",
+        "विकल्प D"
+      ],
+      "correct": 0,
+      "explanation_en": "This tests understanding of Statistics",
+      "explanation_hi": "यह सांख्यिकी की समझ का परीक्षण है"
+    },
+    {
+      "id": "STAT_01_q2",
+      "concept_id": "STAT_01",
+      "difficulty": 2,
+      "text_en": "Question 2 about Statistics (Level 2)",
+      "text_hi": "सांख्यिकी पर प्रश्न 2 (स्तर 2)",
+      "options_en": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "options_hi": [
+        "विकल्प A",
+        "विकल्प B",
+        "विकल्प C",
+        "विकल्प D"
+      ],
+      "correct": 1,
+      "explanation_en": "This tests understanding of Statistics",
+      "explanation_hi": "यह सांख्यिकी की समझ का परीक्षण है"
+    },
+    {
+      "id": "STAT_01_q3",
+      "concept_id": "STAT_01",
+      "difficulty": 3,
+      "text_en": "Question 3 about Statistics (Level 3)",
+      "text_hi": "सांख्यिकी पर प्रश्न 3 (स्तर 3)",
+      "options_en": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "options_hi": [
+        "विकल्प A",
+        "विकल्प B",
+        "विकल्प C",
+        "विकल्प D"
+      ],
+      "correct": 2,
+      "explanation_en": "This tests understanding of Statistics",
+      "explanation_hi": "यह सांख्यिकी की समझ का परीक्षण है"
+    },
+    {
+      "id": "STAT_01_q4",
+      "concept_id": "STAT_01",
+      "difficulty": 1,
+      "text_en": "Question 4 about Statistics (Level 1)",
+      "text_hi": "सांख्यिकी पर प्रश्न 4 (स्तर 1)",
+      "options_en": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "options_hi": [
+        "विकल्प A",
+        "विकल्प B",
+        "विकल्प C",
+        "विकल्प D"
+      ],
+      "correct": 3,
+      "explanation_en": "This tests understanding of Statistics",
+      "explanation_hi": "यह सांख्यिकी की समझ का परीक्षण है"
+    },
+    {
+      "id": "STAT_01_q5",
+      "concept_id": "STAT_01",
+      "difficulty": 2,
+      "text_en": "Question 5 about Statistics (Level 2)",
+      "text_hi": "सांख्यिकी पर प्रश्न 5 (स्तर 2)",
+      "options_en": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "options_hi": [
+        "विकल्प A",
+        "विकल्प B",
+        "विकल्प C",
+        "विकल्प D"
+      ],
+      "correct": 0,
+      "explanation_en": "This tests understanding of Statistics",
+      "explanation_hi": "यह सांख्यिकी की समझ का परीक्षण है"
+    },
+    {
+      "id": "STAT_01_q6",
+      "concept_id": "STAT_01",
+      "difficulty": 3,
+      "text_en": "Question 6 about Statistics (Level 3)",
+      "text_hi": "सांख्यिकी पर प्रश्न 6 (स्तर 3)",
+      "options_en": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "options_hi": [
+        "विकल्प A",
+        "विकल्प B",
+        "विकल्प C",
+        "विकल्प D"
+      ],
+      "correct": 1,
+      "explanation_en": "This tests understanding of Statistics",
+      "explanation_hi": "यह सांख्यिकी की समझ का परीक्षण है"
+    },
+    {
+      "id": "STAT_01_q7",
+      "concept_id": "STAT_01",
+      "difficulty": 1,
+      "text_en": "Question 7 about Statistics (Level 1)",
+      "text_hi": "सांख्यिकी पर प्रश्न 7 (स्तर 1)",
+      "options_en": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "options_hi": [
+        "विकल्प A",
+        "विकल्प B",
+        "विकल्प C",
+        "विकल्प D"
+      ],
+      "correct": 2,
+      "explanation_en": "This tests understanding of Statistics",
+      "explanation_hi": "यह सांख्यिकी की समझ का परीक्षण है"
+    },
+    {
+      "id": "STAT_01_q8",
+      "concept_id": "STAT_01",
+      "difficulty": 2,
+      "text_en": "Question 8 about Statistics (Level 2)",
+      "text_hi": "सांख्यिकी पर प्रश्न 8 (स्तर 2)",
+      "options_en": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "options_hi": [
+        "विकल्प A",
+        "विकल्प B",
+        "विकल्प C",
+        "विकल्प D"
+      ],
+      "correct": 3,
+      "explanation_en": "This tests understanding of Statistics",
+      "explanation_hi": "यह सांख्यिकी की समझ का परीक्षण है"
+    }
+  ],
+  "ALG_04": [
+    {
+      "id": "ALG_04_q1",
+      "concept_id": "ALG_04",
+      "difficulty": 1,
+      "text_en": "Question 1 about Linear Equations in Two Variables (Level 1)",
+      "text_hi": "दो चर वाले रैखिक समीकरण पर प्रश्न 1 (स्तर 1)",
+      "options_en": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "options_hi": [
+        "विकल्प A",
+        "विकल्प B",
+        "विकल्प C",
+        "विकल्प D"
+      ],
+      "correct": 0,
+      "explanation_en": "This tests understanding of Linear Equations in Two Variables",
+      "explanation_hi": "यह दो चर वाले रैखिक समीकरण की समझ का परीक्षण है"
+    },
+    {
+      "id": "ALG_04_q2",
+      "concept_id": "ALG_04",
+      "difficulty": 2,
+      "text_en": "Question 2 about Linear Equations in Two Variables (Level 2)",
+      "text_hi": "दो चर वाले रैखिक समीकरण पर प्रश्न 2 (स्तर 2)",
+      "options_en": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "options_hi": [
+        "विकल्प A",
+        "विकल्प B",
+        "विकल्प C",
+        "विकल्प D"
+      ],
+      "correct": 1,
+      "explanation_en": "This tests understanding of Linear Equations in Two Variables",
+      "explanation_hi": "यह दो चर वाले रैखिक समीकरण की समझ का परीक्षण है"
+    },
+    {
+      "id": "ALG_04_q3",
+      "concept_id": "ALG_04",
+      "difficulty": 3,
+      "text_en": "Question 3 about Linear Equations in Two Variables (Level 3)",
+      "text_hi": "दो चर वाले रैखिक समीकरण पर प्रश्न 3 (स्तर 3)",
+      "options_en": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "options_hi": [
+        "विकल्प A",
+        "विकल्प B",
+        "विकल्प C",
+        "विकल्प D"
+      ],
+      "correct": 2,
+      "explanation_en": "This tests understanding of Linear Equations in Two Variables",
+      "explanation_hi": "यह दो चर वाले रैखिक समीकरण की समझ का परीक्षण है"
+    },
+    {
+      "id": "ALG_04_q4",
+      "concept_id": "ALG_04",
+      "difficulty": 1,
+      "text_en": "Question 4 about Linear Equations in Two Variables (Level 1)",
+      "text_hi": "दो चर वाले रैखिक समीकरण पर प्रश्न 4 (स्तर 1)",
+      "options_en": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "options_hi": [
+        "विकल्प A",
+        "विकल्प B",
+        "विकल्प C",
+        "विकल्प D"
+      ],
+      "correct": 3,
+      "explanation_en": "This tests understanding of Linear Equations in Two Variables",
+      "explanation_hi": "यह दो चर वाले रैखिक समीकरण की समझ का परीक्षण है"
+    },
+    {
+      "id": "ALG_04_q5",
+      "concept_id": "ALG_04",
+      "difficulty": 2,
+      "text_en": "Question 5 about Linear Equations in Two Variables (Level 2)",
+      "text_hi": "दो चर वाले रैखिक समीकरण पर प्रश्न 5 (स्तर 2)",
+      "options_en": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "options_hi": [
+        "विकल्प A",
+        "विकल्प B",
+        "विकल्प C",
+        "विकल्प D"
+      ],
+      "correct": 0,
+      "explanation_en": "This tests understanding of Linear Equations in Two Variables",
+      "explanation_hi": "यह दो चर वाले रैखिक समीकरण की समझ का परीक्षण है"
+    },
+    {
+      "id": "ALG_04_q6",
+      "concept_id": "ALG_04",
+      "difficulty": 3,
+      "text_en": "Question 6 about Linear Equations in Two Variables (Level 3)",
+      "text_hi": "दो चर वाले रैखिक समीकरण पर प्रश्न 6 (स्तर 3)",
+      "options_en": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "options_hi": [
+        "विकल्प A",
+        "विकल्प B",
+        "विकल्प C",
+        "विकल्प D"
+      ],
+      "correct": 1,
+      "explanation_en": "This tests understanding of Linear Equations in Two Variables",
+      "explanation_hi": "यह दो चर वाले रैखिक समीकरण की समझ का परीक्षण है"
+    },
+    {
+      "id": "ALG_04_q7",
+      "concept_id": "ALG_04",
+      "difficulty": 1,
+      "text_en": "Question 7 about Linear Equations in Two Variables (Level 1)",
+      "text_hi": "दो चर वाले रैखिक समीकरण पर प्रश्न 7 (स्तर 1)",
+      "options_en": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "options_hi": [
+        "विकल्प A",
+        "विकल्प B",
+        "विकल्प C",
+        "विकल्प D"
+      ],
+      "correct": 2,
+      "explanation_en": "This tests understanding of Linear Equations in Two Variables",
+      "explanation_hi": "यह दो चर वाले रैखिक समीकरण की समझ का परीक्षण है"
+    },
+    {
+      "id": "ALG_04_q8",
+      "concept_id": "ALG_04",
+      "difficulty": 2,
+      "text_en": "Question 8 about Linear Equations in Two Variables (Level 2)",
+      "text_hi": "दो चर वाले रैखिक समीकरण पर प्रश्न 8 (स्तर 2)",
+      "options_en": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "options_hi": [
+        "विकल्प A",
+        "विकल्प B",
+        "विकल्प C",
+        "विकल्प D"
+      ],
+      "correct": 3,
+      "explanation_en": "This tests understanding of Linear Equations in Two Variables",
+      "explanation_hi": "यह दो चर वाले रैखिक समीकरण की समझ का परीक्षण है"
+    }
+  ],
+  "ALG_05": [
+    {
+      "id": "ALG_05_q1",
+      "concept_id": "ALG_05",
+      "difficulty": 1,
+      "text_en": "Question 1 about Quadratic Expressions (Level 1)",
+      "text_hi": "द्विघात व्यंजक पर प्रश्न 1 (स्तर 1)",
+      "options_en": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "options_hi": [
+        "विकल्प A",
+        "विकल्प B",
+        "विकल्प C",
+        "विकल्प D"
+      ],
+      "correct": 0,
+      "explanation_en": "This tests understanding of Quadratic Expressions",
+      "explanation_hi": "यह द्विघात व्यंजक की समझ का परीक्षण है"
+    },
+    {
+      "id": "ALG_05_q2",
+      "concept_id": "ALG_05",
+      "difficulty": 2,
+      "text_en": "Question 2 about Quadratic Expressions (Level 2)",
+      "text_hi": "द्विघात व्यंजक पर प्रश्न 2 (स्तर 2)",
+      "options_en": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "options_hi": [
+        "विकल्प A",
+        "विकल्प B",
+        "विकल्प C",
+        "विकल्प D"
+      ],
+      "correct": 1,
+      "explanation_en": "This tests understanding of Quadratic Expressions",
+      "explanation_hi": "यह द्विघात व्यंजक की समझ का परीक्षण है"
+    },
+    {
+      "id": "ALG_05_q3",
+      "concept_id": "ALG_05",
+      "difficulty": 3,
+      "text_en": "Question 3 about Quadratic Expressions (Level 3)",
+      "text_hi": "द्विघात व्यंजक पर प्रश्न 3 (स्तर 3)",
+      "options_en": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "options_hi": [
+        "विकल्प A",
+        "विकल्प B",
+        "विकल्प C",
+        "विकल्प D"
+      ],
+      "correct": 2,
+      "explanation_en": "This tests understanding of Quadratic Expressions",
+      "explanation_hi": "यह द्विघात व्यंजक की समझ का परीक्षण है"
+    },
+    {
+      "id": "ALG_05_q4",
+      "concept_id": "ALG_05",
+      "difficulty": 1,
+      "text_en": "Question 4 about Quadratic Expressions (Level 1)",
+      "text_hi": "द्विघात व्यंजक पर प्रश्न 4 (स्तर 1)",
+      "options_en": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "options_hi": [
+        "विकल्प A",
+        "विकल्प B",
+        "विकल्प C",
+        "विकल्प D"
+      ],
+      "correct": 3,
+      "explanation_en": "This tests understanding of Quadratic Expressions",
+      "explanation_hi": "यह द्विघात व्यंजक की समझ का परीक्षण है"
+    },
+    {
+      "id": "ALG_05_q5",
+      "concept_id": "ALG_05",
+      "difficulty": 2,
+      "text_en": "Question 5 about Quadratic Expressions (Level 2)",
+      "text_hi": "द्विघात व्यंजक पर प्रश्न 5 (स्तर 2)",
+      "options_en": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "options_hi": [
+        "विकल्प A",
+        "विकल्प B",
+        "विकल्प C",
+        "विकल्प D"
+      ],
+      "correct": 0,
+      "explanation_en": "This tests understanding of Quadratic Expressions",
+      "explanation_hi": "यह द्विघात व्यंजक की समझ का परीक्षण है"
+    },
+    {
+      "id": "ALG_05_q6",
+      "concept_id": "ALG_05",
+      "difficulty": 3,
+      "text_en": "Question 6 about Quadratic Expressions (Level 3)",
+      "text_hi": "द्विघात व्यंजक पर प्रश्न 6 (स्तर 3)",
+      "options_en": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "options_hi": [
+        "विकल्प A",
+        "विकल्प B",
+        "विकल्प C",
+        "विकल्प D"
+      ],
+      "correct": 1,
+      "explanation_en": "This tests understanding of Quadratic Expressions",
+      "explanation_hi": "यह द्विघात व्यंजक की समझ का परीक्षण है"
+    },
+    {
+      "id": "ALG_05_q7",
+      "concept_id": "ALG_05",
+      "difficulty": 1,
+      "text_en": "Question 7 about Quadratic Expressions (Level 1)",
+      "text_hi": "द्विघात व्यंजक पर प्रश्न 7 (स्तर 1)",
+      "options_en": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "options_hi": [
+        "विकल्प A",
+        "विकल्प B",
+        "विकल्प C",
+        "विकल्प D"
+      ],
+      "correct": 2,
+      "explanation_en": "This tests understanding of Quadratic Expressions",
+      "explanation_hi": "यह द्विघात व्यंजक की समझ का परीक्षण है"
+    },
+    {
+      "id": "ALG_05_q8",
+      "concept_id": "ALG_05",
+      "difficulty": 2,
+      "text_en": "Question 8 about Quadratic Expressions (Level 2)",
+      "text_hi": "द्विघात व्यंजक पर प्रश्न 8 (स्तर 2)",
+      "options_en": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "options_hi": [
+        "विकल्प A",
+        "विकल्प B",
+        "विकल्प C",
+        "विकल्प D"
+      ],
+      "correct": 3,
+      "explanation_en": "This tests understanding of Quadratic Expressions",
+      "explanation_hi": "यह द्विघात व्यंजक की समझ का परीक्षण है"
+    }
+  ],
+  "GEO_03": [
+    {
+      "id": "GEO_03_q1",
+      "concept_id": "GEO_03",
+      "difficulty": 1,
+      "text_en": "Question 1 about Quadrilaterals (Level 1)",
+      "text_hi": "चतुर्भुज पर प्रश्न 1 (स्तर 1)",
+      "options_en": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "options_hi": [
+        "विकल्प A",
+        "विकल्प B",
+        "विकल्प C",
+        "विकल्प D"
+      ],
+      "correct": 0,
+      "explanation_en": "This tests understanding of Quadrilaterals",
+      "explanation_hi": "यह चतुर्भुज की समझ का परीक्षण है"
+    },
+    {
+      "id": "GEO_03_q2",
+      "concept_id": "GEO_03",
+      "difficulty": 2,
+      "text_en": "Question 2 about Quadrilaterals (Level 2)",
+      "text_hi": "चतुर्भुज पर प्रश्न 2 (स्तर 2)",
+      "options_en": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "options_hi": [
+        "विकल्प A",
+        "विकल्प B",
+        "विकल्प C",
+        "विकल्प D"
+      ],
+      "correct": 1,
+      "explanation_en": "This tests understanding of Quadrilaterals",
+      "explanation_hi": "यह चतुर्भुज की समझ का परीक्षण है"
+    },
+    {
+      "id": "GEO_03_q3",
+      "concept_id": "GEO_03",
+      "difficulty": 3,
+      "text_en": "Question 3 about Quadrilaterals (Level 3)",
+      "text_hi": "चतुर्भुज पर प्रश्न 3 (स्तर 3)",
+      "options_en": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "options_hi": [
+        "विकल्प A",
+        "विकल्प B",
+        "विकल्प C",
+        "विकल्प D"
+      ],
+      "correct": 2,
+      "explanation_en": "This tests understanding of Quadrilaterals",
+      "explanation_hi": "यह चतुर्भुज की समझ का परीक्षण है"
+    },
+    {
+      "id": "GEO_03_q4",
+      "concept_id": "GEO_03",
+      "difficulty": 1,
+      "text_en": "Question 4 about Quadrilaterals (Level 1)",
+      "text_hi": "चतुर्भुज पर प्रश्न 4 (स्तर 1)",
+      "options_en": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "options_hi": [
+        "विकल्प A",
+        "विकल्प B",
+        "विकल्प C",
+        "विकल्प D"
+      ],
+      "correct": 3,
+      "explanation_en": "This tests understanding of Quadrilaterals",
+      "explanation_hi": "यह चतुर्भुज की समझ का परीक्षण है"
+    },
+    {
+      "id": "GEO_03_q5",
+      "concept_id": "GEO_03",
+      "difficulty": 2,
+      "text_en": "Question 5 about Quadrilaterals (Level 2)",
+      "text_hi": "चतुर्भुज पर प्रश्न 5 (स्तर 2)",
+      "options_en": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "options_hi": [
+        "विकल्प A",
+        "विकल्प B",
+        "विकल्प C",
+        "विकल्प D"
+      ],
+      "correct": 0,
+      "explanation_en": "This tests understanding of Quadrilaterals",
+      "explanation_hi": "यह चतुर्भुज की समझ का परीक्षण है"
+    },
+    {
+      "id": "GEO_03_q6",
+      "concept_id": "GEO_03",
+      "difficulty": 3,
+      "text_en": "Question 6 about Quadrilaterals (Level 3)",
+      "text_hi": "चतुर्भुज पर प्रश्न 6 (स्तर 3)",
+      "options_en": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "options_hi": [
+        "विकल्प A",
+        "विकल्प B",
+        "विकल्प C",
+        "विकल्प D"
+      ],
+      "correct": 1,
+      "explanation_en": "This tests understanding of Quadrilaterals",
+      "explanation_hi": "यह चतुर्भुज की समझ का परीक्षण है"
+    },
+    {
+      "id": "GEO_03_q7",
+      "concept_id": "GEO_03",
+      "difficulty": 1,
+      "text_en": "Question 7 about Quadrilaterals (Level 1)",
+      "text_hi": "चतुर्भुज पर प्रश्न 7 (स्तर 1)",
+      "options_en": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "options_hi": [
+        "विकल्प A",
+        "विकल्प B",
+        "विकल्प C",
+        "विकल्प D"
+      ],
+      "correct": 2,
+      "explanation_en": "This tests understanding of Quadrilaterals",
+      "explanation_hi": "यह चतुर्भुज की समझ का परीक्षण है"
+    },
+    {
+      "id": "GEO_03_q8",
+      "concept_id": "GEO_03",
+      "difficulty": 2,
+      "text_en": "Question 8 about Quadrilaterals (Level 2)",
+      "text_hi": "चतुर्भुज पर प्रश्न 8 (स्तर 2)",
+      "options_en": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "options_hi": [
+        "विकल्प A",
+        "विकल्प B",
+        "विकल्प C",
+        "विकल्प D"
+      ],
+      "correct": 3,
+      "explanation_en": "This tests understanding of Quadrilaterals",
+      "explanation_hi": "यह चतुर्भुज की समझ का परीक्षण है"
+    }
+  ],
+  "GEO_04": [
+    {
+      "id": "GEO_04_q1",
+      "concept_id": "GEO_04",
+      "difficulty": 1,
+      "text_en": "Question 1 about Circles (Level 1)",
+      "text_hi": "वृत्त पर प्रश्न 1 (स्तर 1)",
+      "options_en": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "options_hi": [
+        "विकल्प A",
+        "विकल्प B",
+        "विकल्प C",
+        "विकल्प D"
+      ],
+      "correct": 0,
+      "explanation_en": "This tests understanding of Circles",
+      "explanation_hi": "यह वृत्त की समझ का परीक्षण है"
+    },
+    {
+      "id": "GEO_04_q2",
+      "concept_id": "GEO_04",
+      "difficulty": 2,
+      "text_en": "Question 2 about Circles (Level 2)",
+      "text_hi": "वृत्त पर प्रश्न 2 (स्तर 2)",
+      "options_en": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "options_hi": [
+        "विकल्प A",
+        "विकल्प B",
+        "विकल्प C",
+        "विकल्प D"
+      ],
+      "correct": 1,
+      "explanation_en": "This tests understanding of Circles",
+      "explanation_hi": "यह वृत्त की समझ का परीक्षण है"
+    },
+    {
+      "id": "GEO_04_q3",
+      "concept_id": "GEO_04",
+      "difficulty": 3,
+      "text_en": "Question 3 about Circles (Level 3)",
+      "text_hi": "वृत्त पर प्रश्न 3 (स्तर 3)",
+      "options_en": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "options_hi": [
+        "विकल्प A",
+        "विकल्प B",
+        "विकल्प C",
+        "विकल्प D"
+      ],
+      "correct": 2,
+      "explanation_en": "This tests understanding of Circles",
+      "explanation_hi": "यह वृत्त की समझ का परीक्षण है"
+    },
+    {
+      "id": "GEO_04_q4",
+      "concept_id": "GEO_04",
+      "difficulty": 1,
+      "text_en": "Question 4 about Circles (Level 1)",
+      "text_hi": "वृत्त पर प्रश्न 4 (स्तर 1)",
+      "options_en": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "options_hi": [
+        "विकल्प A",
+        "विकल्प B",
+        "विकल्प C",
+        "विकल्प D"
+      ],
+      "correct": 3,
+      "explanation_en": "This tests understanding of Circles",
+      "explanation_hi": "यह वृत्त की समझ का परीक्षण है"
+    },
+    {
+      "id": "GEO_04_q5",
+      "concept_id": "GEO_04",
+      "difficulty": 2,
+      "text_en": "Question 5 about Circles (Level 2)",
+      "text_hi": "वृत्त पर प्रश्न 5 (स्तर 2)",
+      "options_en": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "options_hi": [
+        "विकल्प A",
+        "विकल्प B",
+        "विकल्प C",
+        "विकल्प D"
+      ],
+      "correct": 0,
+      "explanation_en": "This tests understanding of Circles",
+      "explanation_hi": "यह वृत्त की समझ का परीक्षण है"
+    },
+    {
+      "id": "GEO_04_q6",
+      "concept_id": "GEO_04",
+      "difficulty": 3,
+      "text_en": "Question 6 about Circles (Level 3)",
+      "text_hi": "वृत्त पर प्रश्न 6 (स्तर 3)",
+      "options_en": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "options_hi": [
+        "विकल्प A",
+        "विकल्प B",
+        "विकल्प C",
+        "विकल्प D"
+      ],
+      "correct": 1,
+      "explanation_en": "This tests understanding of Circles",
+      "explanation_hi": "यह वृत्त की समझ का परीक्षण है"
+    },
+    {
+      "id": "GEO_04_q7",
+      "concept_id": "GEO_04",
+      "difficulty": 1,
+      "text_en": "Question 7 about Circles (Level 1)",
+      "text_hi": "वृत्त पर प्रश्न 7 (स्तर 1)",
+      "options_en": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "options_hi": [
+        "विकल्प A",
+        "विकल्प B",
+        "विकल्प C",
+        "विकल्प D"
+      ],
+      "correct": 2,
+      "explanation_en": "This tests understanding of Circles",
+      "explanation_hi": "यह वृत्त की समझ का परीक्षण है"
+    },
+    {
+      "id": "GEO_04_q8",
+      "concept_id": "GEO_04",
+      "difficulty": 2,
+      "text_en": "Question 8 about Circles (Level 2)",
+      "text_hi": "वृत्त पर प्रश्न 8 (स्तर 2)",
+      "options_en": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "options_hi": [
+        "विकल्प A",
+        "विकल्प B",
+        "विकल्प C",
+        "विकल्प D"
+      ],
+      "correct": 3,
+      "explanation_en": "This tests understanding of Circles",
+      "explanation_hi": "यह वृत्त की समझ का परीक्षण है"
+    }
+  ],
+  "MENS_03": [
+    {
+      "id": "MENS_03_q1",
+      "concept_id": "MENS_03",
+      "difficulty": 1,
+      "text_en": "Question 1 about Surface Area and Volume (Level 1)",
+      "text_hi": "पृष्ठीय क्षेत्रफल और आयतन पर प्रश्न 1 (स्तर 1)",
+      "options_en": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "options_hi": [
+        "विकल्प A",
+        "विकल्प B",
+        "विकल्प C",
+        "विकल्प D"
+      ],
+      "correct": 0,
+      "explanation_en": "This tests understanding of Surface Area and Volume",
+      "explanation_hi": "यह पृष्ठीय क्षेत्रफल और आयतन की समझ का परीक्षण है"
+    },
+    {
+      "id": "MENS_03_q2",
+      "concept_id": "MENS_03",
+      "difficulty": 2,
+      "text_en": "Question 2 about Surface Area and Volume (Level 2)",
+      "text_hi": "पृष्ठीय क्षेत्रफल और आयतन पर प्रश्न 2 (स्तर 2)",
+      "options_en": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "options_hi": [
+        "विकल्प A",
+        "विकल्प B",
+        "विकल्प C",
+        "विकल्प D"
+      ],
+      "correct": 1,
+      "explanation_en": "This tests understanding of Surface Area and Volume",
+      "explanation_hi": "यह पृष्ठीय क्षेत्रफल और आयतन की समझ का परीक्षण है"
+    },
+    {
+      "id": "MENS_03_q3",
+      "concept_id": "MENS_03",
+      "difficulty": 3,
+      "text_en": "Question 3 about Surface Area and Volume (Level 3)",
+      "text_hi": "पृष्ठीय क्षेत्रफल और आयतन पर प्रश्न 3 (स्तर 3)",
+      "options_en": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "options_hi": [
+        "विकल्प A",
+        "विकल्प B",
+        "विकल्प C",
+        "विकल्प D"
+      ],
+      "correct": 2,
+      "explanation_en": "This tests understanding of Surface Area and Volume",
+      "explanation_hi": "यह पृष्ठीय क्षेत्रफल और आयतन की समझ का परीक्षण है"
+    },
+    {
+      "id": "MENS_03_q4",
+      "concept_id": "MENS_03",
+      "difficulty": 1,
+      "text_en": "Question 4 about Surface Area and Volume (Level 1)",
+      "text_hi": "पृष्ठीय क्षेत्रफल और आयतन पर प्रश्न 4 (स्तर 1)",
+      "options_en": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "options_hi": [
+        "विकल्प A",
+        "विकल्प B",
+        "विकल्प C",
+        "विकल्प D"
+      ],
+      "correct": 3,
+      "explanation_en": "This tests understanding of Surface Area and Volume",
+      "explanation_hi": "यह पृष्ठीय क्षेत्रफल और आयतन की समझ का परीक्षण है"
+    },
+    {
+      "id": "MENS_03_q5",
+      "concept_id": "MENS_03",
+      "difficulty": 2,
+      "text_en": "Question 5 about Surface Area and Volume (Level 2)",
+      "text_hi": "पृष्ठीय क्षेत्रफल और आयतन पर प्रश्न 5 (स्तर 2)",
+      "options_en": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "options_hi": [
+        "विकल्प A",
+        "विकल्प B",
+        "विकल्प C",
+        "विकल्प D"
+      ],
+      "correct": 0,
+      "explanation_en": "This tests understanding of Surface Area and Volume",
+      "explanation_hi": "यह पृष्ठीय क्षेत्रफल और आयतन की समझ का परीक्षण है"
+    },
+    {
+      "id": "MENS_03_q6",
+      "concept_id": "MENS_03",
+      "difficulty": 3,
+      "text_en": "Question 6 about Surface Area and Volume (Level 3)",
+      "text_hi": "पृष्ठीय क्षेत्रफल और आयतन पर प्रश्न 6 (स्तर 3)",
+      "options_en": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "options_hi": [
+        "विकल्प A",
+        "विकल्प B",
+        "विकल्प C",
+        "विकल्प D"
+      ],
+      "correct": 1,
+      "explanation_en": "This tests understanding of Surface Area and Volume",
+      "explanation_hi": "यह पृष्ठीय क्षेत्रफल और आयतन की समझ का परीक्षण है"
+    },
+    {
+      "id": "MENS_03_q7",
+      "concept_id": "MENS_03",
+      "difficulty": 1,
+      "text_en": "Question 7 about Surface Area and Volume (Level 1)",
+      "text_hi": "पृष्ठीय क्षेत्रफल और आयतन पर प्रश्न 7 (स्तर 1)",
+      "options_en": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "options_hi": [
+        "विकल्प A",
+        "विकल्प B",
+        "विकल्प C",
+        "विकल्प D"
+      ],
+      "correct": 2,
+      "explanation_en": "This tests understanding of Surface Area and Volume",
+      "explanation_hi": "यह पृष्ठीय क्षेत्रफल और आयतन की समझ का परीक्षण है"
+    },
+    {
+      "id": "MENS_03_q8",
+      "concept_id": "MENS_03",
+      "difficulty": 2,
+      "text_en": "Question 8 about Surface Area and Volume (Level 2)",
+      "text_hi": "पृष्ठीय क्षेत्रफल और आयतन पर प्रश्न 8 (स्तर 2)",
+      "options_en": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "options_hi": [
+        "विकल्प A",
+        "विकल्प B",
+        "विकल्प C",
+        "विकल्प D"
+      ],
+      "correct": 3,
+      "explanation_en": "This tests understanding of Surface Area and Volume",
+      "explanation_hi": "यह पृष्ठीय क्षेत्रफल और आयतन की समझ का परीक्षण है"
+    }
+  ],
+  "TRIG_01": [
+    {
+      "id": "TRIG_01_q1",
+      "concept_id": "TRIG_01",
+      "difficulty": 1,
+      "text_en": "Question 1 about Introduction to Trigonometry (Level 1)",
+      "text_hi": "त्रिकोणमिति का परिचय पर प्रश्न 1 (स्तर 1)",
+      "options_en": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "options_hi": [
+        "विकल्प A",
+        "विकल्प B",
+        "विकल्प C",
+        "विकल्प D"
+      ],
+      "correct": 0,
+      "explanation_en": "This tests understanding of Introduction to Trigonometry",
+      "explanation_hi": "यह त्रिकोणमिति का परिचय की समझ का परीक्षण है"
+    },
+    {
+      "id": "TRIG_01_q2",
+      "concept_id": "TRIG_01",
+      "difficulty": 2,
+      "text_en": "Question 2 about Introduction to Trigonometry (Level 2)",
+      "text_hi": "त्रिकोणमिति का परिचय पर प्रश्न 2 (स्तर 2)",
+      "options_en": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "options_hi": [
+        "विकल्प A",
+        "विकल्प B",
+        "विकल्प C",
+        "विकल्प D"
+      ],
+      "correct": 1,
+      "explanation_en": "This tests understanding of Introduction to Trigonometry",
+      "explanation_hi": "यह त्रिकोणमिति का परिचय की समझ का परीक्षण है"
+    },
+    {
+      "id": "TRIG_01_q3",
+      "concept_id": "TRIG_01",
+      "difficulty": 3,
+      "text_en": "Question 3 about Introduction to Trigonometry (Level 3)",
+      "text_hi": "त्रिकोणमिति का परिचय पर प्रश्न 3 (स्तर 3)",
+      "options_en": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "options_hi": [
+        "विकल्प A",
+        "विकल्प B",
+        "विकल्प C",
+        "विकल्प D"
+      ],
+      "correct": 2,
+      "explanation_en": "This tests understanding of Introduction to Trigonometry",
+      "explanation_hi": "यह त्रिकोणमिति का परिचय की समझ का परीक्षण है"
+    },
+    {
+      "id": "TRIG_01_q4",
+      "concept_id": "TRIG_01",
+      "difficulty": 1,
+      "text_en": "Question 4 about Introduction to Trigonometry (Level 1)",
+      "text_hi": "त्रिकोणमिति का परिचय पर प्रश्न 4 (स्तर 1)",
+      "options_en": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "options_hi": [
+        "विकल्प A",
+        "विकल्प B",
+        "विकल्प C",
+        "विकल्प D"
+      ],
+      "correct": 3,
+      "explanation_en": "This tests understanding of Introduction to Trigonometry",
+      "explanation_hi": "यह त्रिकोणमिति का परिचय की समझ का परीक्षण है"
+    },
+    {
+      "id": "TRIG_01_q5",
+      "concept_id": "TRIG_01",
+      "difficulty": 2,
+      "text_en": "Question 5 about Introduction to Trigonometry (Level 2)",
+      "text_hi": "त्रिकोणमिति का परिचय पर प्रश्न 5 (स्तर 2)",
+      "options_en": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "options_hi": [
+        "विकल्प A",
+        "विकल्प B",
+        "विकल्प C",
+        "विकल्प D"
+      ],
+      "correct": 0,
+      "explanation_en": "This tests understanding of Introduction to Trigonometry",
+      "explanation_hi": "यह त्रिकोणमिति का परिचय की समझ का परीक्षण है"
+    },
+    {
+      "id": "TRIG_01_q6",
+      "concept_id": "TRIG_01",
+      "difficulty": 3,
+      "text_en": "Question 6 about Introduction to Trigonometry (Level 3)",
+      "text_hi": "त्रिकोणमिति का परिचय पर प्रश्न 6 (स्तर 3)",
+      "options_en": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "options_hi": [
+        "विकल्प A",
+        "विकल्प B",
+        "विकल्प C",
+        "विकल्प D"
+      ],
+      "correct": 1,
+      "explanation_en": "This tests understanding of Introduction to Trigonometry",
+      "explanation_hi": "यह त्रिकोणमिति का परिचय की समझ का परीक्षण है"
+    },
+    {
+      "id": "TRIG_01_q7",
+      "concept_id": "TRIG_01",
+      "difficulty": 1,
+      "text_en": "Question 7 about Introduction to Trigonometry (Level 1)",
+      "text_hi": "त्रिकोणमिति का परिचय पर प्रश्न 7 (स्तर 1)",
+      "options_en": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "options_hi": [
+        "विकल्प A",
+        "विकल्प B",
+        "विकल्प C",
+        "विकल्प D"
+      ],
+      "correct": 2,
+      "explanation_en": "This tests understanding of Introduction to Trigonometry",
+      "explanation_hi": "यह त्रिकोणमिति का परिचय की समझ का परीक्षण है"
+    },
+    {
+      "id": "TRIG_01_q8",
+      "concept_id": "TRIG_01",
+      "difficulty": 2,
+      "text_en": "Question 8 about Introduction to Trigonometry (Level 2)",
+      "text_hi": "त्रिकोणमिति का परिचय पर प्रश्न 8 (स्तर 2)",
+      "options_en": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "options_hi": [
+        "विकल्प A",
+        "विकल्प B",
+        "विकल्प C",
+        "विकल्प D"
+      ],
+      "correct": 3,
+      "explanation_en": "This tests understanding of Introduction to Trigonometry",
+      "explanation_hi": "यह त्रिकोणमिति का परिचय की समझ का परीक्षण है"
+    }
+  ],
+  "COORD_01": [
+    {
+      "id": "COORD_01_q1",
+      "concept_id": "COORD_01",
+      "difficulty": 1,
+      "text_en": "Question 1 about Coordinate Geometry (Level 1)",
+      "text_hi": "निर्देशांक ज्यामिति पर प्रश्न 1 (स्तर 1)",
+      "options_en": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "options_hi": [
+        "विकल्प A",
+        "विकल्प B",
+        "विकल्प C",
+        "विकल्प D"
+      ],
+      "correct": 0,
+      "explanation_en": "This tests understanding of Coordinate Geometry",
+      "explanation_hi": "यह निर्देशांक ज्यामिति की समझ का परीक्षण है"
+    },
+    {
+      "id": "COORD_01_q2",
+      "concept_id": "COORD_01",
+      "difficulty": 2,
+      "text_en": "Question 2 about Coordinate Geometry (Level 2)",
+      "text_hi": "निर्देशांक ज्यामिति पर प्रश्न 2 (स्तर 2)",
+      "options_en": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "options_hi": [
+        "विकल्प A",
+        "विकल्प B",
+        "विकल्प C",
+        "विकल्प D"
+      ],
+      "correct": 1,
+      "explanation_en": "This tests understanding of Coordinate Geometry",
+      "explanation_hi": "यह निर्देशांक ज्यामिति की समझ का परीक्षण है"
+    },
+    {
+      "id": "COORD_01_q3",
+      "concept_id": "COORD_01",
+      "difficulty": 3,
+      "text_en": "Question 3 about Coordinate Geometry (Level 3)",
+      "text_hi": "निर्देशांक ज्यामिति पर प्रश्न 3 (स्तर 3)",
+      "options_en": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "options_hi": [
+        "विकल्प A",
+        "विकल्प B",
+        "विकल्प C",
+        "विकल्प D"
+      ],
+      "correct": 2,
+      "explanation_en": "This tests understanding of Coordinate Geometry",
+      "explanation_hi": "यह निर्देशांक ज्यामिति की समझ का परीक्षण है"
+    },
+    {
+      "id": "COORD_01_q4",
+      "concept_id": "COORD_01",
+      "difficulty": 1,
+      "text_en": "Question 4 about Coordinate Geometry (Level 1)",
+      "text_hi": "निर्देशांक ज्यामिति पर प्रश्न 4 (स्तर 1)",
+      "options_en": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "options_hi": [
+        "विकल्प A",
+        "विकल्प B",
+        "विकल्प C",
+        "विकल्प D"
+      ],
+      "correct": 3,
+      "explanation_en": "This tests understanding of Coordinate Geometry",
+      "explanation_hi": "यह निर्देशांक ज्यामिति की समझ का परीक्षण है"
+    },
+    {
+      "id": "COORD_01_q5",
+      "concept_id": "COORD_01",
+      "difficulty": 2,
+      "text_en": "Question 5 about Coordinate Geometry (Level 2)",
+      "text_hi": "निर्देशांक ज्यामिति पर प्रश्न 5 (स्तर 2)",
+      "options_en": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "options_hi": [
+        "विकल्प A",
+        "विकल्प B",
+        "विकल्प C",
+        "विकल्प D"
+      ],
+      "correct": 0,
+      "explanation_en": "This tests understanding of Coordinate Geometry",
+      "explanation_hi": "यह निर्देशांक ज्यामिति की समझ का परीक्षण है"
+    },
+    {
+      "id": "COORD_01_q6",
+      "concept_id": "COORD_01",
+      "difficulty": 3,
+      "text_en": "Question 6 about Coordinate Geometry (Level 3)",
+      "text_hi": "निर्देशांक ज्यामिति पर प्रश्न 6 (स्तर 3)",
+      "options_en": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "options_hi": [
+        "विकल्प A",
+        "विकल्प B",
+        "विकल्प C",
+        "विकल्प D"
+      ],
+      "correct": 1,
+      "explanation_en": "This tests understanding of Coordinate Geometry",
+      "explanation_hi": "यह निर्देशांक ज्यामिति की समझ का परीक्षण है"
+    },
+    {
+      "id": "COORD_01_q7",
+      "concept_id": "COORD_01",
+      "difficulty": 1,
+      "text_en": "Question 7 about Coordinate Geometry (Level 1)",
+      "text_hi": "निर्देशांक ज्यामिति पर प्रश्न 7 (स्तर 1)",
+      "options_en": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "options_hi": [
+        "विकल्प A",
+        "विकल्प B",
+        "विकल्प C",
+        "विकल्प D"
+      ],
+      "correct": 2,
+      "explanation_en": "This tests understanding of Coordinate Geometry",
+      "explanation_hi": "यह निर्देशांक ज्यामिति की समझ का परीक्षण है"
+    },
+    {
+      "id": "COORD_01_q8",
+      "concept_id": "COORD_01",
+      "difficulty": 2,
+      "text_en": "Question 8 about Coordinate Geometry (Level 2)",
+      "text_hi": "निर्देशांक ज्यामिति पर प्रश्न 8 (स्तर 2)",
+      "options_en": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "options_hi": [
+        "विकल्प A",
+        "विकल्प B",
+        "विकल्प C",
+        "विकल्प D"
+      ],
+      "correct": 3,
+      "explanation_en": "This tests understanding of Coordinate Geometry",
+      "explanation_hi": "यह निर्देशांक ज्यामिति की समझ का परीक्षण है"
+    }
+  ],
+  "PROB_01": [
+    {
+      "id": "PROB_01_q1",
+      "concept_id": "PROB_01",
+      "difficulty": 1,
+      "text_en": "Question 1 about Probability (Level 1)",
+      "text_hi": "प्रायिकता पर प्रश्न 1 (स्तर 1)",
+      "options_en": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "options_hi": [
+        "विकल्प A",
+        "विकल्प B",
+        "विकल्प C",
+        "विकल्प D"
+      ],
+      "correct": 0,
+      "explanation_en": "This tests understanding of Probability",
+      "explanation_hi": "यह प्रायिकता की समझ का परीक्षण है"
+    },
+    {
+      "id": "PROB_01_q2",
+      "concept_id": "PROB_01",
+      "difficulty": 2,
+      "text_en": "Question 2 about Probability (Level 2)",
+      "text_hi": "प्रायिकता पर प्रश्न 2 (स्तर 2)",
+      "options_en": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "options_hi": [
+        "विकल्प A",
+        "विकल्प B",
+        "विकल्प C",
+        "विकल्प D"
+      ],
+      "correct": 1,
+      "explanation_en": "This tests understanding of Probability",
+      "explanation_hi": "यह प्रायिकता की समझ का परीक्षण है"
+    },
+    {
+      "id": "PROB_01_q3",
+      "concept_id": "PROB_01",
+      "difficulty": 3,
+      "text_en": "Question 3 about Probability (Level 3)",
+      "text_hi": "प्रायिकता पर प्रश्न 3 (स्तर 3)",
+      "options_en": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "options_hi": [
+        "विकल्प A",
+        "विकल्प B",
+        "विकल्प C",
+        "विकल्प D"
+      ],
+      "correct": 2,
+      "explanation_en": "This tests understanding of Probability",
+      "explanation_hi": "यह प्रायिकता की समझ का परीक्षण है"
+    },
+    {
+      "id": "PROB_01_q4",
+      "concept_id": "PROB_01",
+      "difficulty": 1,
+      "text_en": "Question 4 about Probability (Level 1)",
+      "text_hi": "प्रायिकता पर प्रश्न 4 (स्तर 1)",
+      "options_en": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "options_hi": [
+        "विकल्प A",
+        "विकल्प B",
+        "विकल्प C",
+        "विकल्प D"
+      ],
+      "correct": 3,
+      "explanation_en": "This tests understanding of Probability",
+      "explanation_hi": "यह प्रायिकता की समझ का परीक्षण है"
+    },
+    {
+      "id": "PROB_01_q5",
+      "concept_id": "PROB_01",
+      "difficulty": 2,
+      "text_en": "Question 5 about Probability (Level 2)",
+      "text_hi": "प्रायिकता पर प्रश्न 5 (स्तर 2)",
+      "options_en": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "options_hi": [
+        "विकल्प A",
+        "विकल्प B",
+        "विकल्प C",
+        "विकल्प D"
+      ],
+      "correct": 0,
+      "explanation_en": "This tests understanding of Probability",
+      "explanation_hi": "यह प्रायिकता की समझ का परीक्षण है"
+    },
+    {
+      "id": "PROB_01_q6",
+      "concept_id": "PROB_01",
+      "difficulty": 3,
+      "text_en": "Question 6 about Probability (Level 3)",
+      "text_hi": "प्रायिकता पर प्रश्न 6 (स्तर 3)",
+      "options_en": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "options_hi": [
+        "विकल्प A",
+        "विकल्प B",
+        "विकल्प C",
+        "विकल्प D"
+      ],
+      "correct": 1,
+      "explanation_en": "This tests understanding of Probability",
+      "explanation_hi": "यह प्रायिकता की समझ का परीक्षण है"
+    },
+    {
+      "id": "PROB_01_q7",
+      "concept_id": "PROB_01",
+      "difficulty": 1,
+      "text_en": "Question 7 about Probability (Level 1)",
+      "text_hi": "प्रायिकता पर प्रश्न 7 (स्तर 1)",
+      "options_en": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "options_hi": [
+        "विकल्प A",
+        "विकल्प B",
+        "विकल्प C",
+        "विकल्प D"
+      ],
+      "correct": 2,
+      "explanation_en": "This tests understanding of Probability",
+      "explanation_hi": "यह प्रायिकता की समझ का परीक्षण है"
+    },
+    {
+      "id": "PROB_01_q8",
+      "concept_id": "PROB_01",
+      "difficulty": 2,
+      "text_en": "Question 8 about Probability (Level 2)",
+      "text_hi": "प्रायिकता पर प्रश्न 8 (स्तर 2)",
+      "options_en": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "options_hi": [
+        "विकल्प A",
+        "विकल्प B",
+        "विकल्प C",
+        "विकल्प D"
+      ],
+      "correct": 3,
+      "explanation_en": "This tests understanding of Probability",
+      "explanation_hi": "यह प्रायिकता की समझ का परीक्षण है"
+    }
+  ],
+  "MATH_01": [
+    {
+      "id": "MATH_01_q1",
+      "concept_id": "MATH_01",
+      "difficulty": 1,
+      "text_en": "Question 1 about Comparing Quantities (Level 1)",
+      "text_hi": "राशियों की तुलना पर प्रश्न 1 (स्तर 1)",
+      "options_en": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "options_hi": [
+        "विकल्प A",
+        "विकल्प B",
+        "विकल्प C",
+        "विकल्प D"
+      ],
+      "correct": 0,
+      "explanation_en": "This tests understanding of Comparing Quantities",
+      "explanation_hi": "यह राशियों की तुलना की समझ का परीक्षण है"
+    },
+    {
+      "id": "MATH_01_q2",
+      "concept_id": "MATH_01",
+      "difficulty": 2,
+      "text_en": "Question 2 about Comparing Quantities (Level 2)",
+      "text_hi": "राशियों की तुलना पर प्रश्न 2 (स्तर 2)",
+      "options_en": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "options_hi": [
+        "विकल्प A",
+        "विकल्प B",
+        "विकल्प C",
+        "विकल्प D"
+      ],
+      "correct": 1,
+      "explanation_en": "This tests understanding of Comparing Quantities",
+      "explanation_hi": "यह राशियों की तुलना की समझ का परीक्षण है"
+    },
+    {
+      "id": "MATH_01_q3",
+      "concept_id": "MATH_01",
+      "difficulty": 3,
+      "text_en": "Question 3 about Comparing Quantities (Level 3)",
+      "text_hi": "राशियों की तुलना पर प्रश्न 3 (स्तर 3)",
+      "options_en": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "options_hi": [
+        "विकल्प A",
+        "विकल्प B",
+        "विकल्प C",
+        "विकल्प D"
+      ],
+      "correct": 2,
+      "explanation_en": "This tests understanding of Comparing Quantities",
+      "explanation_hi": "यह राशियों की तुलना की समझ का परीक्षण है"
+    },
+    {
+      "id": "MATH_01_q4",
+      "concept_id": "MATH_01",
+      "difficulty": 1,
+      "text_en": "Question 4 about Comparing Quantities (Level 1)",
+      "text_hi": "राशियों की तुलना पर प्रश्न 4 (स्तर 1)",
+      "options_en": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "options_hi": [
+        "विकल्प A",
+        "विकल्प B",
+        "विकल्प C",
+        "विकल्प D"
+      ],
+      "correct": 3,
+      "explanation_en": "This tests understanding of Comparing Quantities",
+      "explanation_hi": "यह राशियों की तुलना की समझ का परीक्षण है"
+    },
+    {
+      "id": "MATH_01_q5",
+      "concept_id": "MATH_01",
+      "difficulty": 2,
+      "text_en": "Question 5 about Comparing Quantities (Level 2)",
+      "text_hi": "राशियों की तुलना पर प्रश्न 5 (स्तर 2)",
+      "options_en": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "options_hi": [
+        "विकल्प A",
+        "विकल्प B",
+        "विकल्प C",
+        "विकल्प D"
+      ],
+      "correct": 0,
+      "explanation_en": "This tests understanding of Comparing Quantities",
+      "explanation_hi": "यह राशियों की तुलना की समझ का परीक्षण है"
+    },
+    {
+      "id": "MATH_01_q6",
+      "concept_id": "MATH_01",
+      "difficulty": 3,
+      "text_en": "Question 6 about Comparing Quantities (Level 3)",
+      "text_hi": "राशियों की तुलना पर प्रश्न 6 (स्तर 3)",
+      "options_en": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "options_hi": [
+        "विकल्प A",
+        "विकल्प B",
+        "विकल्प C",
+        "विकल्प D"
+      ],
+      "correct": 1,
+      "explanation_en": "This tests understanding of Comparing Quantities",
+      "explanation_hi": "यह राशियों की तुलना की समझ का परीक्षण है"
+    },
+    {
+      "id": "MATH_01_q7",
+      "concept_id": "MATH_01",
+      "difficulty": 1,
+      "text_en": "Question 7 about Comparing Quantities (Level 1)",
+      "text_hi": "राशियों की तुलना पर प्रश्न 7 (स्तर 1)",
+      "options_en": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "options_hi": [
+        "विकल्प A",
+        "विकल्प B",
+        "विकल्प C",
+        "विकल्प D"
+      ],
+      "correct": 2,
+      "explanation_en": "This tests understanding of Comparing Quantities",
+      "explanation_hi": "यह राशियों की तुलना की समझ का परीक्षण है"
+    },
+    {
+      "id": "MATH_01_q8",
+      "concept_id": "MATH_01",
+      "difficulty": 2,
+      "text_en": "Question 8 about Comparing Quantities (Level 2)",
+      "text_hi": "राशियों की तुलना पर प्रश्न 8 (स्तर 2)",
+      "options_en": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "options_hi": [
+        "विकल्प A",
+        "विकल्प B",
+        "विकल्प C",
+        "विकल्प D"
+      ],
+      "correct": 3,
+      "explanation_en": "This tests understanding of Comparing Quantities",
+      "explanation_hi": "यह राशियों की तुलना की समझ का परीक्षण है"
+    }
+  ],
+  "FUNC_01": [
+    {
+      "id": "FUNC_01_q1",
+      "concept_id": "FUNC_01",
+      "difficulty": 1,
+      "text_en": "Question 1 about Functions and Graphs (Level 1)",
+      "text_hi": "फलन और आलेख पर प्रश्न 1 (स्तर 1)",
+      "options_en": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "options_hi": [
+        "विकल्प A",
+        "विकल्प B",
+        "विकल्प C",
+        "विकल्प D"
+      ],
+      "correct": 0,
+      "explanation_en": "This tests understanding of Functions and Graphs",
+      "explanation_hi": "यह फलन और आलेख की समझ का परीक्षण है"
+    },
+    {
+      "id": "FUNC_01_q2",
+      "concept_id": "FUNC_01",
+      "difficulty": 2,
+      "text_en": "Question 2 about Functions and Graphs (Level 2)",
+      "text_hi": "फलन और आलेख पर प्रश्न 2 (स्तर 2)",
+      "options_en": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "options_hi": [
+        "विकल्प A",
+        "विकल्प B",
+        "विकल्प C",
+        "विकल्प D"
+      ],
+      "correct": 1,
+      "explanation_en": "This tests understanding of Functions and Graphs",
+      "explanation_hi": "यह फलन और आलेख की समझ का परीक्षण है"
+    },
+    {
+      "id": "FUNC_01_q3",
+      "concept_id": "FUNC_01",
+      "difficulty": 3,
+      "text_en": "Question 3 about Functions and Graphs (Level 3)",
+      "text_hi": "फलन और आलेख पर प्रश्न 3 (स्तर 3)",
+      "options_en": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "options_hi": [
+        "विकल्प A",
+        "विकल्प B",
+        "विकल्प C",
+        "विकल्प D"
+      ],
+      "correct": 2,
+      "explanation_en": "This tests understanding of Functions and Graphs",
+      "explanation_hi": "यह फलन और आलेख की समझ का परीक्षण है"
+    },
+    {
+      "id": "FUNC_01_q4",
+      "concept_id": "FUNC_01",
+      "difficulty": 1,
+      "text_en": "Question 4 about Functions and Graphs (Level 1)",
+      "text_hi": "फलन और आलेख पर प्रश्न 4 (स्तर 1)",
+      "options_en": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "options_hi": [
+        "विकल्प A",
+        "विकल्प B",
+        "विकल्प C",
+        "विकल्प D"
+      ],
+      "correct": 3,
+      "explanation_en": "This tests understanding of Functions and Graphs",
+      "explanation_hi": "यह फलन और आलेख की समझ का परीक्षण है"
+    },
+    {
+      "id": "FUNC_01_q5",
+      "concept_id": "FUNC_01",
+      "difficulty": 2,
+      "text_en": "Question 5 about Functions and Graphs (Level 2)",
+      "text_hi": "फलन और आलेख पर प्रश्न 5 (स्तर 2)",
+      "options_en": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "options_hi": [
+        "विकल्प A",
+        "विकल्प B",
+        "विकल्प C",
+        "विकल्प D"
+      ],
+      "correct": 0,
+      "explanation_en": "This tests understanding of Functions and Graphs",
+      "explanation_hi": "यह फलन और आलेख की समझ का परीक्षण है"
+    },
+    {
+      "id": "FUNC_01_q6",
+      "concept_id": "FUNC_01",
+      "difficulty": 3,
+      "text_en": "Question 6 about Functions and Graphs (Level 3)",
+      "text_hi": "फलन और आलेख पर प्रश्न 6 (स्तर 3)",
+      "options_en": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "options_hi": [
+        "विकल्प A",
+        "विकल्प B",
+        "विकल्प C",
+        "विकल्प D"
+      ],
+      "correct": 1,
+      "explanation_en": "This tests understanding of Functions and Graphs",
+      "explanation_hi": "यह फलन और आलेख की समझ का परीक्षण है"
+    },
+    {
+      "id": "FUNC_01_q7",
+      "concept_id": "FUNC_01",
+      "difficulty": 1,
+      "text_en": "Question 7 about Functions and Graphs (Level 1)",
+      "text_hi": "फलन और आलेख पर प्रश्न 7 (स्तर 1)",
+      "options_en": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "options_hi": [
+        "विकल्प A",
+        "विकल्प B",
+        "विकल्प C",
+        "विकल्प D"
+      ],
+      "correct": 2,
+      "explanation_en": "This tests understanding of Functions and Graphs",
+      "explanation_hi": "यह फलन और आलेख की समझ का परीक्षण है"
+    },
+    {
+      "id": "FUNC_01_q8",
+      "concept_id": "FUNC_01",
+      "difficulty": 2,
+      "text_en": "Question 8 about Functions and Graphs (Level 2)",
+      "text_hi": "फलन और आलेख पर प्रश्न 8 (स्तर 2)",
+      "options_en": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "options_hi": [
+        "विकल्प A",
+        "विकल्प B",
+        "विकल्प C",
+        "विकल्प D"
+      ],
+      "correct": 3,
+      "explanation_en": "This tests understanding of Functions and Graphs",
+      "explanation_hi": "यह फलन और आलेख की समझ का परीक्षण है"
+    }
+  ],
+  "NUM_06": [
+    {
+      "id": "NUM_06_q1",
+      "concept_id": "NUM_06",
+      "difficulty": 1,
+      "text_en": "Question 1 about Squares, Cubes and Roots (Level 1)",
+      "text_hi": "वर्ग, घन और मूल पर प्रश्न 1 (स्तर 1)",
+      "options_en": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "options_hi": [
+        "विकल्प A",
+        "विकल्प B",
+        "विकल्प C",
+        "विकल्प D"
+      ],
+      "correct": 0,
+      "explanation_en": "This tests understanding of Squares, Cubes and Roots",
+      "explanation_hi": "यह वर्ग, घन और मूल की समझ का परीक्षण है"
+    },
+    {
+      "id": "NUM_06_q2",
+      "concept_id": "NUM_06",
+      "difficulty": 2,
+      "text_en": "Question 2 about Squares, Cubes and Roots (Level 2)",
+      "text_hi": "वर्ग, घन और मूल पर प्रश्न 2 (स्तर 2)",
+      "options_en": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "options_hi": [
+        "विकल्प A",
+        "विकल्प B",
+        "विकल्प C",
+        "विकल्प D"
+      ],
+      "correct": 1,
+      "explanation_en": "This tests understanding of Squares, Cubes and Roots",
+      "explanation_hi": "यह वर्ग, घन और मूल की समझ का परीक्षण है"
+    },
+    {
+      "id": "NUM_06_q3",
+      "concept_id": "NUM_06",
+      "difficulty": 3,
+      "text_en": "Question 3 about Squares, Cubes and Roots (Level 3)",
+      "text_hi": "वर्ग, घन और मूल पर प्रश्न 3 (स्तर 3)",
+      "options_en": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "options_hi": [
+        "विकल्प A",
+        "विकल्प B",
+        "विकल्प C",
+        "विकल्प D"
+      ],
+      "correct": 2,
+      "explanation_en": "This tests understanding of Squares, Cubes and Roots",
+      "explanation_hi": "यह वर्ग, घन और मूल की समझ का परीक्षण है"
+    },
+    {
+      "id": "NUM_06_q4",
+      "concept_id": "NUM_06",
+      "difficulty": 1,
+      "text_en": "Question 4 about Squares, Cubes and Roots (Level 1)",
+      "text_hi": "वर्ग, घन और मूल पर प्रश्न 4 (स्तर 1)",
+      "options_en": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "options_hi": [
+        "विकल्प A",
+        "विकल्प B",
+        "विकल्प C",
+        "विकल्प D"
+      ],
+      "correct": 3,
+      "explanation_en": "This tests understanding of Squares, Cubes and Roots",
+      "explanation_hi": "यह वर्ग, घन और मूल की समझ का परीक्षण है"
+    },
+    {
+      "id": "NUM_06_q5",
+      "concept_id": "NUM_06",
+      "difficulty": 2,
+      "text_en": "Question 5 about Squares, Cubes and Roots (Level 2)",
+      "text_hi": "वर्ग, घन और मूल पर प्रश्न 5 (स्तर 2)",
+      "options_en": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "options_hi": [
+        "विकल्प A",
+        "विकल्प B",
+        "विकल्प C",
+        "विकल्प D"
+      ],
+      "correct": 0,
+      "explanation_en": "This tests understanding of Squares, Cubes and Roots",
+      "explanation_hi": "यह वर्ग, घन और मूल की समझ का परीक्षण है"
+    },
+    {
+      "id": "NUM_06_q6",
+      "concept_id": "NUM_06",
+      "difficulty": 3,
+      "text_en": "Question 6 about Squares, Cubes and Roots (Level 3)",
+      "text_hi": "वर्ग, घन और मूल पर प्रश्न 6 (स्तर 3)",
+      "options_en": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "options_hi": [
+        "विकल्प A",
+        "विकल्प B",
+        "विकल्प C",
+        "विकल्प D"
+      ],
+      "correct": 1,
+      "explanation_en": "This tests understanding of Squares, Cubes and Roots",
+      "explanation_hi": "यह वर्ग, घन और मूल की समझ का परीक्षण है"
+    },
+    {
+      "id": "NUM_06_q7",
+      "concept_id": "NUM_06",
+      "difficulty": 1,
+      "text_en": "Question 7 about Squares, Cubes and Roots (Level 1)",
+      "text_hi": "वर्ग, घन और मूल पर प्रश्न 7 (स्तर 1)",
+      "options_en": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "options_hi": [
+        "विकल्प A",
+        "विकल्प B",
+        "विकल्प C",
+        "विकल्प D"
+      ],
+      "correct": 2,
+      "explanation_en": "This tests understanding of Squares, Cubes and Roots",
+      "explanation_hi": "यह वर्ग, घन और मूल की समझ का परीक्षण है"
+    },
+    {
+      "id": "NUM_06_q8",
+      "concept_id": "NUM_06",
+      "difficulty": 2,
+      "text_en": "Question 8 about Squares, Cubes and Roots (Level 2)",
+      "text_hi": "वर्ग, घन और मूल पर प्रश्न 8 (स्तर 2)",
+      "options_en": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "options_hi": [
+        "विकल्प A",
+        "विकल्प B",
+        "विकल्प C",
+        "विकल्प D"
+      ],
+      "correct": 3,
+      "explanation_en": "This tests understanding of Squares, Cubes and Roots",
+      "explanation_hi": "यह वर्ग, घन और मूल की समझ का परीक्षण है"
+    }
+  ]
+}

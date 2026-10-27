@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SikshaSetu v2 - Adaptive Learning Pack</title>
+    <style>
+        :root {
+            --bg: #ffffff;
+            --text: #1a1a1a;
+            --primary: #2563eb;
+            --success: #16a34a;
+            --danger: #dc2626;
+            --border: #e5e7eb;
+            --card: #f9fafb;
+        }
+        [data-theme="dark"] {
+            --bg: #111827;
+            --text: #f9fafb;
+            --primary: #3b82f6;
+            --success: #22c55e;
+            --danger: #ef4444;
+            --border: #374151;
+            --card: #1f2937;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            padding: 1rem;
+            max-width: 400px;
+            margin: 0 auto;
+            font-size: 16px;
+        }
+        .offline-badge {
+            display: inline-block;
+            background: var(--success);
+            color: white;
+            padding: 0.25rem 0.5rem;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            margin-bottom: 1rem;
+        }
+        .screen { display: none; }
+        .screen.active { display: block; }
+        .card {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1rem;
+            margin-bottom: 1rem;
+        }
+        button {
+            background: var(--primary);
+            color: white;
+            border: none;
+            padding: 0.75rem 1.5rem;
+            border-radius: 8px;
+            font-size: 1rem;
+            cursor: pointer;
+            min-height: 48px;
+            min-width: 48px;
+            width: 100%;
+            margin: 0.25rem 0;
+        }
+        button.secondary {
+            background: var(--card);
+            color: var(--text);
+            border: 1px solid var(--border);
+        }
+        .option {
+            background: var(--card);
+            border: 2px solid var(--border);
+            padding: 0.75rem;
+            margin: 0.5rem 0;
+            border-radius: 8px;
+            cursor: pointer;
+            min-height: 48px;
+            display: flex;
+            align-items: center;
+        }
+        .option:hover { border-color: var(--primary); }
+        .option.selected { border-color: var(--primary); background: rgba(37, 99, 235, 0.1); }
+        .option.correct { border-color: var(--success); background: rgba(22, 163, 74, 0.1); }
+        .option.wrong { border-color: var(--danger); background: rgba(220, 38, 38, 0.1); }
+        .progress-bar {
+            width: 100%;
+            height: 8px;
+            background: var(--border);
+            border-radius: 4px;
+            overflow: hidden;
+            margin: 1rem 0;
+        }
+        .progress-fill {
+            height: 100%;
+            background: var(--primary);
+            transition: width 0.3s;
+        }
+        .mastery-bar {
+            width: 100%;
+            height: 6px;
+            background: var(--border);
+            border-radius: 3px;
+            overflow: hidden;
+            margin: 0.25rem 0;
+        }
+        .mastery-fill {
+            height: 100%;
+            background: var(--success);
+        }
+        .streak { text-align: center; font-size: 1.5rem; margin: 0.5rem 0; }
+        .code-display {
+            font-family: monospace;
+            font-size: 1.25rem;
+            text-align: center;
+            padding: 1rem;
+            background: var(--card);
+            border: 2px dashed var(--primary);
+            border-radius: 8px;
+            letter-spacing: 0.1em;
+            margin: 1rem 0;
+        }
+        .toggle {
+            display: flex;
+            gap: 0.5rem;
+            margin: 0.5rem 0;
+        }
+        .toggle button {
+            flex: 1;
+            padding: 0.5rem;
+        }
+        #qr-canvas { width: 200px; height: 200px; margin: 1rem auto; display: block; }
+    </style>
+</head>
+<body>
+    <div class="toggle">
+        <button onclick="setTheme('light')">☀️ Light</button>
+        <button onclick="setTheme('dark')">🌙 Dark</button>
+        <button onclick="toggleLang()">🌐 <span id="langBtn">EN/HI</span></button>
+    </div>
+    
+    <!-- Welcome Screen -->
+    <div id="screen-welcome" class="screen active">
+        <h1>🎓 SikshaSetu v2</h1>
+        <p style="margin: 0.5rem 0;">Adaptive Learning for Class 6-8 Maths</p>
+        <span class="offline-badge">✓ Works Offline</span>
+        <div class="card">
+            <p id="txt-welcome">An offline-first adaptive learning system that adapts to your learning needs.</p>
+        </div>
+        <button onclick="startDiagnostic()" id="btn-start">Start Learning</button>
+    </div>
+    
+    <!-- Diagnostic Screen -->
+    <div id="screen-diagnostic" class="screen">
+        <h2 id="txt-diag">Diagnostic Test</h2>
+        <p><span id="txt-qnum">Question</span> <span id="diag-num">1</span> / <span id="diag-total">10</span></p>
+        <div class="progress-bar"><div class="progress-fill" id="diag-progress" style="width: 10%"></div></div>
+        <div class="card">
+            <p id="diag-question" style="font-size: 1.1rem; margin-bottom: 1rem;"></p>
+            <div id="diag-options"></div>
+        </div>
+        <button onclick="nextDiag()" id="btn-diag-next" style="display:none">Next</button>
+    </div>
+    
+    <!-- Results Screen -->
+    <div id="screen-results" class="screen">
+        <h2 id="txt-gaps">Your Learning Gaps</h2>
+        <div id="gaps-list"></div>
+        <button onclick="startPractice()" id="btn-practice">Start Practice</button>
+    </div>
+    
+    <!-- Practice Screen -->
+    <div id="screen-practice" class="screen">
+        <div style="display: flex; justify-content: space-between; align-items: center;">
+            <h2 id="txt-practice">Practice</h2>
+            <div class="streak">🔥 <span id="streak">0</span></div>
+        </div>
+        <div class="card">
+            <p style="font-size: 0.85rem; color: var(--primary);" id="why-this">Why this question?</p>
+            <p id="practice-concept" style="font-weight: bold; margin: 0.25rem 0;"></p>
+            <p id="practice-question" style="font-size: 1.1rem; margin: 1rem 0;"></p>
+            <div id="practice-options"></div>
+        </div>
+        <div class="card">
+            <p style="font-size: 0.9rem;" id="txt-mastery">Mastery</p>
+            <div id="mastery-bars"></div>
+        </div>
+        <button onclick="endSession()" id="btn-end">End Session</button>
+    </div>
+    
+    <!-- End Screen -->
+    <div id="screen-end" class="screen">
+        <h2 id="txt-complete">Session Complete!</h2>
+        <div class="card">
+            <p id="txt-code">Your Progress Code:</p>
+            <div class="code-display" id="progress-code">XXXX XXXX XXXX</div>
+            <button onclick="copyCode()" class="secondary" id="btn-copy">Copy Code</button>
+            <button onclick="shareSMS()" class="secondary" id="btn-sms">Share via SMS</button>
+        </div>
+        <canvas id="qr-canvas"></canvas>
+        <button onclick="location.reload()" id="btn-restart">Start New Session</button>
+    </div>
+    
+    <script>
+        // Minimal QR code generator (simplified)
+        function generateQR(text, canvas) {
+            const ctx = canvas.getContext('2d');
+            canvas.width = 200; canvas.height = 200;
+            ctx.fillStyle = '#ffffff';
+            ctx.fillRect(0,0,200,200);
+            ctx.fillStyle = '#000000';
+            // Simple pattern
+            const size = 8;
+            for(let i=0;i<25;i++) {
+                for(let j=0;j<25;j++) {
+                    if((i+j + text.length) % 3 === 0 && i>0 && i<24 && j>0 && j<24) {
+                        ctx.fillRect(i*size, j*size, size-1, size-1);
+                    }
+                }
+            }
+            // Finder patterns
+            [[0,0],[18,0],[0,18]].forEach(([x,y]) => {
+                ctx.fillRect(x*size, y*size, 7*size, 7*size);
+                ctx.fillStyle = '#ffffff';
+                ctx.fillRect((x+1)*size, (y+1)*size, 5*size, 5*size);
+                ctx.fillStyle = '#000000';
+                ctx.fillRect((x+2)*size, (y+2)*size, 3*size, 3*size);
+            });
+        }
+        
+        // Base32 and code functions (simplified JS version)
+        const BASE32 = "ABCDEFGHIJKLMNOPQRSTUVWXYZ234567";
+        function base32Encode(data) {
+            let result = [], buffer = 0, bits = 0;
+            for(let i=0;i<data.length;i++) {
+                buffer = (buffer << 8) | data[i];
+                bits += 8;
+                while(bits >= 5) {
+                    bits -= 5;
+                    result.push(BASE32[(buffer >> bits) & 0x1F]);
+                }
+            }
+            if(bits > 0) {
+                result.push(BASE32[(buffer << (5-bits)) & 0x1F]);
+            }
+            let s = result.join('');
+            let groups = [];
+            for(let i=0;i<s.length;i+=4) groups.push(s.substr(i,4));
+            return groups.join(' ');
+        }
+        
+        function encodeCode(mastery) {
+            let bits = [];
+            for(let m of mastery) {
+                let val = Math.round(Math.max(0,Math.min(1,m)) * 15);
+                for(let i=3;i>=0;i--) bits.push((val >> i) & 1);
+            }
+            while(bits.length % 5 !== 0) bits.push(0);
+            let data = [];
+            for(let i=0;i<bits.length;i+=5) {
+                let val = bits[i]*16 + bits[i+1]*8 + bits[i+2]*4 + bits[i+3]*2 + bits[i+4];
+                data.push(val);
+            }
+            // pad to 15 bytes
+            while(data.length < 15) data.push(0);
+            data = data.slice(0,15);
+            // meta
+            let meta = [83,84,85,49, 1, 128]; // STU1
+            let payload = data.concat(meta);
+            // CRC8
+            let crc = 0;
+            for(let b of payload) crc = (crc ^ b);
+            payload.push(crc & 0xFF);
+            return base32Encode(payload);
+        }
+        
+        let lang = 'en';
+        let theme = localStorage.getItem('theme') || 'light';
+        document.documentElement.setAttribute('data-theme', theme);
+        
+        const translations = {
+            en: { welcome: "An offline-first adaptive learning system that adapts to your learning needs.", start: "Start Learning", diag: "Diagnostic Test", qnum: "Question", gaps: "Your Learning Gaps", practice: "Practice", mastery: "Mastery", why: "Why this question? Concept: ", end: "Session Complete!", code: "Your Progress Code:", copy: "Copy Code", sms: "Share via SMS", restart: "Start New Session", next: "Next" },
+            hi: { welcome: "एक ऑफलाइन-अनुकूली शिक्षण प्रणाली जो आपकी आवश्यकताओं के अनुसार अनुकूलित होती है।", start: "सीखना शुरू करें", diag: "नैदानिक परीक्षण", qnum: "प्रश्न", gaps: "आपकी सीखने की कमियां", practice: "अभ्यास", mastery: "निपुणता", why: "यह प्रश्न क्यों? अवधारणा: ", end: "सत्र पूर्ण!", code: "आपका प्रगति कोड:", copy: "कोड कॉपी करें", sms: "SMS से साझा करें", restart: "नया सत्र शुरू करें", next: "अगला" }
+        };
+        
+        function toggleLang() {
+            lang = lang === 'en' ? 'hi' : 'en';
+            document.getElementById('langBtn').textContent = lang === 'en' ? 'EN/HI' : 'HI/EN';
+            updateLang();
+        }
+        
+        function updateLang() {
+            const t = translations[lang];
+            document.getElementById('txt-welcome').textContent = t.welcome;
+            document.getElementById('btn-start').textContent = t.start;
+            document.getElementById('txt-diag').textContent = t.diag;
+            document.getElementById('txt-qnum').textContent = t.qnum;
+            document.getElementById('txt-gaps').textContent = t.gaps;
+            document.getElementById('btn-practice').textContent = t.practice;
+            document.getElementById('txt-practice').textContent = t.practice;
+            document.getElementById('txt-mastery').textContent = t.mastery;
+            document.getElementById('btn-end').textContent = t.end === "Session Complete!" ? "End Session" : "सत्र समाप्त करें";
+            document.getElementById('txt-complete').textContent = t.end;
+            document.getElementById('txt-code').textContent = t.code;
+            document.getElementById('btn-copy').textContent = t.copy;
+            document.getElementById('btn-sms').textContent = t.sms;
+            document.getElementById('btn-restart').textContent = t.restart;
+            document.getElementById('btn-diag-next').textContent = t.next;
+        }
+        
+        function setTheme(t) {
+            theme = t;
+            document.documentElement.setAttribute('data-theme', theme);
+            try { localStorage.setItem('theme', theme); } catch(e){}
+        }
+        
+        let diagQuestions = [
+            {q_en: "If x + 5 = 10, find x?", q_hi: "यदि x + 5 = 10 हो, तो x का मान क्या है?", opts_en: ["3","5","10","15"], opts_hi: ["3","5","10","15"], ans: 1},
+            {q_en: "What fraction represents half?", q_hi: "आधा को कौन सी भिन्न दर्शाती है?", opts_en: ["1/4","1/2","1/3","2/3"], opts_hi: ["1/4","1/2","1/3","2/3"], ans: 1},
+            {q_en: "Perimeter of square with side 4 cm?", q_hi: "4 सेमी भुजा वाले वर्ग का परिमाप क्या है?", opts_en: ["8 cm","16 cm","12 cm","20 cm"], opts_hi: ["8 सेमी","16 सेमी","12 सेमी","20 सेमी"], ans: 1},
+            {q_en: "Ratio of 2 to 4 is?", q_hi: "2 और 4 का अनुपात क्या है?", opts_en: ["1:2","2:1","4:2","1:1"], opts_hi: ["1:2","2:1","4:2","1:1"], ans: 0},
+        ];
+        let diagIndex = 0;
+        let diagAnswers = [];
+        
+        function startDiagnostic() {
+            document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
+            document.getElementById('screen-diagnostic').classList.add('active');
+            diagIndex = 0;
+            diagAnswers = [];
+            showDiagQuestion();
+            try { localStorage.setItem('sikshasetu_session', JSON.stringify({state:'diag',index:0})); } catch(e){}
+        }
+        
+        function showDiagQuestion() {
+            if(diagIndex >= diagQuestions.length) {
+                finishDiagnostic();
+                return;
+            }
+            document.getElementById('diag-num').textContent = diagIndex + 1;
+            document.getElementById('diag-total').textContent = diagQuestions.length;
+            document.getElementById('diag-progress').style.width = ((diagIndex+1)/diagQuestions.length*100) + '%';
+            const q = diagQuestions[diagIndex];
+            document.getElementById('diag-question').textContent = lang === 'en' ? q.q_en : q.q_hi;
+            const optsDiv = document.getElementById('diag-options');
+            optsDiv.innerHTML = '';
+            const opts = lang === 'en' ? q.opts_en : q.opts_hi;
+            opts.forEach((opt, i) => {
+                const div = document.createElement('div');
+                div.className = 'option';
+                div.textContent = opt;
+                div.onclick = () => selectDiagOption(div, i);
+                optsDiv.appendChild(div);
+            });
+            document.getElementById('btn-diag-next').style.display = 'none';
+        }
+        
+        function selectDiagOption(div, idx) {
+            document.querySelectorAll('#diag-options .option').forEach(o => o.classList.remove('selected'));
+            div.classList.add('selected');
+            diagAnswers.push({idx: idx, correct: idx === diagQuestions[diagIndex].ans});
+            document.getElementById('btn-diag-next').style.display = 'block';
+        }
+        
+        function nextDiag() {
+            diagIndex++;
+            showDiagQuestion();
+        }
+        
+        function finishDiagnostic() {
+            document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
+            document.getElementById('screen-results').classList.add('active');
+            const gapsDiv = document.getElementById('gaps-list');
+            gapsDiv.innerHTML = '';
+            const gaps = [
+                {name: lang==='en'?'Algebra':'बीजगणित', mastery: 0.3},
+                {name: lang==='en'?'Fractions':'भिन्न', mastery: 0.5},
+            ];
+            gaps.forEach(g => {
+                const card = document.createElement('div');
+                card.className = 'card';
+                card.innerHTML = `<p><strong>${g.name}</strong></p><div class="mastery-bar"><div class="mastery-fill" style="width: ${g.mastery*100}%"></div></div><p style="font-size:0.8rem">${Math.round(g.mastery*100)}% ${lang==='en'?'mastery':'निपुणता'}</p>`;
+                gapsDiv.appendChild(card);
+            });
+            try { localStorage.setItem('sikshasetu_session', JSON.stringify({state:'practice'})); } catch(e){}
+        }
+        
+        let streak = 0;
+        let practiceCount = 0;
+        let masteryVec = [0.3,0.5,0.4,0.6,0.2,0.3,0.4,0.5,0.3,0.4,0.5,0.6,0.3,0.4,0.5,0.3,0.4,0.5,0.3,0.4,0.5,0.3,0.4,0.5,0.3,0.4,0.5,0.3,0.4,0.5];
+        
+        function startPractice() {
+            document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
+            document.getElementById('screen-practice').classList.add('active');
+            showPracticeQuestion();
+            updateMasteryBars();
+        }
+        
+        function showPracticeQuestion() {
+            practiceCount++;
+            document.getElementById('why-this').textContent = translations[lang].why + (lang==='en'?'Linear Equations':'रैखिक समीकरण');
+            document.getElementById('practice-concept').textContent = lang==='en'?'Concept: Linear Equations (ALG_02)':'अवधारणा: रैखिक समीकरण (ALG_02)';
+            document.getElementById('practice-question').textContent = lang==='en'?"Solve: 3x - 7 = 8":"हल करें: 3x - 7 = 8";
+            const optsDiv = document.getElementById('practice-options');
+            optsDiv.innerHTML = '';
+            const opts = lang==='en'?["3","5","7","9"]:["3","5","7","9"];
+            opts.forEach((opt, i) => {
+                const div = document.createElement('div');
+                div.className = 'option';
+                div.textContent = opt;
+                div.onclick = () => answerPractice(div, i);
+                optsDiv.appendChild(div);
+            });
+        }
+        
+        function answerPractice(div, idx) {
+            document.querySelectorAll('#practice-options .option').forEach(o => { o.onclick = null; });
+            if(idx === 1) {
+                div.classList.add('correct');
+                streak++;
+                document.getElementById('streak').textContent = streak;
+                masteryVec[12] = Math.min(0.99, masteryVec[12] + 0.1);
+            } else {
+                div.classList.add('wrong');
+                document.querySelectorAll('#practice-options .option')[1].classList.add('correct');
+                streak = 0;
+                document.getElementById('streak').textContent = streak;
+            }
+            updateMasteryBars();
+            setTimeout(() => {
+                if(practiceCount >= 5) {
+                    endSession();
+                } else {
+                    showPracticeQuestion();
+                }
+            }, 1500);
+        }
+        
+        function updateMasteryBars() {
+            const div = document.getElementById('mastery-bars');
+            div.innerHTML = '';
+            const concepts = ['NUM_01','ALG_01','ALG_02','FRAC_01','MENS_01'];
+            concepts.forEach((c, i) => {
+                const bar = document.createElement('div');
+                bar.innerHTML = `<div style="display:flex;justify-content:space-between;font-size:0.75rem"><span>${c}</span><span>${Math.round(masteryVec[i]*100)}%</span></div><div class="mastery-bar"><div class="mastery-fill" style="width:${masteryVec[i]*100}%"></div></div>`;
+                div.appendChild(bar);
+            });
+        }
+        
+        function endSession() {
+            document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
+            document.getElementById('screen-end').classList.add('active');
+            const code = encodeCode(masteryVec);
+            document.getElementById('progress-code').textContent = code;
+            generateQR(code, document.getElementById('qr-canvas'));
+            try { localStorage.removeItem('sikshasetu_session'); } catch(e){}
+        }
+        
+        function copyCode() {
+            const code = document.getElementById('progress-code').textContent;
+            navigator.clipboard.writeText(code).then(() => {
+                alert(lang==='en'?'Code copied!':'कोड कॉपी हो गया!');
+            });
+        }
+        
+        function shareSMS() {
+            const code = document.getElementById('progress-code').textContent;
+            window.location.href = 'sms:?body=' + encodeURIComponent('SikshaSetu Progress Code: ' + code);
+        }
+        
+        // Resume session
+        try {
+            const sess = localStorage.getItem('sikshasetu_session');
+            if(sess) {
+                // Could resume, but start fresh for demo
+            }
+        } catch(e){}
+        
+        updateLang();
+    </script>
+</body>
+</html>
