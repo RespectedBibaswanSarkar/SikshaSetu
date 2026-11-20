@@ -216,9 +216,17 @@ def admin_logs():
 if ADMIN.exists():
     app.mount("/admin", StaticFiles(directory=ADMIN, html=True), name="admin")
 
+STUDENT_DIST = ROOT / "client" / "dist"
+if STUDENT_DIST.exists():
+    app.mount("/", StaticFiles(directory=STUDENT_DIST, html=True), name="student")
+
 @app.get("/")
 def root():
-    return FileResponse(ADMIN / "index.html") if (ADMIN / "index.html").exists() else JSONResponse({"hub": "sikshasetu", "store": str(STORE)})
+    if STUDENT_DIST.exists():
+        return FileResponse(STUDENT_DIST / "index.html")
+    if (ADMIN / "index.html").exists():
+        return FileResponse(ADMIN / "index.html")
+    return JSONResponse({"hub": "sikshasetu", "store": str(STORE)})
 
 @app.get("/api/admin/sync/export")
 def admin_sync_export():
@@ -244,5 +252,11 @@ if __name__ == "__main__":
     if lan:
         import socket
         ip = socket.gethostbyname(socket.gethostname())
-        print(f"SikshaSetu Hub listening on http://{ip}:8000")
+        url = f"http://{ip}:8000"
+        print(f"SikshaSetu Hub: {url}\nAdmin panel:    {url}/admin/")
+        try:
+            import qrcode
+            print(qrcode.make(url).get_ascii())
+        except Exception as e:
+            print(f"(QR unavailable: {e})")
     uvicorn.run(app, host="0.0.0.0", port=8000, log_level="warning")

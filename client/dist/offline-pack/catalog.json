@@ -1,0 +1,19 @@
+{
+ "courses": [
+  {
+   "slug": "6.006",
+   "ocw_url": "https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-spring-2020/",
+   "fallback_slug": "6.006"
+  },
+  {
+   "slug": "6.100L",
+   "ocw_url": "https://ocw.mit.edu/courses/6-100l-introduction-to-cs-and-programming-using-python-fall-2022/",
+   "fallback_slug": "6.100L"
+  },
+  {
+   "slug": "18.06",
+   "ocw_url": "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/",
+   "fallback_slug": "18.06"
+  }
+ ]
+}
