@@ -8,7 +8,7 @@ seed-course:     # make seed-course COURSE=6.006
 verify:
 	python -m pipeline.verify
 serve-lan:
-	python hub/main.py --lan
+	python3 -m hub.main --lan
 clean-cache:
 	rm -rf pipeline/cache pipeline/state
 
@@ -37,5 +37,11 @@ client-test:
 	cd client && npx vitest run
 client-build:
 	cd client && npm run build
+client-pack: client-build   # build PWA + starter pack (offline-pack already has sample lecture)
+	@echo "Built client → client/dist; starter pack → client/public/offline-pack"
 sim:
 	cd sim && python sim.py --students 200
+install-tauri:        # requires Rust/Cargo — see README "Install"
+	cargo install --path tauri 2>/dev/null || echo "Install Rust: curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh && cargo install --path ."
+install-android:      # requires Android Studio/SDK — see README "Install"
+	@echo "Install Android Studio + SDK, then: cd client && npx @capacitor/cli build android"

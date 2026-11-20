@@ -40,15 +40,30 @@ def dl_yt(vid, dest):
     if dest.exists() and dest.stat().st_size > 0:
         return dest
     dest.parent.mkdir(parents=True, exist_ok=True)
-    tmp = dest.with_suffix(".mp4.part")
+    import glob
+    import os
+    import time
     import yt_dlp
+    tmp = dest.parent / (dest.stem + ".part.mp4")
+    before = {p for p in glob.glob(str(dest.parent / "*.mp4"))}
     opts = {"quiet": True, "noprogress": True, "no_warnings": True,
             "outtmpl": str(tmp), "merge_output_format": "mp4",
             "format": "bestvideo[height<=360]+bestaudio/worst",
             "concurrent_fragments": 1}
     with yt_dlp.YoutubeDL(opts) as ydl:
         ydl.download([vid])
-    shutil.move(str(tmp), str(dest))
+    now = time.time()
+    cands = [Path(p) for p in glob.glob(str(dest.parent / "*.mp4"))
+             if now - os.path.getmtime(p) < 120 and os.path.getsize(p) > 1000]
+    cands = [p for p in cands if p != dest]
+    if cands:
+        best = max(cands, key=lambda p: p.stat().st_size)
+        shutil.move(str(best), str(dest))
+        for c in cands:
+            if c.exists() and c != dest:
+                c.unlink()
+    if not dest.exists() or dest.stat().st_size == 0:
+        raise RuntimeError(f"yt download produced no file for {vid}")
     return dest
 
 
@@ -86,5 +101,6 @@ def run(slug, resume=False):
                 u["assets"][tier] = {"path": str(dest), "yt_id": a, "sha256": sha256_of(dest),
                                      "size": dest.stat().st_size, "tier": tier,
                                      "machine_generated": True, "reviewed": False}
+    state.save(slug, st)
     state.mark(slug, "fetch", units=len(st["units"]))
     return True

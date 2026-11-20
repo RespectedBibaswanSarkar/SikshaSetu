@@ -1,4 +1,5 @@
 """Stage: transcode — ffmpeg: 360p H264/AAC faststart, audio-only Opus, poster."""
+import shutil
 import subprocess
 from pathlib import Path
 
@@ -18,24 +19,28 @@ def run(slug, resume=False):
         if not v or not Path(v["path"]).exists():
             continue
         inp = v["path"]
+        out = Path(inp).with_suffix(".360p.mp4")
         d = Path(inp).parent
-        # 360p H.264/AAC faststart
-        out = d / f"{u['id']}_video_360p.mp4"
-        ff(["-i", inp, "-vf", "scale=min(640,iw):min(360,ih)" , "-c:v", "libx264",
+        ff(["-i", inp, "-vf", "scale=640:360", "-c:v", "libx264",
             "-preset", "veryfast", "-crf", "28", "-c:a", "aac", "-b:a", "96k",
             "-movflags", "+faststart", str(out)])
-        u["assets"]["video_360p"] = {**v, "path": str(out), "tier": "video_360p"}
+        shutil.move(str(out), str(inp))
+        a = {**v, "path": str(inp), "tier": "video_360p"}
+        from pipeline.stages.fetch import sha256_of
+        a["sha256"] = sha256_of(inp); a["size"] = Path(inp).stat().st_size
+        u["assets"]["video_360p"] = a
         # audio-only Opus
-        aout = d / f"{u['id']}_audio_only.opus"
+        aout = d / f"{Path(inp).stem}_audio_only.opus"
         ff(["-i", inp, "-vn", "-c:a", "libopus", "-b:a", "128k", str(aout)])
         u["assets"]["audio_only"] = {"path": str(aout), "sha256": __import__("pipeline.stages.fetch", fromlist=["sha256_of"]).sha256_of(aout),
                                      "size": aout.stat().st_size, "tier": "audio_only",
                                      "machine_generated": v.get("machine_generated", True), "reviewed": False}
         # poster from first frame
-        pout = d / f"{u['id']}_poster.jpg"
+        pout = d / f"{Path(inp).stem}_poster.jpg"
         ff(["-ss", "0.5", "-i", inp, "-vframes", "1", "-q:v", "3", str(pout)])
         u["assets"]["poster"] = {"path": str(pout), "sha256": __import__("pipeline.stages.fetch", fromlist=["sha256_of"]).sha256_of(pout),
                                  "size": pout.stat().st_size, "tier": "poster",
                                  "machine_generated": True, "reviewed": False}
+    state.save(slug, st)
     state.mark(slug, "transcode", units=len(st["units"]))
     return True

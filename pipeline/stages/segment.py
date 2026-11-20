@@ -5,33 +5,30 @@ from pathlib import Path
 from pipeline import state
 
 
-def parse_vtt(text):
-    cues, cur = [], []
-    for line in text.splitlines():
-        line = line.strip()
-        if not line:
-            if cur:
-                cues.append(cur)
-                cur = []
-            continue
-        if re.match(r"^\d{2}:\d{2}:\d{2},\d{3} --> ", line):
-            ts = line.split(" --> ")
-            cur = [to_sec(ts[0]), to_sec(ts[1]), []]
-        elif cur and not re.match(r"^\d+$", line):
-            cur[2].append(line)
-    if cur:
-        cues.append(cur)
-    out = []
-    for s, e, txt in cues:
-        if txt:
-            out.append({"start": s, "end": e, "text": " ".join(txt)})
-    return out
+CUE_RE = re.compile(r"(\d{2}:\d{2}:\d{2}[.,]\d{3}) --> (\d{2}:\d{2}:\d{2}[.,]\d{3})")
+TAG_RE = re.compile(r"<[^>]*>")
 
 
 def to_sec(ts):
+    ts = ts.replace(",", ".")
     h, m, rest = ts.split(":")
-    s, ms = rest.split(",")
+    s, ms = rest.split(".")
     return int(h) * 3600 + int(m) * 60 + float(s) + float(ms) / 1000
+
+
+def parse_vtt(text):
+    """Parse VTT with YouTube-style inline tags/timestamps."""
+    cues = []
+    for m in CUE_RE.finditer(text):
+        start, end = to_sec(m.group(1)), to_sec(m.group(2))
+        block = text[m.end():]
+        nxt = CUE_RE.search(block)
+        chunk = block[:nxt.start()] if nxt else block
+        t = " ".join(TAG_RE.sub("", line).strip() for line in chunk.splitlines() if line.strip())
+        t = " ".join(t.split())
+        if t:
+            cues.append({"start": start, "end": end, "text": t})
+    return cues
 
 
 def segment_unit(unit, cues):
@@ -64,5 +61,6 @@ def run(slug, resume=False):
         cues = parse_vtt(Path(tp).read_text(encoding="utf-8", errors="replace"))
         segs = segment_unit(u, cues)
         u.setdefault("segments", []).extend(segs)
+    state.save(slug, st)
     state.mark(slug, "segment", units=len(st["units"]))
     return True

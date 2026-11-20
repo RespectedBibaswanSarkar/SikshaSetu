@@ -17,6 +17,8 @@ def load(slug: str) -> dict:
     r = st["stages"].get("resolve") or {}
     if "units" not in st and r.get("units"):
         st["units"] = r["units"]
+    if "meta" not in st and r.get("meta"):
+        st["meta"] = r["meta"]
     return st
 
 

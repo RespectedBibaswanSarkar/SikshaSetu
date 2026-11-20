@@ -26,6 +26,32 @@
      "desc": "MIT 6.006 Introduction to Algorithms, Fall 2011 View the complete course: http://ocw.mit.edu/6-006F11 Instructor: Srini Devadas\u00a0..."
     }
    ]
+  },
+  "fetch": {
+   "units": 1
+  },
+  "parse": {
+   "units": 1
+  },
+  "transcode": {
+   "units": 1
+  },
+  "transcripts": {
+   "units": 1
+  },
+  "segment": {
+   "units": 1
+  },
+  "questions": {
+   "questions": 0
+  },
+  "package": {
+   "units": 1,
+   "concepts": 0,
+   "questions": 0
+  },
+  "install": {
+   "sample_files": 2
   }
  },
  "units": [
@@ -35,9 +61,70 @@
    "ocw_url": null,
    "yt_id": "Kg4bqzAqRBM",
    "assets": {
-    "video_360p": "Kg4bqzAqRBM"
+    "video_360p": {
+     "path": "/run/media/bibaswansarkar/B0D2AF47D2AF1120/MASTER_BIBASWAN_SARKAR/IIIT MANIPUR/SEM III/HACK FOR SOCIAL CAUSE NIT MANIPUR/sikshasetu/pipeline/cache/6.006/6.006/u01_video_360p.mp4",
+     "yt_id": "Kg4bqzAqRBM",
+     "sha256": "73ae8b51ef66cfd9034b4f9bd1448b862db203e9d8963f34bd01e840a8be5460",
+     "size": 77504128,
+     "tier": "video_360p",
+     "machine_generated": true,
+     "reviewed": false
+    },
+    "transcript_vtt": {
+     "path": "/run/media/bibaswansarkar/B0D2AF47D2AF1120/MASTER_BIBASWAN_SARKAR/IIIT MANIPUR/SEM III/HACK FOR SOCIAL CAUSE NIT MANIPUR/sikshasetu/pipeline/cache/6.006/6.006/u01_video_360p_transcript.vtt",
+     "tier": "transcript_vtt",
+     "machine_generated": true,
+     "reviewed": false,
+     "sha256": "8ed87a5bc9e83871c50dc59e70be4d83d70b46ff9130df24135bc251fce5fa61",
+     "size": 1941
+    },
+    "notes_pdf": {
+     "path": "/run/media/bibaswansarkar/B0D2AF47D2AF1120/MASTER_BIBASWAN_SARKAR/IIIT MANIPUR/SEM III/HACK FOR SOCIAL CAUSE NIT MANIPUR/sikshasetu/pipeline/cache/6.006/6.006/u01_notes.pdf",
+     "tier": "notes_pdf",
+     "sha256": "3e40845676b82c912e1b5052759137527af706110ad04390c7f087919a860bc8",
+     "size": 685,
+     "machine_generated": true,
+     "reviewed": false,
+     "url": null,
+     "attribution": {
+      "course": "6.006",
+      "url": null,
+      "license": "CC BY-NC-SA 4.0"
+     }
+    },
+    "audio_only": {
+     "path": "/run/media/bibaswansarkar/B0D2AF47D2AF1120/MASTER_BIBASWAN_SARKAR/IIIT MANIPUR/SEM III/HACK FOR SOCIAL CAUSE NIT MANIPUR/sikshasetu/pipeline/cache/6.006/6.006/u01_video_360p_audio_only.opus",
+     "sha256": "ab137fe958e0361d2f34841b175150a06ed027625c7ea453ddfbe2eb160b1e5e",
+     "size": 41581836,
+     "tier": "audio_only",
+     "machine_generated": true,
+     "reviewed": false
+    },
+    "poster": {
+     "path": "/run/media/bibaswansarkar/B0D2AF47D2AF1120/MASTER_BIBASWAN_SARKAR/IIIT MANIPUR/SEM III/HACK FOR SOCIAL CAUSE NIT MANIPUR/sikshasetu/pipeline/cache/6.006/6.006/u01_video_360p_poster.jpg",
+     "sha256": "07e2b96cb9f2ef43d85808be08a94cda7c428e1f66340aae3b7bba2b8acecc79",
+     "size": 28362,
+     "tier": "poster",
+     "machine_generated": true,
+     "reviewed": false
+    }
    },
-   "desc": "MIT 6.006 Introduction to Algorithms, Fall 2011 View the complete course: http://ocw.mit.edu/6-006F11 Instructor: Srini Devadas\u00a0..."
+   "desc": "MIT 6.006 Introduction to Algorithms, Fall 2011 View the complete course: http://ocw.mit.edu/6-006F11 Instructor: Srini Devadas\u00a0...",
+   "segments": []
   }
- ]
+ ],
+ "meta": {
+  "slug": "6.006",
+  "title": "Introduction to Algorithms | Electrical Engineering and Computer Science | MIT OpenCourseWare",
+  "term": "6 006 introduction to algorithms spring 2020",
+  "ocw_url": "https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-spring-2020/",
+  "license": "CC BY-NC-SA 4.0",
+  "attribution": {
+   "course_page": "https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-spring-2020/",
+   "license": "CC BY-NC-SA",
+   "date_accessed": "2026-11-20"
+  }
+ },
+ "concepts": [],
+ "questions": []
 }
