@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 130" font-family="Inter,sans-serif" width="560">
+  <style>
+    .box{stroke:#6D4AFF;fill:#0e1118;stroke-width:2;rx:8;transition:all .3s}
+    .box:hover{stroke:#8B6DFF;transform:translateY(-4px);}
+    .lbl{font-size:13px;fill:#fff;font-weight:600}
+    .sub{font-size:9.5px;fill:#9aa0a6}
+    .ed{stroke:#333;stroke-width:1.5;marker-end:url(#arrow);stroke-linecap:round}
+    .ed2{stroke:#6D4AFF;stroke-width:2;marker-end:url(#arrowp);}
+    .ed3{stroke:#2BD4AB;stroke-width:2;marker-end:url(#arrowg);}
+    .pulse{stroke:#F5C518;stroke-width:3;rx:12;fill:none;opacity:0}
+    .stage{font-size:9px;fill:#cbd2d9}
+    @keyframes pulse{0%,100%{opacity:.9;stroke:#F5C518}50%{opacity:.3}}
+    text{user-select:none}
+  </style>
+  <defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0,0L10,5L0,10z" fill="#333"/></marker>
+  <marker id="arrowp" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0,0L10,5L0,10z" fill="#6D4AFF"/></marker>
+  <marker id="arrowg" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0,0L10,5L0,10z" fill="#2BD4AB"/></marker></defs>
+  <rect width="520" height="130" fill="none"/>
+  <rect x="8" y="8" width="504" height="114" fill="none"/>
+  <circle cx="30" cy="22" r="2.4" fill="#6D4AFF"/>
+  <text x="37" y="26" class="stage">MIT OCW (Angular pages → YouTube videos)</text>
+  <g id="n1"><rect x="14" y="34" width="82" height="56" class="box"/><text x="55" y="52" class="lbl">resolve</text><text x="55" y="64" class="sub">course page +<tspan dy="-1"> units</tspan></text><text x="55" y="74" class="sub">S2 / 6.006</text><rect x="26" y="86" width="58" height="8" rx="2" fill="#6D4AFF" opacity=".3"/><rect class="pulse" x="14" y="34" width="82" height="56"><animate attributeName="opacity" values=".9;.1;.9" dur="4s" repeatCount="indefinite"/></rect></g>
+  <g id="n2"><rect x="108" y="34" width="82" height="56" class="box"/><text x="149" y="52" class="lbl">fetch</text><text x="149" y="64" class="sub">2-concurrent,<tspan dy="-1"> checksums</tspan></text><rect class="pulse" x="108" y="34" width="82" height="56"><animate attributeName="opacity" values=".9;.1;.9" dur="3s" begin="0.5s" repeatCount="indefinite"/></rect></g>
+  <g id="n3"><rect x="202" y="34" width="82" height="56" class="box"/><text x="243" y="52" class="lbl">transcode</text><text x="243" y="64" class="sub">360p H.264/AAC<tspan dy="-1"> faststart</tspan></text></g>
+  <g id="n4"><rect x="296" y="34" width="88" height="56" class="box"/><text x="340" y="52" class="lbl">transcripts</text><text x="340" y="64" class="sub">captions or<tspan dy="-1"> whisper</tspan></text><rect class="pulse" x="296" y="34" width="88" height="56"><animate attributeName="opacity" values=".9;.1;.9" dur="2.5s" begin="1s" repeatCount="indefinite"/></rect></g>
+  <g id="n5"><rect x="404" y="34" width="92" height="56" class="box"/><text x="450" y="52" class="lbl">map</text><text x="450" y="64" class="sub">concept graph,<tspan dy="-1"> ~100–200 c</tspan></text></g>
+  <line x1="96" y1="62" x2="106" y2="62" class="ed"/>
+  <line x1="190" y1="62" x2="200" y2="62" class="ed"/>
+  <line x1="284" y1="62" x2="294" y2="62" class="ed"/>
+  <line x1="392" y1="62" x2="402" y2="62" class="ed"/>
+  <line x1="500" y1="62" x2="510" y2="62" class="ed"/>
+  <line x1="510" y1="62" x2="510" y2="62" class="ed2"><animate attributeName="x1" values="500;516" dur="0.6s" repeatCount="indefinite"/><animate attributeName="x2" values="516;500" dur="0.6s" repeatCount="indefinite"/></line>
+  <g id="n6"><rect x="14" y="100" width="92" height="20" class="box"/><text x="60" y="114" class="lbl" font-size="10">package (store, catalog, manifests)</text></g>
+  <line x1="60" y1="118" x2="60" y2="100" class="ed3"/>
+  <line x1="60" y1="130" x2="60" y2="130" class="ed2"><animate attributeName="x1" values="60;60" dur="0.6s" repeatCount="indefinite"/><animate attributeName="x2" values="60;58;60" dur="1s" repeatCount="indefinite"/><animate attributeName="x1" values="60;60" dur="1s" repeatCount="indefinite"/></line>
+  <g id="n7"><rect x="60" y="140" width="110" height="18" class="box" fill="#2BD4AB" stroke="#2BD4AB"/><text x="115" y="153" class="lbl" font-size="10" fill="#0e1118">verify → install → serve</text></g>
+  <rect x="52" y="6" width="80" height="16" rx="4" fill="#6D4AFF" opacity=".25"><animate attributeName="width" values="80;90;80" dur="2s" repeatCount="indefinite"/><text x="92" y="18" font-size="8" fill="#6D4AFF">6.006 · 6.100L · 18.06</text></rect>
+  <text x="6" y="124" font-size="8" fill="#9aa0a6">Click nodes to see stage details</text>
+  <title>Pipeline: OCW courses → resolve → fetch → parse → transcode → transcripts → segment → map → questions → package → install → verify → serve hub</title>
+</svg>

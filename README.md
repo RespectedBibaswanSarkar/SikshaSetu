@@ -45,3 +45,26 @@ Machine-generated transcripts (whisper) flagged; review in admin panel.
 - Transcripts depend on YouTube auto-captions; whisper (`faster-whisper`) is the fallback for videos without captions.
 - 6.006 (Spring 2020) official OCW videos are YouTube-hosted; see docs/seed_report.md.
 - Token-limited build (offline-first, no runtime LLM calls).
+
+## 🎬 Animations (ManimX — `animations/`)
+
+Two ManimX videos (rendered with `python3 -m manim -ql animations/pipeline.py PipelineAnim` etc.):
+
+| Diagram | What it shows |
+|---|---|
+| **[Pipeline](animations/media/pipeline.mp4)** | MIT OCW resolve → fetch (2-concurrent, checksums) → parse → transcode → transcripts → segment → map → questions → package → install → verify — with per-stage color changes. |
+| **[Adaptive learning loop](animations/media/learning_loop.mp4)** | Diagnostic → mastery update → bandit pick → mock test → weak-point report; loop arrow with pacing/decay. |
+
+Sources: [`animations/pipeline.py`](animations/pipeline.py), [`animations/learning_loop.py`](animations/learning_loop.py).
+
+### Interactive pipeline SVG
+
+[`assets/pipeline.svg`](assets/pipeline.svg) — click any stage node to see details; animated edges; course badge pulse:
+
+- **resolve** — course page + units (mitocw search for lecture videos)
+- **fetch** — downloads with checksums, rate-limited (2 concurrent)
+- **transcode** — 360p H.264/AAC faststart, audio-only Opus, poster
+- **transcripts** — official captions (machine) or whisper fallback
+- **map** — concept graph (~100–200 concepts per course), reviewed:false
+- **package** — content-addressed store (objects/<sha256>), catalog/concepts/questions/manifests
+- **verify** — video+notes+transcript+concepts per unit, hashes, acyclic graph
