@@ -28,7 +28,7 @@ def student_scores(units, prereqs, mastery0, hours_week, strategy, rng):
         # bandit: Thompson sampling on mastery gain estimate
         picks = order
     done, gain = set(), 0.0
-    weeks = 52 / max(1, int(hours_week / 20) + 1)
+    weeks = int(52 / max(1, int(hours_week / 20) + 1))
     for _ in range(weeks):
         for u in picks[: int(hours_week // 2)]:
             if u in done:
