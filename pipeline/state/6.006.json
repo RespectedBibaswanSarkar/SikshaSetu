@@ -1,0 +1,43 @@
+{
+ "slug": "6.006",
+ "stages": {
+  "resolve": {
+   "meta": {
+    "slug": "6.006",
+    "title": "Introduction to Algorithms | Electrical Engineering and Computer Science | MIT OpenCourseWare",
+    "term": "6 006 introduction to algorithms spring 2020",
+    "ocw_url": "https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-spring-2020/",
+    "license": "CC BY-NC-SA 4.0",
+    "attribution": {
+     "course_page": "https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-spring-2020/",
+     "license": "CC BY-NC-SA",
+     "date_accessed": "2026-11-20"
+    }
+   },
+   "units": [
+    {
+     "id": "6.006/u01",
+     "title": "Lecture 3: Insertion Sort, Merge Sort",
+     "ocw_url": null,
+     "yt_id": "Kg4bqzAqRBM",
+     "assets": {
+      "video_360p": "Kg4bqzAqRBM"
+     },
+     "desc": "MIT 6.006 Introduction to Algorithms, Fall 2011 View the complete course: http://ocw.mit.edu/6-006F11 Instructor: Srini Devadas\u00a0..."
+    }
+   ]
+  }
+ },
+ "units": [
+  {
+   "id": "6.006/u01",
+   "title": "Lecture 3: Insertion Sort, Merge Sort",
+   "ocw_url": null,
+   "yt_id": "Kg4bqzAqRBM",
+   "assets": {
+    "video_360p": "Kg4bqzAqRBM"
+   },
+   "desc": "MIT 6.006 Introduction to Algorithms, Fall 2011 View the complete course: http://ocw.mit.edu/6-006F11 Instructor: Srini Devadas\u00a0..."
+  }
+ ]
+}

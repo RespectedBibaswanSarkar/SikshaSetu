@@ -1,0 +1,94 @@
+/* SikshaSetu theme tokens — single source of truth (client/src/theme.css) */
+:root {
+  /* Backgrounds */
+  --bg: #0e1118;
+  --bg-2: #141822;
+  --bg-3: #1b2130;
+  --surface: rgba(255, 255, 255, 0.03);
+  --surface-hover: rgba(255, 255, 255, 0.06);
+  --border: rgba(255, 255, 255, 0.08);
+
+  /* Typography */
+  --font: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --text: #e8eaf0;
+  --muted: #9aa0a6;
+  --faint: #5c6270;
+
+  /* Primary (indigo) */
+  --primary: #6d4aff;
+  --primary-light: #8b6dff;
+  --primary-dark: #4b2dd4;
+  --on-primary: #fff;
+
+  /* Semantic */
+  --success: #2bd4ab;
+  --warning: #f5c518;
+  --weak: #ff5a5f;
+  --info: #4fd1ff;
+
+  /* Accent */
+  --accent: #f5c518;
+  --accent-dim: #3a3318;
+
+  /* Gradient background */
+  --grad: linear-gradient(135deg, #1b2a52 0%, #0e1118 100%);
+
+  /* Radius */
+  --r: 16px;
+  --r-sm: 8px;
+
+  /* Shadows */
+  --shadow: 0 2px 16px rgba(0, 0, 0, 0.35);
+  --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.45);
+
+  /* Spacing (base 4px) */
+  --s: 0.25rem;
+  --s2: 0.5rem;
+  --s3: 0.75rem;
+  --s4: 1rem;
+  --s5: 1.25rem;
+  --s6: 1.5rem;
+
+  /* Layout */
+  --sidebar-w: 240px;
+  --topbar-h: 64px;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg: #f3f5f8; --bg-2: #ffffff; --bg-3: #e9ecf1; --surface: rgba(0, 0, 0, 0.02);
+    --surface-hover: rgba(0, 0, 0, 0.05); --border: rgba(0, 0, 0, 0.12);
+    --text: #1d2233; --muted: #5b6270; --faint: #9aa0a6;
+    --grad: linear-gradient(135deg, #e3e9f7 0%, #f3f5f8 100%);
+  }
+}
+
+* { box-sizing: border-box; }
+body { background: var(--bg); color: var(--text); font-family: var(--font); margin: 0; }
+
+/* Utility classes (compact, theme-bound) */
+.card {
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: var(--r); padding: var(--s5); backdrop-filter: blur(6px);
+}
+.btn-primary {
+  background: var(--primary); color: var(--on-primary); border: none;
+  border-radius: var(--r-sm); padding: var(--s3) var(--s5); cursor: pointer;
+  font-weight: 600; transition: filter 0.12s, transform 0.05s;
+}
+.btn-primary:hover { filter: brightness(1.12); }
+.btn-ghost {
+  background: transparent; color: var(--text); border: 1px solid var(--border);
+  border-radius: var(--r-sm); padding: var(--s3) var(--s5); cursor: pointer;
+  font-weight: 600; transition: background 0.12s;
+}
+.btn-ghost:hover { background: var(--surface-hover); }
+.chip-success { background: color-mix(in srgb, var(--success) 18%, transparent); color: var(--success); }
+.chip-weak { background: color-mix(in srgb, var(--weak) 18%, transparent); color: var(--weak); }
+.chip-warning { background: color-mix(in srgb, var(--warning) 18%, transparent); color: var(--warning); }
+.chip-info { background: color-mix(in srgb, var(--info) 18%, transparent); color: var(--info); }
+.text-muted { color: var(--muted); }
+.text-weak { color: var(--weak); }
+.text-success { color: var(--success); }
+.text-accent { color: var(--accent); }
+.grad-bg { background: var(--grad); }

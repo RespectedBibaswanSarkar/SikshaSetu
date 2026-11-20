@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>SikshaSetu – Admin Panel</title>
+<style>
+:root{--navy:#0e1118;--ind:#6d4aff;--green:#2bd4ab;--amber:#f5c518;--red:#ff5a5f;--text:#e8eaf0;--mut:#9aa0a6;--card:rgba(255,255,255,.04);--border:rgba(255,255,255,.09)}
+*{box-sizing:border-box}body{margin:0;font-family:Inter,-apple-system,sans-serif;background:var(--navy);color:var(--text)}
+header{display:flex;align-items:center;gap:1rem;padding:.6rem 1.2rem;border-bottom:1px solid var(--border);background:var(--navy)}
+.brand{font-weight:700;font-size:1.05rem}
+nav{display:flex;gap:.3rem;flex:1}
+nav button{background:none;border:1px solid transparent;color:var(--mut);padding:.45rem .8rem;border-radius:8px;cursor:pointer;font-weight:600}
+nav button:hover{color:var(--text);background:var(--card)}
+nav button.active{color:#fff;background:linear-gradient(135deg,var(--ind),#8b6dff);border-color:#8b6dff}
+main{max-width:1180px;margin:0 auto;padding:1.2rem}.card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:1rem 1.25rem;margin-bottom:.9rem}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:.9rem}
+.stat{display:flex;justify-content:space-between}
+.stat .v{font-size:1.5rem;font-weight:700}
+.stat .label{color:var(--mut);font-size:.82rem}
+table{width:100%;border-collapse:collapse}th,td{text-align:left;padding:.45rem;border-bottom:1px solid var(--border);font-size:.88rem}
+th{color:var(--mut);font-weight:600}
+button.primary{background:var(--ind);color:#fff;border:none;padding:.55rem 1rem;border-radius:8px;font-weight:600;cursor:pointer}
+button.primary:hover{filter:brightness(1.1)}
+input[type=text]{background:var(--card);border:1px solid var(--border);color:var(--text);padding:.5rem;border-radius:8px;min-width:220px}
+.badge{display:inline-block;padding:.15rem .5rem;border-radius:10px;font-size:.75rem;font-weight:600}
+.badge.ok{background:rgba(43,212,171,.15);color:var(--green)}
+.badge.pend{background:rgba(245,197,24,.15);color:var(--amber)}
+.badge.err{background:rgba(255,90,95,.15);color:var(--red)}
+.line{fill:none;stroke:url(#g);stroke-width:2}svg{width:100%;height:140px}#g{stop-color:var(--ind)}
+.row{display:flex;gap:.6rem;align-items:center}
+.row select{background:var(--card);border:1px solid var(--border);color:var(--text);padding:.5rem;border-radius:8px}
+.muted{color:var(--mut);font-size:.82rem}
+.att{font-size:.78rem;color:var(--mut);margin-top:.3rem;display:block}
+.heat{display:grid;grid-template-columns:repeat(7,1fr);gap:4px;height:10rem;align-items:center}
+.heat div{background:rgba(109,74,255,.18);border-radius:3px}
+.heat div.d{background:rgba(109,74,255,.45)}
+.attribution{font-size:.8rem;color:var(--mut)}
+</style></head><body><header><span class="brand">SikshaSetu Admin</span>
+<nav><button id="tab1" class="active">Dashboard</button><button id="tab2">Map Course</button><button id="tab3">Course Status</button><button id="tab4">Course Details</button><button id="tab5">System Logs</button><button id="tab6">Roster</button></nav>
+<button onclick="location.href='/'">Logout</button></header>
+<main><div id="app"></div></main><script src="admin.js"></script></body></html>
