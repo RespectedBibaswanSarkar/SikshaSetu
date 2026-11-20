@@ -1,0 +1,7 @@
+/pipeline/cache
+/hub/content
+/pipeline/store
+/media
+/client/dist
+/hub/hub.db
+/sim/results/sim_experiments.json
