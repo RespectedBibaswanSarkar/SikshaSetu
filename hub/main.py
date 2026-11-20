@@ -250,13 +250,19 @@ async def admin_sync_import(request: Request):
 if __name__ == "__main__":
     lan = "--lan" in sys.argv
     if lan:
-        import socket
-        ip = socket.gethostbyname(socket.gethostname())
+        import subprocess
+        try:
+            out = subprocess.run(["hostname", "-I"], capture_output=True, text=True).stdout.split()
+            ip = out[0] if out and not out[0].startswith("127.") else "127.0.0.1"
+        except Exception:
+            ip = "127.0.0.1"
         url = f"http://{ip}:8000"
         print(f"SikshaSetu Hub: {url}\nAdmin panel:    {url}/admin/")
         try:
             import qrcode
-            print(qrcode.make(url).get_ascii())
+            qr = qrcode.QRCode()
+            qr.add_data(url); qr.make()
+            qr.print_ascii()
         except Exception as e:
             print(f"(QR unavailable: {e})")
     uvicorn.run(app, host="0.0.0.0", port=8000, log_level="warning")
