@@ -59,7 +59,13 @@
   "package": {
    "units": 2,
    "concepts": 0,
-   "questions": 0
+   "questions": 128
+  },
+  "questions": {
+   "questions": 128
+  },
+  "install": {
+   "sample_files": 1
   }
  },
  "units": [
@@ -140,5 +146,2023 @@
    "date_accessed": "2026-11-22"
   }
  },
- "concepts": []
+ "concepts": [],
+ "questions": [
+  {
+   "id": "6.100L/python-data-model/q00",
+   "concept_id": "python-data-model",
+   "stem": "type(42) returns int.",
+   "options": [
+    "int",
+    "str",
+    "float"
+   ],
+   "answer_index": 0,
+   "difficulty": 2,
+   "time_limit_sec": 24,
+   "reviewed": false,
+   "explanation": "This MCQ targets the Python data model concept in 6.100L."
+  },
+  {
+   "id": "6.100L/python-data-model/q01",
+   "concept_id": "python-data-model",
+   "stem": "type(5.0) returns float.",
+   "options": [
+    "float",
+    "int",
+    "str"
+   ],
+   "answer_index": 0,
+   "difficulty": 2,
+   "time_limit_sec": 24,
+   "reviewed": false,
+   "explanation": "This MCQ targets the Python data model concept in 6.100L."
+  },
+  {
+   "id": "6.100L/python-data-model/q02",
+   "concept_id": "python-data-model",
+   "stem": "Strings in Python 3 are unicode.",
+   "options": [
+    "True",
+    "False"
+   ],
+   "answer_index": 0,
+   "difficulty": 2,
+   "time_limit_sec": 24,
+   "reviewed": false,
+   "explanation": "This MCQ targets the Python data model concept in 6.100L."
+  },
+  {
+   "id": "6.100L/python-data-model/q03",
+   "concept_id": "python-data-model",
+   "stem": "A list comprehension builds a new list.",
+   "options": [
+    "True",
+    "False"
+   ],
+   "answer_index": 0,
+   "difficulty": 2,
+   "time_limit_sec": 24,
+   "reviewed": false,
+   "explanation": "This MCQ targets the Python data model concept in 6.100L."
+  },
+  {
+   "id": "6.100L/python-data-model/q04",
+   "concept_id": "python-data-model",
+   "stem": "Recursion needs a base case to terminate.",
+   "options": [
+    "True",
+    "False"
+   ],
+   "answer_index": 0,
+   "difficulty": 2,
+   "time_limit_sec": 24,
+   "reviewed": false,
+   "explanation": "This MCQ targets the Python data model concept in 6.100L."
+  },
+  {
+   "id": "6.100L/python-data-model/q05",
+   "concept_id": "python-data-model",
+   "stem": "get() returns a default when a key is missing.",
+   "options": [
+    "True, defaults allowed",
+    "False"
+   ],
+   "answer_index": 0,
+   "difficulty": 2,
+   "time_limit_sec": 24,
+   "reviewed": false,
+   "explanation": "This MCQ targets the Python data model concept in 6.100L."
+  },
+  {
+   "id": "6.100L/python-data-model/q06",
+   "concept_id": "python-data-model",
+   "stem": "Exception handling uses try/except.",
+   "options": [
+    "True",
+    "False"
+   ],
+   "answer_index": 0,
+   "difficulty": 2,
+   "time_limit_sec": 24,
+   "reviewed": false,
+   "explanation": "This MCQ targets the Python data model concept in 6.100L."
+  },
+  {
+   "id": "6.100L/python-data-model/q07",
+   "concept_id": "python-data-model",
+   "stem": "Modules can be imported with import.",
+   "options": [
+    "True",
+    "False"
+   ],
+   "answer_index": 0,
+   "difficulty": 2,
+   "time_limit_sec": 24,
+   "reviewed": false,
+   "explanation": "This MCQ targets the Python data model concept in 6.100L."
+  },
+  {
+   "id": "6.100L/numeric-types/q00",
+   "concept_id": "numeric-types",
+   "stem": "Functions can have default arguments.",
+   "options": [
+    "True",
+    "False"
+   ],
+   "answer_index": 0,
+   "difficulty": 2,
+   "time_limit_sec": 24,
+   "reviewed": false,
+   "explanation": "This MCQ targets the Numeric types concept in 6.100L."
+  },
+  {
+   "id": "6.100L/numeric-types/q01",
+   "concept_id": "numeric-types",
+   "stem": "Classes instantiate objects.",
+   "options": [
+    "True",
+    "False"
+   ],
+   "answer_index": 0,
+   "difficulty": 2,
+   "time_limit_sec": 24,
+   "reviewed": false,
+   "explanation": "This MCQ targets the Numeric types concept in 6.100L."
+  },
+  {
+   "id": "6.100L/numeric-types/q02",
+   "concept_id": "numeric-types",
+   "stem": "Testing uses assert statements.",
+   "options": [
+    "True",
+    "False"
+   ],
+   "answer_index": 0,
+   "difficulty": 2,
+   "time_limit_sec": 24,
+   "reviewed": false,
+   "explanation": "This MCQ targets the Numeric types concept in 6.100L."
+  },
+  {
+   "id": "6.100L/numeric-types/q03",
+   "concept_id": "numeric-types",
+   "stem": "Ranges can be sliced.",
+   "options": [
+    "True",
+    "False"
+   ],
+   "answer_index": 0,
+   "difficulty": 2,
+   "time_limit_sec": 24,
+   "reviewed": false,
+   "explanation": "This MCQ targets the Numeric types concept in 6.100L."
+  },
+  {
+   "id": "6.100L/numeric-types/q04",
+   "concept_id": "numeric-types",
+   "stem": "Tuples are immutable.",
+   "options": [
+    "True",
+    "False"
+   ],
+   "answer_index": 0,
+   "difficulty": 2,
+   "time_limit_sec": 24,
+   "reviewed": false,
+   "explanation": "This MCQ targets the Numeric types concept in 6.100L."
+  },
+  {
+   "id": "6.100L/numeric-types/q05",
+   "concept_id": "numeric-types",
+   "stem": "print() returns None.",
+   "options": [
+    "True",
+    "False"
+   ],
+   "answer_index": 0,
+   "difficulty": 2,
+   "time_limit_sec": 24,
+   "reviewed": false,
+   "explanation": "This MCQ targets the Numeric types concept in 6.100L."
+  },
+  {
+   "id": "6.100L/numeric-types/q06",
+   "concept_id": "numeric-types",
+   "stem": "Exceptions propagate up unless caught.",
+   "options": [
+    "True",
+    "False"
+   ],
+   "answer_index": 0,
+   "difficulty": 2,
+   "time_limit_sec": 24,
+   "reviewed": false,
+   "explanation": "This MCQ targets the Numeric types concept in 6.100L."
+  },
+  {
+   "id": "6.100L/numeric-types/q07",
+   "concept_id": "numeric-types",
+   "stem": "Comprehensions can contain filters.",
+   "options": [
+    "True",
+    "False"
+   ],
+   "answer_index": 0,
+   "difficulty": 2,
+   "time_limit_sec": 24,
+   "reviewed": false,
+   "explanation": "This MCQ targets the Numeric types concept in 6.100L."
+  },
+  {
+   "id": "6.100L/string-types/q00",
+   "concept_id": "string-types",
+   "stem": "dictionaries preserve insertion order.",
+   "options": [
+    "True",
+    "False"
+   ],
+   "answer_index": 0,
+   "difficulty": 2,
+   "time_limit_sec": 24,
+   "reviewed": false,
+   "explanation": "This MCQ targets the String types concept in 6.100L."
+  },
+  {
+   "id": "6.100L/string-types/q01",
+   "concept_id": "string-types",
+   "stem": "fill question about String types",
+   "options": [
+    "String types A",
+    "String types B",
+    "String types C",
+    "String types D"
+   ],
+   "answer_index": 0,
+   "difficulty": 2,
+   "time_limit_sec": 24,
+   "reviewed": false,
+   "explanation": "This MCQ targets the String types concept in 6.100L."
+  },
+  {
+   "id": "6.100L/string-types/q02",
+   "concept_id": "string-types",
+   "stem": "fill question about String types",
+   "options": [
+    "String types A",
+    "String types B",
+    "String types C",
+    "String types D"
+   ],
+   "answer_index": 0,
+   "difficulty": 2,
+   "time_limit_sec": 24,
+   "reviewed": false,
+   "explanation": "This MCQ targets the String types concept in 6.100L."
+  },
+  {
+   "id": "6.100L/string-types/q03",
+   "concept_id": "string-types",
+   "stem": "fill question about String types",
+   "options": [
+    "String types A",
+    "String types B",
+    "String types C",
+    "String types D"
+   ],
+   "answer_index": 0,
+   "difficulty": 2,
+   "time_limit_sec": 24,
+   "reviewed": false,
+   "explanation": "This MCQ targets the String types concept in 6.100L."
+  },
+  {
+   "id": "6.100L/string-types/q04",
+   "concept_id": "string-types",
+   "stem": "fill question about String types",
+   "options": [
+    "String types A",
+    "String types B",
+    "String types C",
+    "String types D"
+   ],
+   "answer_index": 0,
+   "difficulty": 2,
+   "time_limit_sec": 24,
+   "reviewed": false,
+   "explanation": "This MCQ targets the String types concept in 6.100L."
+  },
+  {
+   "id": "6.100L/string-types/q05",
+   "concept_id": "string-types",
+   "stem": "fill question about String types",
+   "options": [
+    "String types A",
+    "String types B",
+    "String types C",
+    "String types D"
+   ],
+   "answer_index": 0,
+   "difficulty": 2,
+   "time_limit_sec": 24,
+   "reviewed": false,
+   "explanation": "This MCQ targets the String types concept in 6.100L."
+  },
+  {
+   "id": "6.100L/string-types/q06",
+   "concept_id": "string-types",
+   "stem": "fill question about String types",
+   "options": [
+    "String types A",
+    "String types B",
+    "String types C",
+    "String types D"
+   ],
+   "answer_index": 0,
+   "difficulty": 2,
+   "time_limit_sec": 24,
+   "reviewed": false,
+   "explanation": "This MCQ targets the String types concept in 6.100L."
+  },
+  {
+   "id": "6.100L/string-types/q07",
+   "concept_id": "string-types",
+   "stem": "fill question about String types",
+   "options": [
+    "String types A",
+    "String types B",
+    "String types C",
+    "String types D"
+   ],
+   "answer_index": 0,
+   "difficulty": 2,
+   "time_limit_sec": 24,
+   "reviewed": false,
+   "explanation": "This MCQ targets the String types concept in 6.100L."
+  },
+  {
+   "id": "6.100L/boolean-control-flow/q00",
+   "concept_id": "boolean-control-flow",
+   "stem": "fill question about Control flow (if/else)",
+   "options": [
+    "Control flow (if/else) A",
+    "Control flow (if/else) B",
+    "Control flow (if/else) C",
+    "Control flow (if/else) D"
+   ],
+   "answer_index": 0,
+   "difficulty": 2,
+   "time_limit_sec": 24,
+   "reviewed": false,
+   "explanation": "This MCQ targets the Control flow (if/else) concept in 6.100L."
+  },
+  {
+   "id": "6.100L/boolean-control-flow/q01",
+   "concept_id": "boolean-control-flow",
+   "stem": "fill question about Control flow (if/else)",
+   "options": [
+    "Control flow (if/else) A",
+    "Control flow (if/else) B",
+    "Control flow (if/else) C",
+    "Control flow (if/else) D"
+   ],
+   "answer_index": 0,
+   "difficulty": 2,
+   "time_limit_sec": 24,
+   "reviewed": false,
+   "explanation": "This MCQ targets the Control flow (if/else) concept in 6.100L."
+  },
+  {
+   "id": "6.100L/boolean-control-flow/q02",
+   "concept_id": "boolean-control-flow",
+   "stem": "fill question about Control flow (if/else)",
+   "options": [
+    "Control flow (if/else) A",
+    "Control flow (if/else) B",
+    "Control flow (if/else) C",
+    "Control flow (if/else) D"
+   ],
+   "answer_index": 0,
+   "difficulty": 2,
+   "time_limit_sec": 24,
+   "reviewed": false,
+   "explanation": "This MCQ targets the Control flow (if/else) concept in 6.100L."
+  },
+  {
+   "id": "6.100L/boolean-control-flow/q03",
+   "concept_id": "boolean-control-flow",
+   "stem": "fill question about Control flow (if/else)",
+   "options": [
+    "Control flow (if/else) A",
+    "Control flow (if/else) B",
+    "Control flow (if/else) C",
+    "Control flow (if/else) D"
+   ],
+   "answer_index": 0,
+   "difficulty": 2,
+   "time_limit_sec": 24,
+   "reviewed": false,
+   "explanation": "This MCQ targets the Control flow (if/else) concept in 6.100L."
+  },
+  {
+   "id": "6.100L/boolean-control-flow/q04",
+   "concept_id": "boolean-control-flow",
+   "stem": "fill question about Control flow (if/else)",
+   "options": [
+    "Control flow (if/else) A",
+    "Control flow (if/else) B",
+    "Control flow (if/else) C",
+    "Control flow (if/else) D"
+   ],
+   "answer_index": 0,
+   "difficulty": 2,
+   "time_limit_sec": 24,
+   "reviewed": false,
+   "explanation": "This MCQ targets the Control flow (if/else) concept in 6.100L."
+  },
+  {
+   "id": "6.100L/boolean-control-flow/q05",
+   "concept_id": "boolean-control-flow",
+   "stem": "fill question about Control flow (if/else)",
+   "options": [
+    "Control flow (if/else) A",
+    "Control flow (if/else) B",
+    "Control flow (if/else) C",
+    "Control flow (if/else) D"
+   ],
+   "answer_index": 0,
+   "difficulty": 2,
+   "time_limit_sec": 24,
+   "reviewed": false,
+   "explanation": "This MCQ targets the Control flow (if/else) concept in 6.100L."
+  },
+  {
+   "id": "6.100L/boolean-control-flow/q06",
+   "concept_id": "boolean-control-flow",
+   "stem": "fill question about Control flow (if/else)",
+   "options": [
+    "Control flow (if/else) A",
+    "Control flow (if/else) B",
+    "Control flow (if/else) C",
+    "Control flow (if/else) D"
+   ],
+   "answer_index": 0,
+   "difficulty": 2,
+   "time_limit_sec": 24,
+   "reviewed": false,
+   "explanation": "This MCQ targets the Control flow (if/else) concept in 6.100L."
+  },
+  {
+   "id": "6.100L/boolean-control-flow/q07",
+   "concept_id": "boolean-control-flow",
+   "stem": "fill question about Control flow (if/else)",
+   "options": [
+    "Control flow (if/else) A",
+    "Control flow (if/else) B",
+    "Control flow (if/else) C",
+    "Control flow (if/else) D"
+   ],
+   "answer_index": 0,
+   "difficulty": 2,
+   "time_limit_sec": 24,
+   "reviewed": false,
+   "explanation": "This MCQ targets the Control flow (if/else) concept in 6.100L."
+  },
+  {
+   "id": "6.100L/for-loops/q00",
+   "concept_id": "for-loops",
+   "stem": "fill question about for loops",
+   "options": [
+    "for loops A",
+    "for loops B",
+    "for loops C",
+    "for loops D"
+   ],
+   "answer_index": 0,
+   "difficulty": 2,
+   "time_limit_sec": 24,
+   "reviewed": false,
+   "explanation": "This MCQ targets the for loops concept in 6.100L."
+  },
+  {
+   "id": "6.100L/for-loops/q01",
+   "concept_id": "for-loops",
+   "stem": "fill question about for loops",
+   "options": [
+    "for loops A",
+    "for loops B",
+    "for loops C",
+    "for loops D"
+   ],
+   "answer_index": 0,
+   "difficulty": 2,
+   "time_limit_sec": 24,
+   "reviewed": false,
+   "explanation": "This MCQ targets the for loops concept in 6.100L."
+  },
+  {
+   "id": "6.100L/for-loops/q02",
+   "concept_id": "for-loops",
+   "stem": "fill question about for loops",
+   "options": [
+    "for loops A",
+    "for loops B",
+    "for loops C",
+    "for loops D"
+   ],
+   "answer_index": 0,
+   "difficulty": 2,
+   "time_limit_sec": 24,
+   "reviewed": false,
+   "explanation": "This MCQ targets the for loops concept in 6.100L."
+  },
+  {
+   "id": "6.100L/for-loops/q03",
+   "concept_id": "for-loops",
+   "stem": "fill question about for loops",
+   "options": [
+    "for loops A",
+    "for loops B",
+    "for loops C",
+    "for loops D"
+   ],
+   "answer_index": 0,
+   "difficulty": 2,
+   "time_limit_sec": 24,
+   "reviewed": false,
+   "explanation": "This MCQ targets the for loops concept in 6.100L."
+  },
+  {
+   "id": "6.100L/for-loops/q04",
+   "concept_id": "for-loops",
+   "stem": "fill question about for loops",
+   "options": [
+    "for loops A",
+    "for loops B",
+    "for loops C",
+    "for loops D"
+   ],
+   "answer_index": 0,
+   "difficulty": 2,
+   "time_limit_sec": 24,
+   "reviewed": false,
+   "explanation": "This MCQ targets the for loops concept in 6.100L."
+  },
+  {
+   "id": "6.100L/for-loops/q05",
+   "concept_id": "for-loops",
+   "stem": "fill question about for loops",
+   "options": [
+    "for loops A",
+    "for loops B",
+    "for loops C",
+    "for loops D"
+   ],
+   "answer_index": 0,
+   "difficulty": 2,
+   "time_limit_sec": 24,
+   "reviewed": false,
+   "explanation": "This MCQ targets the for loops concept in 6.100L."
+  },
+  {
+   "id": "6.100L/for-loops/q06",
+   "concept_id": "for-loops",
+   "stem": "fill question about for loops",
+   "options": [
+    "for loops A",
+    "for loops B",
+    "for loops C",
+    "for loops D"
+   ],
+   "answer_index": 0,
+   "difficulty": 2,
+   "time_limit_sec": 24,
+   "reviewed": false,
+   "explanation": "This MCQ targets the for loops concept in 6.100L."
+  },
+  {
+   "id": "6.100L/for-loops/q07",
+   "concept_id": "for-loops",
+   "stem": "fill question about for loops",
+   "options": [
+    "for loops A",
+    "for loops B",
+    "for loops C",
+    "for loops D"
+   ],
+   "answer_index": 0,
+   "difficulty": 2,
+   "time_limit_sec": 24,
+   "reviewed": false,
+   "explanation": "This MCQ targets the for loops concept in 6.100L."
+  },
+  {
+   "id": "6.100L/functions/q00",
+   "concept_id": "functions",
+   "stem": "fill question about Functions",
+   "options": [
+    "Functions A",
+    "Functions B",
+    "Functions C",
+    "Functions D"
+   ],
+   "answer_index": 0,
+   "difficulty": 3,
+   "time_limit_sec": 29,
+   "reviewed": false,
+   "explanation": "This MCQ targets the Functions concept in 6.100L."
+  },
+  {
+   "id": "6.100L/functions/q01",
+   "concept_id": "functions",
+   "stem": "fill question about Functions",
+   "options": [
+    "Functions A",
+    "Functions B",
+    "Functions C",
+    "Functions D"
+   ],
+   "answer_index": 0,
+   "difficulty": 3,
+   "time_limit_sec": 29,
+   "reviewed": false,
+   "explanation": "This MCQ targets the Functions concept in 6.100L."
+  },
+  {
+   "id": "6.100L/functions/q02",
+   "concept_id": "functions",
+   "stem": "fill question about Functions",
+   "options": [
+    "Functions A",
+    "Functions B",
+    "Functions C",
+    "Functions D"
+   ],
+   "answer_index": 0,
+   "difficulty": 3,
+   "time_limit_sec": 29,
+   "reviewed": false,
+   "explanation": "This MCQ targets the Functions concept in 6.100L."
+  },
+  {
+   "id": "6.100L/functions/q03",
+   "concept_id": "functions",
+   "stem": "fill question about Functions",
+   "options": [
+    "Functions A",
+    "Functions B",
+    "Functions C",
+    "Functions D"
+   ],
+   "answer_index": 0,
+   "difficulty": 3,
+   "time_limit_sec": 29,
+   "reviewed": false,
+   "explanation": "This MCQ targets the Functions concept in 6.100L."
+  },
+  {
+   "id": "6.100L/functions/q04",
+   "concept_id": "functions",
+   "stem": "fill question about Functions",
+   "options": [
+    "Functions A",
+    "Functions B",
+    "Functions C",
+    "Functions D"
+   ],
+   "answer_index": 0,
+   "difficulty": 3,
+   "time_limit_sec": 29,
+   "reviewed": false,
+   "explanation": "This MCQ targets the Functions concept in 6.100L."
+  },
+  {
+   "id": "6.100L/functions/q05",
+   "concept_id": "functions",
+   "stem": "fill question about Functions",
+   "options": [
+    "Functions A",
+    "Functions B",
+    "Functions C",
+    "Functions D"
+   ],
+   "answer_index": 0,
+   "difficulty": 3,
+   "time_limit_sec": 29,
+   "reviewed": false,
+   "explanation": "This MCQ targets the Functions concept in 6.100L."
+  },
+  {
+   "id": "6.100L/functions/q06",
+   "concept_id": "functions",
+   "stem": "fill question about Functions",
+   "options": [
+    "Functions A",
+    "Functions B",
+    "Functions C",
+    "Functions D"
+   ],
+   "answer_index": 0,
+   "difficulty": 3,
+   "time_limit_sec": 29,
+   "reviewed": false,
+   "explanation": "This MCQ targets the Functions concept in 6.100L."
+  },
+  {
+   "id": "6.100L/functions/q07",
+   "concept_id": "functions",
+   "stem": "fill question about Functions",
+   "options": [
+    "Functions A",
+    "Functions B",
+    "Functions C",
+    "Functions D"
+   ],
+   "answer_index": 0,
+   "difficulty": 3,
+   "time_limit_sec": 29,
+   "reviewed": false,
+   "explanation": "This MCQ targets the Functions concept in 6.100L."
+  },
+  {
+   "id": "6.100L/scope-namespaces/q00",
+   "concept_id": "scope-namespaces",
+   "stem": "fill question about Scope and namespaces",
+   "options": [
+    "Scope and namespaces A",
+    "Scope and namespaces B",
+    "Scope and namespaces C",
+    "Scope and namespaces D"
+   ],
+   "answer_index": 0,
+   "difficulty": 3,
+   "time_limit_sec": 29,
+   "reviewed": false,
+   "explanation": "This MCQ targets the Scope and namespaces concept in 6.100L."
+  },
+  {
+   "id": "6.100L/scope-namespaces/q01",
+   "concept_id": "scope-namespaces",
+   "stem": "fill question about Scope and namespaces",
+   "options": [
+    "Scope and namespaces A",
+    "Scope and namespaces B",
+    "Scope and namespaces C",
+    "Scope and namespaces D"
+   ],
+   "answer_index": 0,
+   "difficulty": 3,
+   "time_limit_sec": 29,
+   "reviewed": false,
+   "explanation": "This MCQ targets the Scope and namespaces concept in 6.100L."
+  },
+  {
+   "id": "6.100L/scope-namespaces/q02",
+   "concept_id": "scope-namespaces",
+   "stem": "fill question about Scope and namespaces",
+   "options": [
+    "Scope and namespaces A",
+    "Scope and namespaces B",
+    "Scope and namespaces C",
+    "Scope and namespaces D"
+   ],
+   "answer_index": 0,
+   "difficulty": 3,
+   "time_limit_sec": 29,
+   "reviewed": false,
+   "explanation": "This MCQ targets the Scope and namespaces concept in 6.100L."
+  },
+  {
+   "id": "6.100L/scope-namespaces/q03",
+   "concept_id": "scope-namespaces",
+   "stem": "fill question about Scope and namespaces",
+   "options": [
+    "Scope and namespaces A",
+    "Scope and namespaces B",
+    "Scope and namespaces C",
+    "Scope and namespaces D"
+   ],
+   "answer_index": 0,
+   "difficulty": 3,
+   "time_limit_sec": 29,
+   "reviewed": false,
+   "explanation": "This MCQ targets the Scope and namespaces concept in 6.100L."
+  },
+  {
+   "id": "6.100L/scope-namespaces/q04",
+   "concept_id": "scope-namespaces",
+   "stem": "fill question about Scope and namespaces",
+   "options": [
+    "Scope and namespaces A",
+    "Scope and namespaces B",
+    "Scope and namespaces C",
+    "Scope and namespaces D"
+   ],
+   "answer_index": 0,
+   "difficulty": 3,
+   "time_limit_sec": 29,
+   "reviewed": false,
+   "explanation": "This MCQ targets the Scope and namespaces concept in 6.100L."
+  },
+  {
+   "id": "6.100L/scope-namespaces/q05",
+   "concept_id": "scope-namespaces",
+   "stem": "fill question about Scope and namespaces",
+   "options": [
+    "Scope and namespaces A",
+    "Scope and namespaces B",
+    "Scope and namespaces C",
+    "Scope and namespaces D"
+   ],
+   "answer_index": 0,
+   "difficulty": 3,
+   "time_limit_sec": 29,
+   "reviewed": false,
+   "explanation": "This MCQ targets the Scope and namespaces concept in 6.100L."
+  },
+  {
+   "id": "6.100L/scope-namespaces/q06",
+   "concept_id": "scope-namespaces",
+   "stem": "fill question about Scope and namespaces",
+   "options": [
+    "Scope and namespaces A",
+    "Scope and namespaces B",
+    "Scope and namespaces C",
+    "Scope and namespaces D"
+   ],
+   "answer_index": 0,
+   "difficulty": 3,
+   "time_limit_sec": 29,
+   "reviewed": false,
+   "explanation": "This MCQ targets the Scope and namespaces concept in 6.100L."
+  },
+  {
+   "id": "6.100L/scope-namespaces/q07",
+   "concept_id": "scope-namespaces",
+   "stem": "fill question about Scope and namespaces",
+   "options": [
+    "Scope and namespaces A",
+    "Scope and namespaces B",
+    "Scope and namespaces C",
+    "Scope and namespaces D"
+   ],
+   "answer_index": 0,
+   "difficulty": 3,
+   "time_limit_sec": 29,
+   "reviewed": false,
+   "explanation": "This MCQ targets the Scope and namespaces concept in 6.100L."
+  },
+  {
+   "id": "6.100L/lists-tuples/q00",
+   "concept_id": "lists-tuples",
+   "stem": "fill question about Lists and tuples",
+   "options": [
+    "Lists and tuples A",
+    "Lists and tuples B",
+    "Lists and tuples C",
+    "Lists and tuples D"
+   ],
+   "answer_index": 0,
+   "difficulty": 3,
+   "time_limit_sec": 29,
+   "reviewed": false,
+   "explanation": "This MCQ targets the Lists and tuples concept in 6.100L."
+  },
+  {
+   "id": "6.100L/lists-tuples/q01",
+   "concept_id": "lists-tuples",
+   "stem": "fill question about Lists and tuples",
+   "options": [
+    "Lists and tuples A",
+    "Lists and tuples B",
+    "Lists and tuples C",
+    "Lists and tuples D"
+   ],
+   "answer_index": 0,
+   "difficulty": 3,
+   "time_limit_sec": 29,
+   "reviewed": false,
+   "explanation": "This MCQ targets the Lists and tuples concept in 6.100L."
+  },
+  {
+   "id": "6.100L/lists-tuples/q02",
+   "concept_id": "lists-tuples",
+   "stem": "fill question about Lists and tuples",
+   "options": [
+    "Lists and tuples A",
+    "Lists and tuples B",
+    "Lists and tuples C",
+    "Lists and tuples D"
+   ],
+   "answer_index": 0,
+   "difficulty": 3,
+   "time_limit_sec": 29,
+   "reviewed": false,
+   "explanation": "This MCQ targets the Lists and tuples concept in 6.100L."
+  },
+  {
+   "id": "6.100L/lists-tuples/q03",
+   "concept_id": "lists-tuples",
+   "stem": "fill question about Lists and tuples",
+   "options": [
+    "Lists and tuples A",
+    "Lists and tuples B",
+    "Lists and tuples C",
+    "Lists and tuples D"
+   ],
+   "answer_index": 0,
+   "difficulty": 3,
+   "time_limit_sec": 29,
+   "reviewed": false,
+   "explanation": "This MCQ targets the Lists and tuples concept in 6.100L."
+  },
+  {
+   "id": "6.100L/lists-tuples/q04",
+   "concept_id": "lists-tuples",
+   "stem": "fill question about Lists and tuples",
+   "options": [
+    "Lists and tuples A",
+    "Lists and tuples B",
+    "Lists and tuples C",
+    "Lists and tuples D"
+   ],
+   "answer_index": 0,
+   "difficulty": 3,
+   "time_limit_sec": 29,
+   "reviewed": false,
+   "explanation": "This MCQ targets the Lists and tuples concept in 6.100L."
+  },
+  {
+   "id": "6.100L/lists-tuples/q05",
+   "concept_id": "lists-tuples",
+   "stem": "fill question about Lists and tuples",
+   "options": [
+    "Lists and tuples A",
+    "Lists and tuples B",
+    "Lists and tuples C",
+    "Lists and tuples D"
+   ],
+   "answer_index": 0,
+   "difficulty": 3,
+   "time_limit_sec": 29,
+   "reviewed": false,
+   "explanation": "This MCQ targets the Lists and tuples concept in 6.100L."
+  },
+  {
+   "id": "6.100L/lists-tuples/q06",
+   "concept_id": "lists-tuples",
+   "stem": "fill question about Lists and tuples",
+   "options": [
+    "Lists and tuples A",
+    "Lists and tuples B",
+    "Lists and tuples C",
+    "Lists and tuples D"
+   ],
+   "answer_index": 0,
+   "difficulty": 3,
+   "time_limit_sec": 29,
+   "reviewed": false,
+   "explanation": "This MCQ targets the Lists and tuples concept in 6.100L."
+  },
+  {
+   "id": "6.100L/lists-tuples/q07",
+   "concept_id": "lists-tuples",
+   "stem": "fill question about Lists and tuples",
+   "options": [
+    "Lists and tuples A",
+    "Lists and tuples B",
+    "Lists and tuples C",
+    "Lists and tuples D"
+   ],
+   "answer_index": 0,
+   "difficulty": 3,
+   "time_limit_sec": 29,
+   "reviewed": false,
+   "explanation": "This MCQ targets the Lists and tuples concept in 6.100L."
+  },
+  {
+   "id": "6.100L/dicts/q00",
+   "concept_id": "dicts",
+   "stem": "fill question about Dictionaries",
+   "options": [
+    "Dictionaries A",
+    "Dictionaries B",
+    "Dictionaries C",
+    "Dictionaries D"
+   ],
+   "answer_index": 0,
+   "difficulty": 3,
+   "time_limit_sec": 29,
+   "reviewed": false,
+   "explanation": "This MCQ targets the Dictionaries concept in 6.100L."
+  },
+  {
+   "id": "6.100L/dicts/q01",
+   "concept_id": "dicts",
+   "stem": "fill question about Dictionaries",
+   "options": [
+    "Dictionaries A",
+    "Dictionaries B",
+    "Dictionaries C",
+    "Dictionaries D"
+   ],
+   "answer_index": 0,
+   "difficulty": 3,
+   "time_limit_sec": 29,
+   "reviewed": false,
+   "explanation": "This MCQ targets the Dictionaries concept in 6.100L."
+  },
+  {
+   "id": "6.100L/dicts/q02",
+   "concept_id": "dicts",
+   "stem": "fill question about Dictionaries",
+   "options": [
+    "Dictionaries A",
+    "Dictionaries B",
+    "Dictionaries C",
+    "Dictionaries D"
+   ],
+   "answer_index": 0,
+   "difficulty": 3,
+   "time_limit_sec": 29,
+   "reviewed": false,
+   "explanation": "This MCQ targets the Dictionaries concept in 6.100L."
+  },
+  {
+   "id": "6.100L/dicts/q03",
+   "concept_id": "dicts",
+   "stem": "fill question about Dictionaries",
+   "options": [
+    "Dictionaries A",
+    "Dictionaries B",
+    "Dictionaries C",
+    "Dictionaries D"
+   ],
+   "answer_index": 0,
+   "difficulty": 3,
+   "time_limit_sec": 29,
+   "reviewed": false,
+   "explanation": "This MCQ targets the Dictionaries concept in 6.100L."
+  },
+  {
+   "id": "6.100L/dicts/q04",
+   "concept_id": "dicts",
+   "stem": "fill question about Dictionaries",
+   "options": [
+    "Dictionaries A",
+    "Dictionaries B",
+    "Dictionaries C",
+    "Dictionaries D"
+   ],
+   "answer_index": 0,
+   "difficulty": 3,
+   "time_limit_sec": 29,
+   "reviewed": false,
+   "explanation": "This MCQ targets the Dictionaries concept in 6.100L."
+  },
+  {
+   "id": "6.100L/dicts/q05",
+   "concept_id": "dicts",
+   "stem": "fill question about Dictionaries",
+   "options": [
+    "Dictionaries A",
+    "Dictionaries B",
+    "Dictionaries C",
+    "Dictionaries D"
+   ],
+   "answer_index": 0,
+   "difficulty": 3,
+   "time_limit_sec": 29,
+   "reviewed": false,
+   "explanation": "This MCQ targets the Dictionaries concept in 6.100L."
+  },
+  {
+   "id": "6.100L/dicts/q06",
+   "concept_id": "dicts",
+   "stem": "fill question about Dictionaries",
+   "options": [
+    "Dictionaries A",
+    "Dictionaries B",
+    "Dictionaries C",
+    "Dictionaries D"
+   ],
+   "answer_index": 0,
+   "difficulty": 3,
+   "time_limit_sec": 29,
+   "reviewed": false,
+   "explanation": "This MCQ targets the Dictionaries concept in 6.100L."
+  },
+  {
+   "id": "6.100L/dicts/q07",
+   "concept_id": "dicts",
+   "stem": "fill question about Dictionaries",
+   "options": [
+    "Dictionaries A",
+    "Dictionaries B",
+    "Dictionaries C",
+    "Dictionaries D"
+   ],
+   "answer_index": 0,
+   "difficulty": 3,
+   "time_limit_sec": 29,
+   "reviewed": false,
+   "explanation": "This MCQ targets the Dictionaries concept in 6.100L."
+  },
+  {
+   "id": "6.100L/comprehensions/q00",
+   "concept_id": "comprehensions",
+   "stem": "fill question about Comprehensions",
+   "options": [
+    "Comprehensions A",
+    "Comprehensions B",
+    "Comprehensions C",
+    "Comprehensions D"
+   ],
+   "answer_index": 0,
+   "difficulty": 3,
+   "time_limit_sec": 29,
+   "reviewed": false,
+   "explanation": "This MCQ targets the Comprehensions concept in 6.100L."
+  },
+  {
+   "id": "6.100L/comprehensions/q01",
+   "concept_id": "comprehensions",
+   "stem": "fill question about Comprehensions",
+   "options": [
+    "Comprehensions A",
+    "Comprehensions B",
+    "Comprehensions C",
+    "Comprehensions D"
+   ],
+   "answer_index": 0,
+   "difficulty": 3,
+   "time_limit_sec": 29,
+   "reviewed": false,
+   "explanation": "This MCQ targets the Comprehensions concept in 6.100L."
+  },
+  {
+   "id": "6.100L/comprehensions/q02",
+   "concept_id": "comprehensions",
+   "stem": "fill question about Comprehensions",
+   "options": [
+    "Comprehensions A",
+    "Comprehensions B",
+    "Comprehensions C",
+    "Comprehensions D"
+   ],
+   "answer_index": 0,
+   "difficulty": 3,
+   "time_limit_sec": 29,
+   "reviewed": false,
+   "explanation": "This MCQ targets the Comprehensions concept in 6.100L."
+  },
+  {
+   "id": "6.100L/comprehensions/q03",
+   "concept_id": "comprehensions",
+   "stem": "fill question about Comprehensions",
+   "options": [
+    "Comprehensions A",
+    "Comprehensions B",
+    "Comprehensions C",
+    "Comprehensions D"
+   ],
+   "answer_index": 0,
+   "difficulty": 3,
+   "time_limit_sec": 29,
+   "reviewed": false,
+   "explanation": "This MCQ targets the Comprehensions concept in 6.100L."
+  },
+  {
+   "id": "6.100L/comprehensions/q04",
+   "concept_id": "comprehensions",
+   "stem": "fill question about Comprehensions",
+   "options": [
+    "Comprehensions A",
+    "Comprehensions B",
+    "Comprehensions C",
+    "Comprehensions D"
+   ],
+   "answer_index": 0,
+   "difficulty": 3,
+   "time_limit_sec": 29,
+   "reviewed": false,
+   "explanation": "This MCQ targets the Comprehensions concept in 6.100L."
+  },
+  {
+   "id": "6.100L/comprehensions/q05",
+   "concept_id": "comprehensions",
+   "stem": "fill question about Comprehensions",
+   "options": [
+    "Comprehensions A",
+    "Comprehensions B",
+    "Comprehensions C",
+    "Comprehensions D"
+   ],
+   "answer_index": 0,
+   "difficulty": 3,
+   "time_limit_sec": 29,
+   "reviewed": false,
+   "explanation": "This MCQ targets the Comprehensions concept in 6.100L."
+  },
+  {
+   "id": "6.100L/comprehensions/q06",
+   "concept_id": "comprehensions",
+   "stem": "fill question about Comprehensions",
+   "options": [
+    "Comprehensions A",
+    "Comprehensions B",
+    "Comprehensions C",
+    "Comprehensions D"
+   ],
+   "answer_index": 0,
+   "difficulty": 3,
+   "time_limit_sec": 29,
+   "reviewed": false,
+   "explanation": "This MCQ targets the Comprehensions concept in 6.100L."
+  },
+  {
+   "id": "6.100L/comprehensions/q07",
+   "concept_id": "comprehensions",
+   "stem": "fill question about Comprehensions",
+   "options": [
+    "Comprehensions A",
+    "Comprehensions B",
+    "Comprehensions C",
+    "Comprehensions D"
+   ],
+   "answer_index": 0,
+   "difficulty": 3,
+   "time_limit_sec": 29,
+   "reviewed": false,
+   "explanation": "This MCQ targets the Comprehensions concept in 6.100L."
+  },
+  {
+   "id": "6.100L/recursion/q00",
+   "concept_id": "recursion",
+   "stem": "fill question about Recursion",
+   "options": [
+    "Recursion A",
+    "Recursion B",
+    "Recursion C",
+    "Recursion D"
+   ],
+   "answer_index": 0,
+   "difficulty": 4,
+   "time_limit_sec": 34,
+   "reviewed": false,
+   "explanation": "This MCQ targets the Recursion concept in 6.100L."
+  },
+  {
+   "id": "6.100L/recursion/q01",
+   "concept_id": "recursion",
+   "stem": "fill question about Recursion",
+   "options": [
+    "Recursion A",
+    "Recursion B",
+    "Recursion C",
+    "Recursion D"
+   ],
+   "answer_index": 0,
+   "difficulty": 4,
+   "time_limit_sec": 34,
+   "reviewed": false,
+   "explanation": "This MCQ targets the Recursion concept in 6.100L."
+  },
+  {
+   "id": "6.100L/recursion/q02",
+   "concept_id": "recursion",
+   "stem": "fill question about Recursion",
+   "options": [
+    "Recursion A",
+    "Recursion B",
+    "Recursion C",
+    "Recursion D"
+   ],
+   "answer_index": 0,
+   "difficulty": 4,
+   "time_limit_sec": 34,
+   "reviewed": false,
+   "explanation": "This MCQ targets the Recursion concept in 6.100L."
+  },
+  {
+   "id": "6.100L/recursion/q03",
+   "concept_id": "recursion",
+   "stem": "fill question about Recursion",
+   "options": [
+    "Recursion A",
+    "Recursion B",
+    "Recursion C",
+    "Recursion D"
+   ],
+   "answer_index": 0,
+   "difficulty": 4,
+   "time_limit_sec": 34,
+   "reviewed": false,
+   "explanation": "This MCQ targets the Recursion concept in 6.100L."
+  },
+  {
+   "id": "6.100L/recursion/q04",
+   "concept_id": "recursion",
+   "stem": "fill question about Recursion",
+   "options": [
+    "Recursion A",
+    "Recursion B",
+    "Recursion C",
+    "Recursion D"
+   ],
+   "answer_index": 0,
+   "difficulty": 4,
+   "time_limit_sec": 34,
+   "reviewed": false,
+   "explanation": "This MCQ targets the Recursion concept in 6.100L."
+  },
+  {
+   "id": "6.100L/recursion/q05",
+   "concept_id": "recursion",
+   "stem": "fill question about Recursion",
+   "options": [
+    "Recursion A",
+    "Recursion B",
+    "Recursion C",
+    "Recursion D"
+   ],
+   "answer_index": 0,
+   "difficulty": 4,
+   "time_limit_sec": 34,
+   "reviewed": false,
+   "explanation": "This MCQ targets the Recursion concept in 6.100L."
+  },
+  {
+   "id": "6.100L/recursion/q06",
+   "concept_id": "recursion",
+   "stem": "fill question about Recursion",
+   "options": [
+    "Recursion A",
+    "Recursion B",
+    "Recursion C",
+    "Recursion D"
+   ],
+   "answer_index": 0,
+   "difficulty": 4,
+   "time_limit_sec": 34,
+   "reviewed": false,
+   "explanation": "This MCQ targets the Recursion concept in 6.100L."
+  },
+  {
+   "id": "6.100L/recursion/q07",
+   "concept_id": "recursion",
+   "stem": "fill question about Recursion",
+   "options": [
+    "Recursion A",
+    "Recursion B",
+    "Recursion C",
+    "Recursion D"
+   ],
+   "answer_index": 0,
+   "difficulty": 4,
+   "time_limit_sec": 34,
+   "reviewed": false,
+   "explanation": "This MCQ targets the Recursion concept in 6.100L."
+  },
+  {
+   "id": "6.100L/classes/q00",
+   "concept_id": "classes",
+   "stem": "fill question about Classes",
+   "options": [
+    "Classes A",
+    "Classes B",
+    "Classes C",
+    "Classes D"
+   ],
+   "answer_index": 0,
+   "difficulty": 4,
+   "time_limit_sec": 34,
+   "reviewed": false,
+   "explanation": "This MCQ targets the Classes concept in 6.100L."
+  },
+  {
+   "id": "6.100L/classes/q01",
+   "concept_id": "classes",
+   "stem": "fill question about Classes",
+   "options": [
+    "Classes A",
+    "Classes B",
+    "Classes C",
+    "Classes D"
+   ],
+   "answer_index": 0,
+   "difficulty": 4,
+   "time_limit_sec": 34,
+   "reviewed": false,
+   "explanation": "This MCQ targets the Classes concept in 6.100L."
+  },
+  {
+   "id": "6.100L/classes/q02",
+   "concept_id": "classes",
+   "stem": "fill question about Classes",
+   "options": [
+    "Classes A",
+    "Classes B",
+    "Classes C",
+    "Classes D"
+   ],
+   "answer_index": 0,
+   "difficulty": 4,
+   "time_limit_sec": 34,
+   "reviewed": false,
+   "explanation": "This MCQ targets the Classes concept in 6.100L."
+  },
+  {
+   "id": "6.100L/classes/q03",
+   "concept_id": "classes",
+   "stem": "fill question about Classes",
+   "options": [
+    "Classes A",
+    "Classes B",
+    "Classes C",
+    "Classes D"
+   ],
+   "answer_index": 0,
+   "difficulty": 4,
+   "time_limit_sec": 34,
+   "reviewed": false,
+   "explanation": "This MCQ targets the Classes concept in 6.100L."
+  },
+  {
+   "id": "6.100L/classes/q04",
+   "concept_id": "classes",
+   "stem": "fill question about Classes",
+   "options": [
+    "Classes A",
+    "Classes B",
+    "Classes C",
+    "Classes D"
+   ],
+   "answer_index": 0,
+   "difficulty": 4,
+   "time_limit_sec": 34,
+   "reviewed": false,
+   "explanation": "This MCQ targets the Classes concept in 6.100L."
+  },
+  {
+   "id": "6.100L/classes/q05",
+   "concept_id": "classes",
+   "stem": "fill question about Classes",
+   "options": [
+    "Classes A",
+    "Classes B",
+    "Classes C",
+    "Classes D"
+   ],
+   "answer_index": 0,
+   "difficulty": 4,
+   "time_limit_sec": 34,
+   "reviewed": false,
+   "explanation": "This MCQ targets the Classes concept in 6.100L."
+  },
+  {
+   "id": "6.100L/classes/q06",
+   "concept_id": "classes",
+   "stem": "fill question about Classes",
+   "options": [
+    "Classes A",
+    "Classes B",
+    "Classes C",
+    "Classes D"
+   ],
+   "answer_index": 0,
+   "difficulty": 4,
+   "time_limit_sec": 34,
+   "reviewed": false,
+   "explanation": "This MCQ targets the Classes concept in 6.100L."
+  },
+  {
+   "id": "6.100L/classes/q07",
+   "concept_id": "classes",
+   "stem": "fill question about Classes",
+   "options": [
+    "Classes A",
+    "Classes B",
+    "Classes C",
+    "Classes D"
+   ],
+   "answer_index": 0,
+   "difficulty": 4,
+   "time_limit_sec": 34,
+   "reviewed": false,
+   "explanation": "This MCQ targets the Classes concept in 6.100L."
+  },
+  {
+   "id": "6.100L/debugging/q00",
+   "concept_id": "debugging",
+   "stem": "fill question about Debugging in Python",
+   "options": [
+    "Debugging in Python A",
+    "Debugging in Python B",
+    "Debugging in Python C",
+    "Debugging in Python D"
+   ],
+   "answer_index": 0,
+   "difficulty": 3,
+   "time_limit_sec": 29,
+   "reviewed": false,
+   "explanation": "This MCQ targets the Debugging in Python concept in 6.100L."
+  },
+  {
+   "id": "6.100L/debugging/q01",
+   "concept_id": "debugging",
+   "stem": "fill question about Debugging in Python",
+   "options": [
+    "Debugging in Python A",
+    "Debugging in Python B",
+    "Debugging in Python C",
+    "Debugging in Python D"
+   ],
+   "answer_index": 0,
+   "difficulty": 3,
+   "time_limit_sec": 29,
+   "reviewed": false,
+   "explanation": "This MCQ targets the Debugging in Python concept in 6.100L."
+  },
+  {
+   "id": "6.100L/debugging/q02",
+   "concept_id": "debugging",
+   "stem": "fill question about Debugging in Python",
+   "options": [
+    "Debugging in Python A",
+    "Debugging in Python B",
+    "Debugging in Python C",
+    "Debugging in Python D"
+   ],
+   "answer_index": 0,
+   "difficulty": 3,
+   "time_limit_sec": 29,
+   "reviewed": false,
+   "explanation": "This MCQ targets the Debugging in Python concept in 6.100L."
+  },
+  {
+   "id": "6.100L/debugging/q03",
+   "concept_id": "debugging",
+   "stem": "fill question about Debugging in Python",
+   "options": [
+    "Debugging in Python A",
+    "Debugging in Python B",
+    "Debugging in Python C",
+    "Debugging in Python D"
+   ],
+   "answer_index": 0,
+   "difficulty": 3,
+   "time_limit_sec": 29,
+   "reviewed": false,
+   "explanation": "This MCQ targets the Debugging in Python concept in 6.100L."
+  },
+  {
+   "id": "6.100L/debugging/q04",
+   "concept_id": "debugging",
+   "stem": "fill question about Debugging in Python",
+   "options": [
+    "Debugging in Python A",
+    "Debugging in Python B",
+    "Debugging in Python C",
+    "Debugging in Python D"
+   ],
+   "answer_index": 0,
+   "difficulty": 3,
+   "time_limit_sec": 29,
+   "reviewed": false,
+   "explanation": "This MCQ targets the Debugging in Python concept in 6.100L."
+  },
+  {
+   "id": "6.100L/debugging/q05",
+   "concept_id": "debugging",
+   "stem": "fill question about Debugging in Python",
+   "options": [
+    "Debugging in Python A",
+    "Debugging in Python B",
+    "Debugging in Python C",
+    "Debugging in Python D"
+   ],
+   "answer_index": 0,
+   "difficulty": 3,
+   "time_limit_sec": 29,
+   "reviewed": false,
+   "explanation": "This MCQ targets the Debugging in Python concept in 6.100L."
+  },
+  {
+   "id": "6.100L/debugging/q06",
+   "concept_id": "debugging",
+   "stem": "fill question about Debugging in Python",
+   "options": [
+    "Debugging in Python A",
+    "Debugging in Python B",
+    "Debugging in Python C",
+    "Debugging in Python D"
+   ],
+   "answer_index": 0,
+   "difficulty": 3,
+   "time_limit_sec": 29,
+   "reviewed": false,
+   "explanation": "This MCQ targets the Debugging in Python concept in 6.100L."
+  },
+  {
+   "id": "6.100L/debugging/q07",
+   "concept_id": "debugging",
+   "stem": "fill question about Debugging in Python",
+   "options": [
+    "Debugging in Python A",
+    "Debugging in Python B",
+    "Debugging in Python C",
+    "Debugging in Python D"
+   ],
+   "answer_index": 0,
+   "difficulty": 3,
+   "time_limit_sec": 29,
+   "reviewed": false,
+   "explanation": "This MCQ targets the Debugging in Python concept in 6.100L."
+  },
+  {
+   "id": "6.100L/testing/q00",
+   "concept_id": "testing",
+   "stem": "fill question about Testing and asserts",
+   "options": [
+    "Testing and asserts A",
+    "Testing and asserts B",
+    "Testing and asserts C",
+    "Testing and asserts D"
+   ],
+   "answer_index": 0,
+   "difficulty": 3,
+   "time_limit_sec": 29,
+   "reviewed": false,
+   "explanation": "This MCQ targets the Testing and asserts concept in 6.100L."
+  },
+  {
+   "id": "6.100L/testing/q01",
+   "concept_id": "testing",
+   "stem": "fill question about Testing and asserts",
+   "options": [
+    "Testing and asserts A",
+    "Testing and asserts B",
+    "Testing and asserts C",
+    "Testing and asserts D"
+   ],
+   "answer_index": 0,
+   "difficulty": 3,
+   "time_limit_sec": 29,
+   "reviewed": false,
+   "explanation": "This MCQ targets the Testing and asserts concept in 6.100L."
+  },
+  {
+   "id": "6.100L/testing/q02",
+   "concept_id": "testing",
+   "stem": "fill question about Testing and asserts",
+   "options": [
+    "Testing and asserts A",
+    "Testing and asserts B",
+    "Testing and asserts C",
+    "Testing and asserts D"
+   ],
+   "answer_index": 0,
+   "difficulty": 3,
+   "time_limit_sec": 29,
+   "reviewed": false,
+   "explanation": "This MCQ targets the Testing and asserts concept in 6.100L."
+  },
+  {
+   "id": "6.100L/testing/q03",
+   "concept_id": "testing",
+   "stem": "fill question about Testing and asserts",
+   "options": [
+    "Testing and asserts A",
+    "Testing and asserts B",
+    "Testing and asserts C",
+    "Testing and asserts D"
+   ],
+   "answer_index": 0,
+   "difficulty": 3,
+   "time_limit_sec": 29,
+   "reviewed": false,
+   "explanation": "This MCQ targets the Testing and asserts concept in 6.100L."
+  },
+  {
+   "id": "6.100L/testing/q04",
+   "concept_id": "testing",
+   "stem": "fill question about Testing and asserts",
+   "options": [
+    "Testing and asserts A",
+    "Testing and asserts B",
+    "Testing and asserts C",
+    "Testing and asserts D"
+   ],
+   "answer_index": 0,
+   "difficulty": 3,
+   "time_limit_sec": 29,
+   "reviewed": false,
+   "explanation": "This MCQ targets the Testing and asserts concept in 6.100L."
+  },
+  {
+   "id": "6.100L/testing/q05",
+   "concept_id": "testing",
+   "stem": "fill question about Testing and asserts",
+   "options": [
+    "Testing and asserts A",
+    "Testing and asserts B",
+    "Testing and asserts C",
+    "Testing and asserts D"
+   ],
+   "answer_index": 0,
+   "difficulty": 3,
+   "time_limit_sec": 29,
+   "reviewed": false,
+   "explanation": "This MCQ targets the Testing and asserts concept in 6.100L."
+  },
+  {
+   "id": "6.100L/testing/q06",
+   "concept_id": "testing",
+   "stem": "fill question about Testing and asserts",
+   "options": [
+    "Testing and asserts A",
+    "Testing and asserts B",
+    "Testing and asserts C",
+    "Testing and asserts D"
+   ],
+   "answer_index": 0,
+   "difficulty": 3,
+   "time_limit_sec": 29,
+   "reviewed": false,
+   "explanation": "This MCQ targets the Testing and asserts concept in 6.100L."
+  },
+  {
+   "id": "6.100L/testing/q07",
+   "concept_id": "testing",
+   "stem": "fill question about Testing and asserts",
+   "options": [
+    "Testing and asserts A",
+    "Testing and asserts B",
+    "Testing and asserts C",
+    "Testing and asserts D"
+   ],
+   "answer_index": 0,
+   "difficulty": 3,
+   "time_limit_sec": 29,
+   "reviewed": false,
+   "explanation": "This MCQ targets the Testing and asserts concept in 6.100L."
+  },
+  {
+   "id": "6.100L/exceptions/q00",
+   "concept_id": "exceptions",
+   "stem": "fill question about Exceptions",
+   "options": [
+    "Exceptions A",
+    "Exceptions B",
+    "Exceptions C",
+    "Exceptions D"
+   ],
+   "answer_index": 0,
+   "difficulty": 3,
+   "time_limit_sec": 29,
+   "reviewed": false,
+   "explanation": "This MCQ targets the Exceptions concept in 6.100L."
+  },
+  {
+   "id": "6.100L/exceptions/q01",
+   "concept_id": "exceptions",
+   "stem": "fill question about Exceptions",
+   "options": [
+    "Exceptions A",
+    "Exceptions B",
+    "Exceptions C",
+    "Exceptions D"
+   ],
+   "answer_index": 0,
+   "difficulty": 3,
+   "time_limit_sec": 29,
+   "reviewed": false,
+   "explanation": "This MCQ targets the Exceptions concept in 6.100L."
+  },
+  {
+   "id": "6.100L/exceptions/q02",
+   "concept_id": "exceptions",
+   "stem": "fill question about Exceptions",
+   "options": [
+    "Exceptions A",
+    "Exceptions B",
+    "Exceptions C",
+    "Exceptions D"
+   ],
+   "answer_index": 0,
+   "difficulty": 3,
+   "time_limit_sec": 29,
+   "reviewed": false,
+   "explanation": "This MCQ targets the Exceptions concept in 6.100L."
+  },
+  {
+   "id": "6.100L/exceptions/q03",
+   "concept_id": "exceptions",
+   "stem": "fill question about Exceptions",
+   "options": [
+    "Exceptions A",
+    "Exceptions B",
+    "Exceptions C",
+    "Exceptions D"
+   ],
+   "answer_index": 0,
+   "difficulty": 3,
+   "time_limit_sec": 29,
+   "reviewed": false,
+   "explanation": "This MCQ targets the Exceptions concept in 6.100L."
+  },
+  {
+   "id": "6.100L/exceptions/q04",
+   "concept_id": "exceptions",
+   "stem": "fill question about Exceptions",
+   "options": [
+    "Exceptions A",
+    "Exceptions B",
+    "Exceptions C",
+    "Exceptions D"
+   ],
+   "answer_index": 0,
+   "difficulty": 3,
+   "time_limit_sec": 29,
+   "reviewed": false,
+   "explanation": "This MCQ targets the Exceptions concept in 6.100L."
+  },
+  {
+   "id": "6.100L/exceptions/q05",
+   "concept_id": "exceptions",
+   "stem": "fill question about Exceptions",
+   "options": [
+    "Exceptions A",
+    "Exceptions B",
+    "Exceptions C",
+    "Exceptions D"
+   ],
+   "answer_index": 0,
+   "difficulty": 3,
+   "time_limit_sec": 29,
+   "reviewed": false,
+   "explanation": "This MCQ targets the Exceptions concept in 6.100L."
+  },
+  {
+   "id": "6.100L/exceptions/q06",
+   "concept_id": "exceptions",
+   "stem": "fill question about Exceptions",
+   "options": [
+    "Exceptions A",
+    "Exceptions B",
+    "Exceptions C",
+    "Exceptions D"
+   ],
+   "answer_index": 0,
+   "difficulty": 3,
+   "time_limit_sec": 29,
+   "reviewed": false,
+   "explanation": "This MCQ targets the Exceptions concept in 6.100L."
+  },
+  {
+   "id": "6.100L/exceptions/q07",
+   "concept_id": "exceptions",
+   "stem": "fill question about Exceptions",
+   "options": [
+    "Exceptions A",
+    "Exceptions B",
+    "Exceptions C",
+    "Exceptions D"
+   ],
+   "answer_index": 0,
+   "difficulty": 3,
+   "time_limit_sec": 29,
+   "reviewed": false,
+   "explanation": "This MCQ targets the Exceptions concept in 6.100L."
+  },
+  {
+   "id": "6.100L/modules-imports/q00",
+   "concept_id": "modules-imports",
+   "stem": "fill question about Modules and imports",
+   "options": [
+    "Modules and imports A",
+    "Modules and imports B",
+    "Modules and imports C",
+    "Modules and imports D"
+   ],
+   "answer_index": 0,
+   "difficulty": 3,
+   "time_limit_sec": 29,
+   "reviewed": false,
+   "explanation": "This MCQ targets the Modules and imports concept in 6.100L."
+  },
+  {
+   "id": "6.100L/modules-imports/q01",
+   "concept_id": "modules-imports",
+   "stem": "fill question about Modules and imports",
+   "options": [
+    "Modules and imports A",
+    "Modules and imports B",
+    "Modules and imports C",
+    "Modules and imports D"
+   ],
+   "answer_index": 0,
+   "difficulty": 3,
+   "time_limit_sec": 29,
+   "reviewed": false,
+   "explanation": "This MCQ targets the Modules and imports concept in 6.100L."
+  },
+  {
+   "id": "6.100L/modules-imports/q02",
+   "concept_id": "modules-imports",
+   "stem": "fill question about Modules and imports",
+   "options": [
+    "Modules and imports A",
+    "Modules and imports B",
+    "Modules and imports C",
+    "Modules and imports D"
+   ],
+   "answer_index": 0,
+   "difficulty": 3,
+   "time_limit_sec": 29,
+   "reviewed": false,
+   "explanation": "This MCQ targets the Modules and imports concept in 6.100L."
+  },
+  {
+   "id": "6.100L/modules-imports/q03",
+   "concept_id": "modules-imports",
+   "stem": "fill question about Modules and imports",
+   "options": [
+    "Modules and imports A",
+    "Modules and imports B",
+    "Modules and imports C",
+    "Modules and imports D"
+   ],
+   "answer_index": 0,
+   "difficulty": 3,
+   "time_limit_sec": 29,
+   "reviewed": false,
+   "explanation": "This MCQ targets the Modules and imports concept in 6.100L."
+  },
+  {
+   "id": "6.100L/modules-imports/q04",
+   "concept_id": "modules-imports",
+   "stem": "fill question about Modules and imports",
+   "options": [
+    "Modules and imports A",
+    "Modules and imports B",
+    "Modules and imports C",
+    "Modules and imports D"
+   ],
+   "answer_index": 0,
+   "difficulty": 3,
+   "time_limit_sec": 29,
+   "reviewed": false,
+   "explanation": "This MCQ targets the Modules and imports concept in 6.100L."
+  },
+  {
+   "id": "6.100L/modules-imports/q05",
+   "concept_id": "modules-imports",
+   "stem": "fill question about Modules and imports",
+   "options": [
+    "Modules and imports A",
+    "Modules and imports B",
+    "Modules and imports C",
+    "Modules and imports D"
+   ],
+   "answer_index": 0,
+   "difficulty": 3,
+   "time_limit_sec": 29,
+   "reviewed": false,
+   "explanation": "This MCQ targets the Modules and imports concept in 6.100L."
+  },
+  {
+   "id": "6.100L/modules-imports/q06",
+   "concept_id": "modules-imports",
+   "stem": "fill question about Modules and imports",
+   "options": [
+    "Modules and imports A",
+    "Modules and imports B",
+    "Modules and imports C",
+    "Modules and imports D"
+   ],
+   "answer_index": 0,
+   "difficulty": 3,
+   "time_limit_sec": 29,
+   "reviewed": false,
+   "explanation": "This MCQ targets the Modules and imports concept in 6.100L."
+  },
+  {
+   "id": "6.100L/modules-imports/q07",
+   "concept_id": "modules-imports",
+   "stem": "fill question about Modules and imports",
+   "options": [
+    "Modules and imports A",
+    "Modules and imports B",
+    "Modules and imports C",
+    "Modules and imports D"
+   ],
+   "answer_index": 0,
+   "difficulty": 3,
+   "time_limit_sec": 29,
+   "reviewed": false,
+   "explanation": "This MCQ targets the Modules and imports concept in 6.100L."
+  }
+ ]
 }

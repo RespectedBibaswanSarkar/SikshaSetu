@@ -76,6 +76,7 @@ def run(slug, resume=False):
     cpath = ROOT.parent / "content" / slug / "concepts.yaml"
     if cpath.exists():
         concepts = yaml.safe_load(cpath.read_text())["concepts"]
+    st["concepts"] = concepts
     state.mark(slug, "map", concepts=len(concepts))
     st.setdefault("concepts", []).extend(concepts)
     state.save(slug, st)
