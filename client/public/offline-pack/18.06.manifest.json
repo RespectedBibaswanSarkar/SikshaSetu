@@ -19,12 +19,12 @@
    "ocw_url": null,
    "assets": {
     "video_360p": {
-     "sha256": "dd578dda0c11bad1b074b2b23327d18ff38414c0ed553ec2ef1ce641346b023a",
-     "size": 111031931,
+     "sha256": "57d0d1ae5292b2a20dfdad16374ffebb0194641d63dcf85578caf1a6cfa3b19c",
+     "size": 106584645,
      "tier": "video_360p",
      "machine_generated": true,
      "reviewed": false,
-     "path": "/run/media/bibaswansarkar/B0D2AF47D2AF1120/MASTER_BIBASWAN_SARKAR/IIIT MANIPUR/SEM III/HACK FOR SOCIAL CAUSE NIT MANIPUR/sikshasetu/pipeline/store/objects/dd578dda0c11bad1b074b2b23327d18ff38414c0ed553ec2ef1ce641346b023a",
+     "path": "/run/media/bibaswansarkar/B0D2AF47D2AF1120/MASTER_BIBASWAN_SARKAR/IIIT MANIPUR/SEM III/HACK FOR SOCIAL CAUSE NIT MANIPUR/sikshasetu/pipeline/store/objects/57d0d1ae5292b2a20dfdad16374ffebb0194641d63dcf85578caf1a6cfa3b19c",
      "attribution": {
       "course": "18.06",
       "url": null,
@@ -38,6 +38,45 @@
      "machine_generated": true,
      "reviewed": false,
      "path": "/run/media/bibaswansarkar/B0D2AF47D2AF1120/MASTER_BIBASWAN_SARKAR/IIIT MANIPUR/SEM III/HACK FOR SOCIAL CAUSE NIT MANIPUR/sikshasetu/pipeline/store/objects/11f431faa67e462518426832efded3073cb225c96b248739cca8635750765040",
+     "attribution": {
+      "course": "18.06",
+      "url": null,
+      "license": "CC BY-NC-SA 4.0"
+     }
+    },
+    "audio_only": {
+     "sha256": "411d605c1fd7cf22b56316e7da5c32412fbcc9a08e1145a4e36d5214be0098ee",
+     "size": 51729361,
+     "tier": "audio_only",
+     "machine_generated": true,
+     "reviewed": false,
+     "path": "/run/media/bibaswansarkar/B0D2AF47D2AF1120/MASTER_BIBASWAN_SARKAR/IIIT MANIPUR/SEM III/HACK FOR SOCIAL CAUSE NIT MANIPUR/sikshasetu/pipeline/store/objects/411d605c1fd7cf22b56316e7da5c32412fbcc9a08e1145a4e36d5214be0098ee",
+     "attribution": {
+      "course": "18.06",
+      "url": null,
+      "license": "CC BY-NC-SA 4.0"
+     }
+    },
+    "poster": {
+     "sha256": "fae9be23fcbb9335ee1c7186f82e8aa4de84e48f39a2c947ab4badbf37b4c090",
+     "size": 37829,
+     "tier": "poster",
+     "machine_generated": true,
+     "reviewed": false,
+     "path": "/run/media/bibaswansarkar/B0D2AF47D2AF1120/MASTER_BIBASWAN_SARKAR/IIIT MANIPUR/SEM III/HACK FOR SOCIAL CAUSE NIT MANIPUR/sikshasetu/pipeline/store/objects/fae9be23fcbb9335ee1c7186f82e8aa4de84e48f39a2c947ab4badbf37b4c090",
+     "attribution": {
+      "course": "18.06",
+      "url": null,
+      "license": "CC BY-NC-SA 4.0"
+     }
+    },
+    "transcript_vtt": {
+     "sha256": "32cc88f4006a782c9a610ad046bcfa6fc0b0acd5b0069c95da8098a4193db7a5",
+     "size": 434,
+     "tier": "transcript_vtt",
+     "machine_generated": true,
+     "reviewed": false,
+     "path": "/run/media/bibaswansarkar/B0D2AF47D2AF1120/MASTER_BIBASWAN_SARKAR/IIIT MANIPUR/SEM III/HACK FOR SOCIAL CAUSE NIT MANIPUR/sikshasetu/pipeline/store/objects/32cc88f4006a782c9a610ad046bcfa6fc0b0acd5b0069c95da8098a4193db7a5",
      "attribution": {
       "course": "18.06",
       "url": null,
