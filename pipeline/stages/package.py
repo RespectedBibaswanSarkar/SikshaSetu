@@ -14,7 +14,7 @@ def package_course(st):
     slug = st["slug"]
     objs = STORE / "objects"
     objs.mkdir(parents=True, exist_ok=True)
-    manifest = {"slug": slug, "meta": st["meta"], "units": []}
+    manifest = {"slug": slug, "meta": st.get("meta", {}), "units": []}
     for u in st["units"]:
         mu = {"id": u["id"], "title": u["title"], "ocw_url": u.get("ocw_url"),
               "assets": {}, "segments": u.get("segments", []),
@@ -27,7 +27,7 @@ def package_course(st):
                 mu["assets"][tier] = {k: a[k] for k in ("sha256", "size", "tier", "machine_generated", "reviewed")}
                 mu["assets"][tier]["path"] = str(dst)
                 mu["assets"][tier]["attribution"] = {"course": slug, "url": u.get("ocw_url") or a.get("url"),
-                                                     "license": st["meta"]["license"]}
+                                                     "license": st.get("meta", {}).get("license", "CC BY-NC-SA")}
         manifest["units"].append(mu)
     (STORE / f"{slug}.manifest.json").write_text(json.dumps(manifest, indent=1), encoding="utf-8")
     return manifest

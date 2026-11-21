@@ -52,7 +52,7 @@ def run(slug, resume=False):
                                         "sha256": sha256_of(p), "size": p.stat().st_size,
                                         "machine_generated": True, "reviewed": False,
                                         "url": u.get("ocw_url"),
-                                        "attribution": {"course": slug, "url": u.get("ocw_url"), "license": st["meta"]["license"]}}
+                                        "attribution": {"course": slug, "url": u.get("ocw_url"), "license": st.get("meta", {}).get("license", "CC BY-NC-SA")}}
     concepts = []
     for ui, u in enumerate(st["units"]):
         for s in u.get("segments", []):

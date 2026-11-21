@@ -79,7 +79,7 @@ def run(slug, resume=False):
     st = state.load(slug)
     for u in st["units"]:
         for tier, a in list(u["assets"].items()):
-            if isinstance(a, dict) and a.get("path"):
+            if isinstance(a, dict) and a.get("path") and Path(a["path"]).exists():
                 continue
             if isinstance(a, dict):  # url + maybe yt id
                 url, vid = a.get("url"), a.get("path") or a.get("yt_id")
@@ -99,6 +99,12 @@ def run(slug, resume=False):
                 dest = CACHE / slug / f"{u['id']}_video_360p.mp4"
                 dl_yt(a, dest)
                 u["assets"][tier] = {"path": str(dest), "yt_id": a, "sha256": sha256_of(dest),
+                                     "size": dest.stat().st_size, "tier": tier,
+                                     "machine_generated": True, "reviewed": False}
+            elif isinstance(a, dict) and a.get("yt_id") and not Path(a.get("path", "")).exists():
+                dest = CACHE / slug / f"{u['id']}_video_360p.mp4"
+                dl_yt(a["yt_id"], dest)
+                u["assets"][tier] = {"path": str(dest), "yt_id": a["yt_id"], "sha256": sha256_of(dest),
                                      "size": dest.stat().st_size, "tier": tier,
                                      "machine_generated": True, "reviewed": False}
     state.save(slug, st)
