@@ -1,0 +1,78 @@
+{
+ "slug": "6.006",
+ "meta": {
+  "slug": "6.006",
+  "title": "Introduction to Algorithms | Electrical Engineering and Computer Science | MIT OpenCourseWare",
+  "term": "6 006 introduction to algorithms spring 2020",
+  "ocw_url": "https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-spring-2020/",
+  "license": "CC BY-NC-SA 4.0",
+  "attribution": {
+   "course_page": "https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-spring-2020/",
+   "license": "CC BY-NC-SA",
+   "date_accessed": "2026-11-22"
+  }
+ },
+ "units": [
+  {
+   "id": "6.006/u01",
+   "title": "Lecture 3: Insertion Sort, Merge Sort",
+   "ocw_url": null,
+   "assets": {
+    "video_360p": {
+     "sha256": "e41f1ccd646e12ba5ddc70deb07665e74798a16b7b6177267dc97d3e2cbef6cc",
+     "size": 85593593,
+     "tier": "video_360p",
+     "machine_generated": true,
+     "reviewed": false,
+     "path": "/run/media/bibaswansarkar/B0D2AF47D2AF1120/MASTER_BIBASWAN_SARKAR/IIIT MANIPUR/SEM III/HACK FOR SOCIAL CAUSE NIT MANIPUR/sikshasetu/pipeline/store/objects/e41f1ccd646e12ba5ddc70deb07665e74798a16b7b6177267dc97d3e2cbef6cc",
+     "attribution": {
+      "course": "6.006",
+      "url": null,
+      "license": "CC BY-NC-SA 4.0"
+     }
+    },
+    "audio_only": {
+     "sha256": "1cbed87fd7bb2bd6c6309efd38bf2042fa294e1e563363835c2ee13bd9e4749e",
+     "size": 41541581,
+     "tier": "audio_only",
+     "machine_generated": true,
+     "reviewed": false,
+     "path": "/run/media/bibaswansarkar/B0D2AF47D2AF1120/MASTER_BIBASWAN_SARKAR/IIIT MANIPUR/SEM III/HACK FOR SOCIAL CAUSE NIT MANIPUR/sikshasetu/pipeline/store/objects/1cbed87fd7bb2bd6c6309efd38bf2042fa294e1e563363835c2ee13bd9e4749e",
+     "attribution": {
+      "course": "6.006",
+      "url": null,
+      "license": "CC BY-NC-SA 4.0"
+     }
+    },
+    "poster": {
+     "sha256": "d3df543595c4c1acf9b62b009db85b419a091a060ddb889cc7e51f1845d92b61",
+     "size": 28482,
+     "tier": "poster",
+     "machine_generated": true,
+     "reviewed": false,
+     "path": "/run/media/bibaswansarkar/B0D2AF47D2AF1120/MASTER_BIBASWAN_SARKAR/IIIT MANIPUR/SEM III/HACK FOR SOCIAL CAUSE NIT MANIPUR/sikshasetu/pipeline/store/objects/d3df543595c4c1acf9b62b009db85b419a091a060ddb889cc7e51f1845d92b61",
+     "attribution": {
+      "course": "6.006",
+      "url": null,
+      "license": "CC BY-NC-SA 4.0"
+     }
+    },
+    "notes_pdf": {
+     "sha256": "3e40845676b82c912e1b5052759137527af706110ad04390c7f087919a860bc8",
+     "size": 685,
+     "tier": "notes_pdf",
+     "machine_generated": true,
+     "reviewed": false,
+     "path": "/run/media/bibaswansarkar/B0D2AF47D2AF1120/MASTER_BIBASWAN_SARKAR/IIIT MANIPUR/SEM III/HACK FOR SOCIAL CAUSE NIT MANIPUR/sikshasetu/pipeline/store/objects/3e40845676b82c912e1b5052759137527af706110ad04390c7f087919a860bc8",
+     "attribution": {
+      "course": "6.006",
+      "url": null,
+      "license": "CC BY-NC-SA 4.0"
+     }
+    }
+   },
+   "segments": [],
+   "concepts": []
+  }
+ ]
+}

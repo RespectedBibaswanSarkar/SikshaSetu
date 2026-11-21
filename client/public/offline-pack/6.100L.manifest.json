@@ -1,0 +1,113 @@
+{
+ "slug": "6.100L",
+ "meta": {
+  "slug": "6.100L",
+  "title": "Introduction to CS and Programming using Python | Electrical Engineering and Computer Science | MIT OpenCourseWare",
+  "term": "6 100l introduction to cs and programming using python fall 2022",
+  "ocw_url": "https://ocw.mit.edu/courses/6-100l-introduction-to-cs-and-programming-using-python-fall-2022/",
+  "license": "CC BY-NC-SA 4.0",
+  "attribution": {
+   "course_page": "https://ocw.mit.edu/courses/6-100l-introduction-to-cs-and-programming-using-python-fall-2022/",
+   "license": "CC BY-NC-SA",
+   "date_accessed": "2026-11-22"
+  }
+ },
+ "units": [
+  {
+   "id": "6.100L/u01",
+   "title": "Lecture 2: Strings, Input/Output, and Branching",
+   "ocw_url": null,
+   "assets": {
+    "video_360p": {
+     "sha256": "dd14630cd6fc7a17560b2cff8d0dce294f678f6403080ac43978bd437b43566d",
+     "size": 83950750,
+     "tier": "video_360p",
+     "machine_generated": true,
+     "reviewed": false,
+     "path": "/run/media/bibaswansarkar/B0D2AF47D2AF1120/MASTER_BIBASWAN_SARKAR/IIIT MANIPUR/SEM III/HACK FOR SOCIAL CAUSE NIT MANIPUR/sikshasetu/pipeline/store/objects/dd14630cd6fc7a17560b2cff8d0dce294f678f6403080ac43978bd437b43566d",
+     "attribution": {
+      "course": "6.100L",
+      "url": null,
+      "license": "CC BY-NC-SA 4.0"
+     }
+    },
+    "notes_pdf": {
+     "sha256": "c3db04dc89b04eca343568ed7e6cd059230f40addc6823de2a5dacdcb49d084e",
+     "size": 696,
+     "tier": "notes_pdf",
+     "machine_generated": true,
+     "reviewed": false,
+     "path": "/run/media/bibaswansarkar/B0D2AF47D2AF1120/MASTER_BIBASWAN_SARKAR/IIIT MANIPUR/SEM III/HACK FOR SOCIAL CAUSE NIT MANIPUR/sikshasetu/pipeline/store/objects/c3db04dc89b04eca343568ed7e6cd059230f40addc6823de2a5dacdcb49d084e",
+     "attribution": {
+      "course": "6.100L",
+      "url": null,
+      "license": "CC BY-NC-SA 4.0"
+     }
+    },
+    "transcript_vtt": {
+     "sha256": "dc3518e25216aaf9e4641b61d5cef7dabd939a09bf44fb8ef82eda0ab418d671",
+     "size": 631712,
+     "tier": "transcript_vtt",
+     "machine_generated": true,
+     "reviewed": false,
+     "path": "/run/media/bibaswansarkar/B0D2AF47D2AF1120/MASTER_BIBASWAN_SARKAR/IIIT MANIPUR/SEM III/HACK FOR SOCIAL CAUSE NIT MANIPUR/sikshasetu/pipeline/store/objects/dc3518e25216aaf9e4641b61d5cef7dabd939a09bf44fb8ef82eda0ab418d671",
+     "attribution": {
+      "course": "6.100L",
+      "url": null,
+      "license": "CC BY-NC-SA 4.0"
+     }
+    }
+   },
+   "segments": [],
+   "concepts": []
+  },
+  {
+   "id": "6.100L/u02",
+   "title": "Lecture 1: Introduction to CS and Programming Using Python",
+   "ocw_url": null,
+   "assets": {
+    "video_360p": {
+     "sha256": "dd14630cd6fc7a17560b2cff8d0dce294f678f6403080ac43978bd437b43566d",
+     "size": 83950750,
+     "tier": "video_360p",
+     "machine_generated": true,
+     "reviewed": false,
+     "path": "/run/media/bibaswansarkar/B0D2AF47D2AF1120/MASTER_BIBASWAN_SARKAR/IIIT MANIPUR/SEM III/HACK FOR SOCIAL CAUSE NIT MANIPUR/sikshasetu/pipeline/store/objects/dd14630cd6fc7a17560b2cff8d0dce294f678f6403080ac43978bd437b43566d",
+     "attribution": {
+      "course": "6.100L",
+      "url": null,
+      "license": "CC BY-NC-SA 4.0"
+     }
+    },
+    "notes_pdf": {
+     "sha256": "78e1e138b074cb948c6ee7b0074779a0c7c885e28a0ceabd7a72857adcf15ab8",
+     "size": 707,
+     "tier": "notes_pdf",
+     "machine_generated": true,
+     "reviewed": false,
+     "path": "/run/media/bibaswansarkar/B0D2AF47D2AF1120/MASTER_BIBASWAN_SARKAR/IIIT MANIPUR/SEM III/HACK FOR SOCIAL CAUSE NIT MANIPUR/sikshasetu/pipeline/store/objects/78e1e138b074cb948c6ee7b0074779a0c7c885e28a0ceabd7a72857adcf15ab8",
+     "attribution": {
+      "course": "6.100L",
+      "url": null,
+      "license": "CC BY-NC-SA 4.0"
+     }
+    },
+    "transcript_vtt": {
+     "sha256": "9c601a7e19449b7288dd286e946c0d3ea91e46ecd3657cdb46d34da293fb315f",
+     "size": 509605,
+     "tier": "transcript_vtt",
+     "machine_generated": true,
+     "reviewed": false,
+     "path": "/run/media/bibaswansarkar/B0D2AF47D2AF1120/MASTER_BIBASWAN_SARKAR/IIIT MANIPUR/SEM III/HACK FOR SOCIAL CAUSE NIT MANIPUR/sikshasetu/pipeline/store/objects/9c601a7e19449b7288dd286e946c0d3ea91e46ecd3657cdb46d34da293fb315f",
+     "attribution": {
+      "course": "6.100L",
+      "url": null,
+      "license": "CC BY-NC-SA 4.0"
+     }
+    }
+   },
+   "segments": [],
+   "concepts": []
+  }
+ ]
+}

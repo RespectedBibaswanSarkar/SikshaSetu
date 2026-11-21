@@ -73,7 +73,7 @@ def run(slug, resume=False):
     # ensure acyclicity: prereqs always reference earlier-created concepts
     for c in concepts:
         c["prerequisites"] = [p for p in c["prerequisites"] if p != c["id"]][:3]
-    cpath = ROOT.parent / "content" / slug / "concepts.yaml"
+    cpath = ROOT / "content" / slug / "concepts.yaml"
     if cpath.exists():
         concepts = yaml.safe_load(cpath.read_text())["concepts"]
     st["concepts"] = concepts
