@@ -213,12 +213,8 @@ def admin_logs():
 
 # ---------------- static admin panel ----------------
 
-if ADMIN.exists():
-    app.mount("/admin", StaticFiles(directory=ADMIN, html=True), name="admin")
+# static mounts are registered LAST so API routes take precedence (Starlette route order)
 
-STUDENT_DIST = ROOT / "client" / "dist"
-if STUDENT_DIST.exists():
-    app.mount("/", StaticFiles(directory=STUDENT_DIST, html=True), name="student")
 
 @app.get("/")
 def root():
@@ -246,6 +242,13 @@ async def admin_sync_import(request: Request):
     db.commit()
     log_line(db, f"roster imported: {len(body.get('students', []))} students", "INFO")
     return {"ok": True, "count": len(body.get("students", []))}
+
+ADMIN_DIST = ROOT / "hub" / "admin"
+STUDENT_DIST = ROOT / "client" / "dist"
+if ADMIN_DIST.exists():
+    app.mount("/admin", StaticFiles(directory=ADMIN_DIST, html=True), name="admin")
+if STUDENT_DIST.exists():
+    app.mount("/", StaticFiles(directory=STUDENT_DIST, html=True), name="student")
 
 if __name__ == "__main__":
     lan = "--lan" in sys.argv

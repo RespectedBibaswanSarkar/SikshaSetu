@@ -10,11 +10,8 @@ export const HUB = location.origin;
 
 let catalogCache: Catalog | null = null;
 export async function fetchJSON<T>(url: string): Promise<T> {
-  if (location.protocol === "file:" || !navigator.onLine) {
-    const r = await fetch(url, { cache: "no-store" });
-    if (!r.ok) throw new Error(`${r.status} ${url}`);
-    return r.json();
-  }
+  const r = await fetch(url, { cache: "no-store" });
+  if (!r.ok) throw new Error(`${r.status} ${url}`);
   return r.json();
 }
 export async function getCatalog(): Promise<Catalog> { catalogCache ??= await fetchJSON<Catalog>("/catalog.json"); return catalogCache; }
