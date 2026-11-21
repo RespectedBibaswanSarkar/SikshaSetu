@@ -77,6 +77,7 @@ def run(slug, resume=False):
     if cpath.exists():
         concepts = yaml.safe_load(cpath.read_text())["concepts"]
     st["concepts"] = concepts
+    state.save(slug, st)
     state.mark(slug, "map", concepts=len(concepts))
     st.setdefault("concepts", []).extend(concepts)
     state.save(slug, st)
