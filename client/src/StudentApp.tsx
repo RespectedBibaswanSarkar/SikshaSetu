@@ -2,113 +2,397 @@ import { useEffect, useState } from "react";
 import { getCatalog, getManifest } from "./api";
 import * as storage from "./storage";
 import { Engine } from "./engine";
+import { 
+  Flame, GraduationCap, CheckCircle2, Trophy, Clock, 
+  Target, Sparkles, AlertTriangle, Calendar, BookOpen, 
+  FileText, MessageSquare, Settings, ArrowUpRight, ChevronRight,
+  Lightbulb
+} from "lucide-react";
 
-const WEEK = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
-export default function StudentApp({ page, setPage, setName }) {
-  const [st, setSt] = useState<storage.StoredState>(() => storage.initialState());
+interface StudentAppProps {
+  page: string;
+  setPage: (page: any) => void;
+  setName: (name: string) => void;
+  isMobile?: boolean;
+}
+
+export default function StudentApp({ setPage }: StudentAppProps) {
   const [mans, setMans] = useState<Record<string, storage.Manifest>>({});
   const [eng] = useState(() => new Engine([]));
-  const [plan, setPlan] = useState<string[]>([]);
-  const [report, setReport] = useState("");
-  const [searchOut, setSearchOut] = useState<any[]>([]);
-  const [showReport, setShowReport] = useState(false);
-
-  const unitTitle = (id: string) => Object.values(mans).flatMap(m => m.units).find(u => u.id === id)?.title ?? id;
-
-  const progress = eng.concepts.length ? Math.round((eng.concepts.map(c => eng.pL(c.id)).reduce((a, b) => a + b, 0) / eng.concepts.length) * 100) : 0;
-  const accEntries = Object.values(st.questionAcc).filter((a: any) => a.total > 0);
-  const accuracy = accEntries.length ? Math.round((accEntries.reduce((s: number, a: any) => s + a.ok / a.total, 0) / accEntries.length) * 100) : 0;
-  const tests = Object.values(st.questionAcc).filter((a: any) => a.total >= 12).length;
-  const minutes = Object.values(st.dailyMinutes).reduce((a, b) => a + b, 0);
-  const prevWeek = Object.entries(st.dailyMinutes).filter(([d]) => d <= new Date(Date.now() - 7 * 86400000).toISOString().slice(0, 10)).reduce((a, [, b]) => a + b, 0);
-  const dPct = Math.round(accuracy - (Object.entries(st.dailyMinutes).filter(([d]) => d > new Date(Date.now() - 7 * 86400000).toISOString().slice(0, 10)).reduce((s: number, [d, b]) => { const pl = eng.concepts.length; const recentGain = 0; return s + b; }, 0))); // simplified below
-  const weekAvgP = () => { const xs: number[] = []; Object.entries(st.dailyMinutes).forEach(([d]) => {}); return 0; };
-  const streak = (() => { let s = 0; const keys = Object.keys(st.dailyMinutes).sort((a, b) => b > a ? 1 : -1); const last = new Date(Date.now() - 86400000).toISOString().slice(0, 10); for (const k of keys) { const min = st.dailyMinutes[k]; if (new Date(k) <= new Date(last)) { if (min >= 10) s++; else break; } else { if (min >= 10) s++; else break; } } return s; })();
-  const planIds = eng.recommend(60);
-
-  useEffect(() => {
-    (async () => {
-      setSt(await storage.loadState());
-      const c = await getCatalog();
-      setMans({});
-      const ms: Record<string, storage.Manifest> = {};
-      for (const m of c.courses) { try { ms[m.slug] = await getManifest(m.slug); } catch {} }
-      setMans(ms);
-      eng.concepts.push(...Object.values(ms).flatMap(m => m.units.flatMap(u => u.concepts)));
-      setPlan(eng.recommend(60));
-      document.title = "SikshaSetu — Learn • Analyse • Grow";
-    })();
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
-
-  useEffect(() => { setPlan(eng.recommend(60)); }, [eng.concepts.length]);
+  const [courses, setCourses] = useState<any[]>([]);
 
   useEffect(() => {
     (async () => {
       try {
-        setSt(await storage.loadState());
-        setCat(await getCatalog());
-        const ms: Record<string, storage.Manifest> = {};
-        for (const c of (await getCatalog()).courses) {
-          try { ms[c.slug] = await getManifest(c.slug); } catch {}
+        const cat = await getCatalog();
+        if (cat && cat.courses) {
+          setCourses(cat.courses);
+          const ms: Record<string, storage.Manifest> = {};
+          for (const c of cat.courses) {
+            try {
+              ms[c.slug] = await getManifest(c.slug);
+            } catch {}
+          }
+          setMans(ms);
+          eng.concepts.push(...Object.values(ms).flatMap(m => m.units.flatMap(u => u.concepts)));
         }
-        setMans(ms);
-        setName(window.name || "Alex");
-        // personalised plan from bandit
-        const units: { id: string; title: string; seg: number; skip: boolean }[] =
-          Object.values(ms).flatMap(m => m.units.map(u => ({ id: u.id, title: u.title, seg: u.segments.length, skip: false })));
-        const scored = units.map(u => ({ u, readiness: 1 - Object.values(st.mastery).filter((v: number) => v < 5).length / Math.max(1, Object.keys(st.mastery).length) })).sort((a, b) => (st.mastery[b.u.id] ?? 0) + 0 - (st.mastery[a.u.id] ?? 0));
-        setPlan(scored.slice(0, 5).map(x => ({ unit: x.u.id, title: x.u.title, dur: x.u.segments[0]?.end || 20, why: "weak/recently studied + prerequisite readiness" })));
-      } catch (e) { console.error("load", e); }
+      } catch (e) {
+        console.error(e);
+      }
     })();
-  }, []);
-
-  const genReport = () => {
-    const accs = Object.entries(st.questionAcc).map(([u, a]) => ({ u, acc: (a as any).total ? Math.round(((a as any).ok / (a as any).total) * 100) : 0 })).sort((a, b) => a.acc - b.acc);
-    const weak = accs.slice(0, 3);
-    setReport(`Weekly Review — overall accuracy ${accs.length ? Math.round(accs.reduce((s, a) => s + a.acc, 0) / accs.length) : 0}% across ${accs.length} units. Top 3 weak concepts: ${weak.map(w => w.u).join(", ").replace(/6.006|6.100L|18.06|\/u0\d\d/g, "") || "—"}${weak.length ? ` (${weak.map(w => w.acc + "%").join(", ")})` : ""}. Review root cause: you missed ${Math.max(0, ...accs.map(a => a.acc)) === 0 ? "no " : "some "}concepts in earlier units — revisit prerequisite units via the planner.`);
-  };
-
-  const stat = (label: string, value: string, cls = "") => (
-    <div className={`card stat ${cls}`}><div className="stat-label">{label}</div><div className="stat-value">{value}</div><div className="stat-delta">{label === "Accuracy" ? `+${((total > 0 ? (total - done) / Math.max(total, 1) * 100 : 0)).toFixed(0)}%` : total > 0 ? `≈ ${Math.round(totalMastery / Math.max(total, 1))}/10` : "—"}</div></div>
-  );
+  }, [eng]);
 
   return (
-    <div>
-      <h1>Dashboard · Learn • Analyse • Grow</h1>
-      <div className="streak">🔥 Streak: {streak} day{streak === 1 ? "" : "s"}</div>
-      <div className="stats">
-        {stat("Overall Progress", `${progress}%`, "indigo")}
-        {stat("Mock Tests Taken", String(tests), "amber")}
-        {stat("Accuracy", `${accuracy}%`, "green")}
-        {stat("Study Time", `${Math.round(minutes / 60)}h`, "blue")}
+    <div className="dashboard-content">
+      {/* Mobile view phone container for mobile breakpoint */}
+      <div className="mobile-only-view">
+        <div className="mobile-greeting-row">
+          <div>
+            <h1 className="mobile-greeting-title">Good Morning, Bibaswan!</h1>
+          </div>
+          <div className="streak-badge-mobile">
+            <Flame size={16} className="flame-icon" />
+            <div className="streak-num-mobile">12</div>
+            <div className="streak-sub-mobile">Day Streak</div>
+          </div>
+        </div>
+
+        {/* Mobile Progress Card */}
+        <div className="mobile-progress-card">
+          <div className="mobile-progress-left">
+            <div className="mobile-progress-label">Progress</div>
+            <div className="mobile-progress-val">72%</div>
+            <div className="mobile-progress-next">Next: Revise Calculus (30 min)</div>
+          </div>
+          <div className="mobile-progress-donut">
+            <svg width="68" height="68" viewBox="0 0 36 36" className="donut-svg">
+              <path
+                className="donut-bg"
+                d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
+              />
+              <path
+                className="donut-stroke"
+                strokeDasharray="72, 100"
+                d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
+              />
+            </svg>
+          </div>
+        </div>
+
+        {/* AI Insight */}
+        <div className="mobile-insight-box">
+          <div className="insight-header">
+            <Lightbulb size={18} className="insight-bulb" />
+            <span className="insight-title">AI Insight</span>
+          </div>
+          <div className="insight-body">Focus more on Probability Basics</div>
+        </div>
+
+        <button className="btn-mobile-start" onClick={() => setPage("planner")}>
+          Start Learning →
+        </button>
       </div>
-      <h2 className="section">Personalised Learning Path (recommended next)</h2>
-      <div className="panel">
-        <ul className="timeline">
-          {plan.length ? plan.map((u, i) => <li key={u} className={i === 0 ? "done" : ""}><b>{unitTitle(u)}</b><span className="muted">· {i + 1}. recommend · prerequisite readiness</span></li>) : <li className="muted">Load lessons from the catalog to see recommendations</li>}
-        </ul>
-        <button className="btn primary" onClick={() => setPage("planner")}>View Plan</button>
-      </div>
-      <h2 className="section">AI Performance Analysis · Powered by RL</h2>
-      <div className="panel">
-        <div className="donut"><canvas id="donut" width="120" height="120"></canvas><span className="donut-label">Focus Score</span></div>
-        <ul>{Object.entries(st.questionAcc).slice(0, 3).map(([u, a]: any) => <li key={u}>{u} — {Math.round((a.ok / (a.total || 1)) * 100)}% (n={a.total})</li>)}</ul>
-        <button className="btn" onClick={genReport}>View Detailed Analysis</button>
-        {report && <div className="report">{report}</div>}
-        <div className="muted small">Why am I seeing this? — The recommender adapts from your quiz accuracy and time spent; weak concepts surface first, and spacing decay adds recent items.</div>
-      </div>
-      <h2 className="section">Weekly Mock Test</h2>
-      <div className="panel">
-        <p><b>Next topic:</b> {plan[0]?.title || "—"} · <b>Due:</b> {new Date().toLocaleDateString("en-US", { weekday: "short", month: "short", day: "numeric" })}</p>
-        <button className="btn primary" onClick={() => setPage("test")}>Start Test</button>
-        <span className="chip-info">{done === 0 ? "not started" : done === 1 ? "1 done" : "in progress"}</span>
-      </div>
-      <h2 className="section">MIT OCW Courses (First Year CS)</h2>
-      <div className="courses">{(cat?.courses || []).slice(0, 2).map(c => <div className="course-card"><div><b>{c.number}</b><br />{c.title}</div><div className="progress"><div style={{ width: "62%" }} /></div><span className="muted small">{c.ocw_url.split("/")[3] || ""} · CC BY-NC-SA — MIT OpenCourseWare</span></div>)}</div>
-      <h2 className="section">Quick Access</h2>
-      <div className="quick">
-        {[{ label: "Offline Notes", p: "library" }, { label: "Study Planner", p: "planner" }, { label: "Ask SikshaSetu", p: "resources" }, { label: "Settings", p: "settings" }].map(q => <button key={q.label} className="quick-btn" onClick={() => setPage(q.p)}>{q.label}</button>)}
+
+      {/* Desktop view */}
+      <div className="desktop-dashboard-view">
+        {/* Hero banner */}
+        <div className="hero-banner">
+          <div className="hero-text-wrap">
+            <h1 className="hero-heading">Good Morning, Bibaswan!</h1>
+            <p className="hero-subheading">
+              Let's continue your learning journey with SikshaSetu ✨
+            </p>
+          </div>
+          <div className="hero-right-wrap">
+            <div className="hero-quote">
+              "Small steps every day<br />lead to big results."
+            </div>
+            <div className="streak-badge">
+              <Flame size={24} className="flame-icon" />
+              <div className="streak-info">
+                <div className="streak-count">12</div>
+                <div className="streak-label">Day Streak</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Top 4 Stat Cards */}
+        <div className="stat-cards-grid">
+          {/* Card 1: Overall Progress */}
+          <div className="metric-card">
+            <div className="metric-icon-wrap purple-glow">
+              <GraduationCap size={22} className="metric-icon purple-text" />
+            </div>
+            <div className="metric-details">
+              <span className="metric-label">Overall Progress</span>
+              <div className="metric-value-row">
+                <span className="metric-value">72%</span>
+              </div>
+              <div className="progress-bar-track">
+                <div className="progress-bar-fill" style={{ width: "72%" }}></div>
+              </div>
+            </div>
+          </div>
+
+          {/* Card 2: Mock Tests Taken */}
+          <div className="metric-card">
+            <div className="metric-icon-wrap teal-glow">
+              <CheckCircle2 size={22} className="metric-icon teal-text" />
+            </div>
+            <div className="metric-details">
+              <span className="metric-label">Mock Tests Taken</span>
+              <div className="metric-value-row">
+                <span className="metric-value">8</span>
+                <span className="delta-pill green-pill">↑ +2</span>
+              </div>
+            </div>
+          </div>
+
+          {/* Card 3: Accuracy */}
+          <div className="metric-card">
+            <div className="metric-icon-wrap amber-glow">
+              <Trophy size={22} className="metric-icon amber-text" />
+            </div>
+            <div className="metric-details">
+              <span className="metric-label">Accuracy</span>
+              <div className="metric-value-row">
+                <span className="metric-value">87%</span>
+                <span className="delta-pill amber-pill">↑ +5%</span>
+              </div>
+            </div>
+          </div>
+
+          {/* Card 4: Study Time */}
+          <div className="metric-card">
+            <div className="metric-icon-wrap blue-glow">
+              <Clock size={22} className="metric-icon blue-text" />
+            </div>
+            <div className="metric-details">
+              <span className="metric-label">Study Time</span>
+              <div className="metric-value-row">
+                <span className="metric-value">24.5 hrs</span>
+                <span className="delta-pill green-pill">↑ +3.2h</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Middle Row (3 cards) */}
+        <div className="middle-cards-grid">
+          {/* Card 1: Personalised Learning Path */}
+          <div className="panel-card learning-path-card">
+            <div className="panel-card-header">
+              <div className="panel-header-left">
+                <div className="target-icon-wrap">
+                  <Target size={18} className="target-icon" />
+                </div>
+                <h3 className="panel-title">Your Personalised Learning Path</h3>
+              </div>
+              <button className="panel-pill-btn" onClick={() => setPage("planner")}>
+                View Plan →
+              </button>
+            </div>
+
+            <div className="timeline-steps">
+              <div className="timeline-step">
+                <div className="step-badge-col">
+                  <span className="step-pill pill-today">Today</span>
+                  <div className="timeline-line"></div>
+                </div>
+                <div className="step-content">
+                  <div className="step-title">Revise: Calculus - Limits & Continuity</div>
+                  <div className="step-duration">(30 min)</div>
+                </div>
+              </div>
+
+              <div className="timeline-step">
+                <div className="step-badge-col">
+                  <span className="step-pill pill-next">Next</span>
+                  <div className="timeline-line"></div>
+                </div>
+                <div className="step-content">
+                  <div className="step-title">Practice: Arrays & Pointers (C++)</div>
+                  <div className="step-duration">(45 min)</div>
+                </div>
+              </div>
+
+              <div className="timeline-step">
+                <div className="step-badge-col">
+                  <span className="step-pill pill-later">Later</span>
+                </div>
+                <div className="step-content">
+                  <div className="step-title">Explore: MIT OCW - Computer Systems</div>
+                  <div className="step-duration">(1 hr)</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Card 2: AI Performance Analysis */}
+          <div className="panel-card ai-perf-card">
+            <div className="panel-card-header">
+              <div className="panel-header-left">
+                <Sparkles size={18} className="sparkle-icon" />
+                <h3 className="panel-title">AI Performance Analysis</h3>
+              </div>
+              <span className="rl-badge">✨ Powered by RL</span>
+            </div>
+
+            <div className="ai-perf-body">
+              <div className="donut-gauge-container">
+                <svg width="110" height="110" viewBox="0 0 36 36" className="donut-chart-svg">
+                  <path
+                    className="donut-bg-dark"
+                    d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
+                  />
+                  <path
+                    className="donut-stroke-gradient"
+                    strokeDasharray="78, 100"
+                    d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
+                  />
+                </svg>
+                <div className="donut-center-text">
+                  <div className="donut-score">78%</div>
+                  <div className="donut-score-label">Focus Score</div>
+                </div>
+              </div>
+
+              <div className="weak-areas-list">
+                <div className="weak-areas-title">Weak Areas Detected:</div>
+                <div className="weak-item">
+                  <AlertTriangle size={14} className="weak-icon" />
+                  <span>C++ Pointers & Memory</span>
+                </div>
+                <div className="weak-item">
+                  <AlertTriangle size={14} className="weak-icon" />
+                  <span>Probability Basics</span>
+                </div>
+                <div className="weak-item">
+                  <AlertTriangle size={14} className="weak-icon" />
+                  <span>Discrete Mathematics</span>
+                </div>
+              </div>
+            </div>
+
+            <button className="btn-view-analysis" onClick={() => setPage("analytics")}>
+              View Detailed Analysis →
+            </button>
+          </div>
+
+          {/* Card 3: Weekly Mock Test */}
+          <div className="panel-card mock-test-card">
+            <div className="panel-card-header">
+              <div className="panel-header-left">
+                <Calendar size={18} className="calendar-icon" />
+                <h3 className="panel-title">Weekly Mock Test</h3>
+              </div>
+            </div>
+
+            <div className="mock-test-body">
+              <div className="mock-test-info">
+                <p className="mock-test-ready">Your next mock test is ready!</p>
+                <div className="mock-meta-row">
+                  <span className="mock-meta-label">Topic:</span>
+                  <span className="mock-meta-val">Data Structures</span>
+                </div>
+                <div className="mock-meta-row">
+                  <span className="mock-meta-label">Date:</span>
+                  <span className="mock-meta-val">Nov 22, 2026</span>
+                </div>
+              </div>
+
+              <div className="mock-test-art">
+                <svg width="74" height="84" viewBox="0 0 64 74" fill="none">
+                  <rect x="8" y="10" width="48" height="60" rx="8" fill="#1e2538" stroke="#374151" strokeWidth="2" />
+                  <rect x="22" y="4" width="20" height="10" rx="3" fill="#6d4aff" />
+                  <path d="M18 26h28M18 36h28M18 46h18" stroke="#60a5fa" strokeWidth="2.5" strokeLinecap="round" />
+                  <circle cx="50" cy="56" r="10" fill="#6d4aff" />
+                  <path d="M50 51v5l3 2" stroke="#fff" strokeWidth="1.8" strokeLinecap="round" />
+                </svg>
+              </div>
+            </div>
+
+            <button className="btn-start-test" onClick={() => setPage("test")}>
+              Start Test →
+            </button>
+          </div>
+        </div>
+
+        {/* Bottom Section: MIT OCW Courses + Quick Access */}
+        <div className="bottom-cards-grid">
+          {/* MIT OCW Courses */}
+          <div className="panel-card mit-courses-panel">
+            <div className="mit-header-row">
+              <div className="mit-title-wrap">
+                <div className="mit-logo-badge">MIT</div>
+                <div>
+                  <h3 className="mit-heading">MIT OCW Courses (First Year CS)</h3>
+                  <p className="mit-subheading">Curated course content for you</p>
+                </div>
+              </div>
+              <button className="panel-pill-btn" onClick={() => setPage("library")}>
+                Explore All →
+              </button>
+            </div>
+
+            <div className="mit-course-cards-row">
+              <div className="mit-mini-card" onClick={() => setPage("library")}>
+                <div className="course-code">6.0001</div>
+                <div className="course-name">Introduction to Computer Science</div>
+              </div>
+
+              <div className="mit-mini-card" onClick={() => setPage("library")}>
+                <div className="course-code">6.006</div>
+                <div className="course-name">Intro to Algorithms</div>
+              </div>
+
+              <div className="mit-mini-card" onClick={() => setPage("library")}>
+                <div className="course-code">6.033</div>
+                <div className="course-name">Computer Systems</div>
+              </div>
+
+              <div className="mit-mini-card" onClick={() => setPage("library")}>
+                <div className="course-code">6.042</div>
+                <div className="course-name">Mathematics for Computer Science</div>
+              </div>
+            </div>
+          </div>
+
+          {/* Quick Access */}
+          <div className="panel-card quick-access-panel">
+            <h3 className="quick-access-title">Quick Access</h3>
+            <div className="quick-access-grid">
+              <button className="quick-action-tile" onClick={() => setPage("library")}>
+                <div className="quick-tile-icon-wrap">
+                  <FileText size={20} className="quick-tile-icon" />
+                </div>
+                <span className="quick-tile-label">Offline Notes</span>
+              </button>
+
+              <button className="quick-action-tile" onClick={() => setPage("planner")}>
+                <div className="quick-tile-icon-wrap">
+                  <Calendar size={20} className="quick-tile-icon" />
+                </div>
+                <span className="quick-tile-label">Study Planner</span>
+              </button>
+
+              <button className="quick-action-tile" onClick={() => setPage("resources")}>
+                <div className="quick-tile-icon-wrap">
+                  <MessageSquare size={20} className="quick-tile-icon" />
+                </div>
+                <span className="quick-tile-label">Ask SikshaSetu</span>
+              </button>
+
+              <button className="quick-action-tile" onClick={() => setPage("settings")}>
+                <div className="quick-tile-icon-wrap">
+                  <Settings size={20} className="quick-tile-icon" />
+                </div>
+                <span className="quick-tile-label">Settings</span>
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );

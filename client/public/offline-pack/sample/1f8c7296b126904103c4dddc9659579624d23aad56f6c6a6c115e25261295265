@@ -1,0 +1,86 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 5 0 R >> >> /Contents 4 0 R >>
+endobj
+4 0 obj
+<< /Length 5860 >>
+stream
+BT /F1 9 Tf 50 750 Td 12 TL (6.006: Lecture 3: Insertion Sort, Merge Sort) Tj T*
+(align:start position:0% the following content is provided under align:start position:0% the followin) Tj T*
+(align:start position:0% out there and so we'll try and improve align:start position:0% out there and) Tj T*
+(align:start position:0% organizers spreadsheets Etc so there's lots of obvious align:start position:) Tj T*
+(align:start position:0% determine which record is smaller than align:start position:0% determine whi) Tj T*
+(align:start position:0% yep oh absolutely but um there's u i I'm align:start position:0% yep oh abso) Tj T*
+(align:start position:0% you'd have a bunch of numbers uh that align:start position:0% you'd have a b) Tj T*
+(align:start position:0% item if the array happened to be sorted align:start position:0% sorted align) Tj T*
+(align:start position:0% of divide and conquer probably the align:start position:0% of divide and con) Tj T*
+(align:start position:0% frequency of that item s similar to what document distance does document dis) Tj T*
+(align:start position:0% everything that's uded by this big Opa align:start position:0% everything th) Tj T*
+(align:start position:0% know all sorts of sorts like cocktail sort and bonic sort align:start positi) Tj T*
+(align:start position:0% so what is insertion sort for I = 1 2 align:start position:0% so what is ins) Tj T*
+(align:start position:0% through an example of this we're going align:start position:0% through an ex) Tj T*
+(align:start position:0% increasing order uh this is not sorted align:start position:0% increasing or) Tj T*
+(align:start position:0% now the key is over here at six now at this point things um are kind of easy) Tj T*
+(align:start position:0% one and six and then you'll swap one is align:start position:0% one and six ) Tj T*
+(align:start position:0% insertion sort the code that we have for insertion align:start position:0% i) Tj T*
+(align:start position:0% good question if I think of a step as align:start position:0% good question ) Tj T*
+(align:start position:0% that's Theta n so each step is Theta align:start position:0% step is Theta a) Tj T*
+(align:start position:0% say the x86 of the myips architecture align:start position:0% say the x86 of) Tj T*
+(align:start position:0% the same or that compares are and we'll say which one of align:start positio) Tj T*
+(align:start position:0% me a better complexity in the case where align:start position:0% me a better) Tj T*
+(align:start position:0% you know what I'm going to replace this with binary align:start position:0% ) Tj T*
+(align:start position:0% require insertion into a of 0 through align:start position:0% require insert) Tj T*
+(align:start position:0% right okay good so as you can see there's many varieties of sorting align:st) Tj T*
+(align:start position:0% on and so forth but we'll stick to uh align:start position:0% on and so fort) Tj T*
+(align:start position:0% interesting to those of you who already know mer sort and those of you who d) Tj T*
+(align:start position:0% here there's no real explicit code that align:start position:0% here there's) Tj T*
+(align:start position:0% n you have two arrays of size n / align:start position:0% arrays of size n /) Tj T*
+(align:start position:0% this could be R align:start position:0% this could be R Prime um what you ha) Tj T*
+(align:start position:0% one down when I put one down I have to cross out one so effectively what ali) Tj T*
+(align:start position:0% fairly straightforward if you have an align:start position:0% fairly straigh) Tj T*
+(align:start position:0% have you know two arrays of size n / two here what do I align:start position) Tj T*
+(align:start position:0% take a look at merge sord and we'll look align:start position:0% take a look) Tj T*
+(align:start position:0% n and so if I just look at this structure that I have here I can write a ali) Tj T*
+(align:start position:0% have seen recurrences in 6042 and you align:start position:0% have seen recu) Tj T*
+(align:start position:0% up as I do the recursion so when I go C of n at the top level that's the wor) Tj T*
+(align:start position:0% question that I'd like you to answer align:start position:0% question that I) Tj T*
+(align:start position:0% the result that we're looking for right so you add up the work in each of th) Tj T*
+(align:start position:0% n all right so I've fxed in constant C align:start position:0% n all right s) Tj T*
+(align:start position:0% numbers is Theta n Square for swaps merge sort is Theta n log n um here's al) Tj T*
+(align:start position:0% what this picture shows this says sorted align:start position:0% what this p) Tj T*
+(align:start position:0% location override the other Etc and that's the Theta 1 auxiliary space for a) Tj T*
+(align:start position:0% keeping 1 half of a uh the you can sort align:start position:0% keeping 1 ha) Tj T*
+(align:start position:0% uses Theta n auxiliary space so people don't really use in place mer it's a ) Tj T*
+(align:start position:0% align:start position:0% that's something like 0 2 N sare align:start positio) Tj T*
+(align:start position:0% the constant factors get uh subsumed Beyond certain values of n so align:sta) Tj T*
+(align:start position:0% going to look at a couple of different align:start position:0% going to look) Tj T*
+(align:start position:0% but it's it is way this recurrence could have come up all right so what does) Tj T*
+(align:start position:0% take a look at what happens here CN s CN align:start position:0% take a look) Tj T*
+(align:start position:0% okay here there was roughly equal amount of work done in each of the differe) Tj T*
+(align:start position:0% before and so if I look at what I have align:start position:0% before and so) Tj T*
+(align:start position:0% versions of recurrences all right I'll stick around and people who answered ) Tj T*
+ET
+endstream
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+xref
+0 6
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000241 00000 n 
+0000006153 00000 n 
+trailer
+<< /Size 6 /Root 1 0 R >>
+startxref
+6223
+%%EOF

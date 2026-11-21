@@ -1,548 +1,696 @@
 [
  {
-  "id": "python-data-model",
-  "name": "Python data model",
+  "id": "asymptotic-notation",
+  "name": "Asymptotic notation",
   "unit_refs": [
-   "Unit 0: Python Basics"
+   "Unit 0: Introduction"
   ],
   "prerequisites": [],
-  "difficulty": 2,
-  "tags": [
-   "type()",
-   "class",
-   "dunder"
-  ],
-  "description": "Core concept: Python data model (6.100L)."
- },
- {
-  "id": "numeric-types",
-  "name": "Numeric types",
-  "unit_refs": [
-   "Unit 1: Control and Data"
-  ],
-  "prerequisites": [
-   "python-data-model"
-  ],
-  "difficulty": 2,
-  "tags": [
-   "int",
-   "float",
-   "complex"
-  ],
-  "description": "Core concept: Numeric types (6.100L)."
- },
- {
-  "id": "string-types",
-  "name": "String types",
-  "unit_refs": [
-   "Unit 2: Functions and Errors"
-  ],
-  "prerequisites": [
-   "python-data-model"
-  ],
-  "difficulty": 2,
-  "tags": [
-   "str",
-   "unicode",
-   "immutability"
-  ],
-  "description": "Core concept: String types (6.100L)."
- },
- {
-  "id": "boolean-control-flow",
-  "name": "Control flow (if/else)",
-  "unit_refs": [
-   "Unit 3: Testing"
-  ],
-  "prerequisites": [
-   "python-data-model"
-  ],
-  "difficulty": 2,
-  "tags": [
-   "ternary",
-   "truthiness",
-   "while"
-  ],
-  "description": "Core concept: Control flow (if/else) (6.100L)."
- },
- {
-  "id": "for-loops",
-  "name": "for loops",
-  "unit_refs": [
-   "Unit 0: Python Basics"
-  ],
-  "prerequisites": [
-   "python-data-model"
-  ],
-  "difficulty": 2,
-  "tags": [
-   "range",
-   "iterables",
-   "for-else"
-  ],
-  "description": "Core concept: for loops (6.100L)."
- },
- {
-  "id": "functions",
-  "name": "Functions",
-  "unit_refs": [
-   "Unit 1: Control and Data"
-  ],
-  "prerequisites": [
-   "python-data-model"
-  ],
   "difficulty": 3,
   "tags": [
-   "def",
-   "default args",
-   "lambda"
+   "algorithm analysis",
+   "time complexity",
+   "\u0398/O/\u03a9"
   ],
-  "description": "Core concept: Functions (6.100L)."
+  "description": "Core concept: Asymptotic notation (6.006)."
  },
  {
-  "id": "scope-namespaces",
-  "name": "Scope and namespaces",
+  "id": "recurrences",
+  "name": "Recurrences",
   "unit_refs": [
-   "Unit 2: Functions and Errors"
+   "Unit 1: Sorting"
   ],
   "prerequisites": [
-   "functions"
-  ],
-  "difficulty": 3,
-  "tags": [
-   "local/global/nonlocal",
-   "LEGB",
-   "modules"
-  ],
-  "description": "Core concept: Scope and namespaces (6.100L)."
- },
- {
-  "id": "lists-tuples",
-  "name": "Lists and tuples",
-  "unit_refs": [
-   "Unit 3: Testing"
-  ],
-  "prerequisites": [
-   "python-data-model"
-  ],
-  "difficulty": 3,
-  "tags": [
-   "mutation",
-   "slicing",
-   "tuple immutability"
-  ],
-  "description": "Core concept: Lists and tuples (6.100L)."
- },
- {
-  "id": "dicts",
-  "name": "Dictionaries",
-  "unit_refs": [
-   "Unit 0: Python Basics"
-  ],
-  "prerequisites": [
-   "lists-tuples"
-  ],
-  "difficulty": 3,
-  "tags": [
-   "keys",
-   "values",
-   "items()"
-  ],
-  "description": "Core concept: Dictionaries (6.100L)."
- },
- {
-  "id": "comprehensions",
-  "name": "Comprehensions",
-  "unit_refs": [
-   "Unit 1: Control and Data"
-  ],
-  "prerequisites": [
-   "lists-tuples",
-   "dicts"
-  ],
-  "difficulty": 3,
-  "tags": [
-   "list comp",
-   "dict comp",
-   "generator"
-  ],
-  "description": "Core concept: Comprehensions (6.100L)."
- },
- {
-  "id": "recursion",
-  "name": "Recursion",
-  "unit_refs": [
-   "Unit 2: Functions and Errors"
-  ],
-  "prerequisites": [
-   "functions"
+   "asymptotic-notation"
   ],
   "difficulty": 4,
   "tags": [
-   "base case",
-   "stack",
-   "tail recursion"
+   "recursion",
+   "recurrence relations"
   ],
-  "description": "Core concept: Recursion (6.100L)."
+  "description": "Core concept: Recurrences (6.006)."
  },
  {
-  "id": "classes",
-  "name": "Classes",
+  "id": "sorting-algorithms",
+  "name": "Sorting algorithms",
   "unit_refs": [
-   "Unit 3: Testing"
+   "Unit 2: Graphs and DP"
   ],
   "prerequisites": [
-   "python-data-model"
+   "asymptotic-notation",
+   "recurrences"
+  ],
+  "difficulty": 5,
+  "tags": [
+   "quicksort",
+   "mergesort",
+   "heapsort",
+   "insertion sort"
+  ],
+  "description": "Core concept: Sorting algorithms (6.006)."
+ },
+ {
+  "id": "heap-and-priority-queue",
+  "name": "Heaps and priority queues",
+  "unit_refs": [
+   "Unit 3: Analysis"
+  ],
+  "prerequisites": [
+   "recurrences"
   ],
   "difficulty": 4,
   "tags": [
-   "__init__",
-   "self",
-   "inheritance"
+   "heapify",
+   "heap sort",
+   "priority queue"
   ],
-  "description": "Core concept: Classes (6.100L)."
+  "description": "Core concept: Heaps and priority queues (6.006)."
  },
  {
-  "id": "debugging",
-  "name": "Debugging in Python",
+  "id": "hash-tables",
+  "name": "Hash tables",
   "unit_refs": [
-   "Unit 0: Python Basics"
+   "Unit 0: Introduction"
   ],
   "prerequisites": [
-   "functions",
-   "scope-namespaces"
+   "asymptotic-notation"
+  ],
+  "difficulty": 4,
+  "tags": [
+   "chaining",
+   "open addressing",
+   "load factor"
+  ],
+  "description": "Core concept: Hash tables (6.006)."
+ },
+ {
+  "id": "bsts",
+  "name": "Binary search trees",
+  "unit_refs": [
+   "Unit 1: Sorting"
+  ],
+  "prerequisites": [
+   "hash-tables"
+  ],
+  "difficulty": 4,
+  "tags": [
+   "BST",
+   "AVL",
+   "in-order traversal"
+  ],
+  "description": "Core concept: Binary search trees (6.006)."
+ },
+ {
+  "id": "recursion-dp",
+  "name": "Recursion and dynamic programming",
+  "unit_refs": [
+   "Unit 2: Graphs and DP"
+  ],
+  "prerequisites": [
+   "recurrences",
+   "bsts"
+  ],
+  "difficulty": 5,
+  "tags": [
+   "subproblems",
+   "memoization",
+   "overlapping subproblems"
+  ],
+  "description": "Core concept: Recursion and dynamic programming (6.006)."
+ },
+ {
+  "id": "graph-representations",
+  "name": "Graph representations",
+  "unit_refs": [
+   "Unit 3: Analysis"
+  ],
+  "prerequisites": [
+   "hash-tables"
   ],
   "difficulty": 3,
   "tags": [
-   "print debugging",
-   "breakpoints",
-   "traceback"
+   "adjacency lists",
+   "matrices"
   ],
-  "description": "Core concept: Debugging in Python (6.100L)."
+  "description": "Core concept: Graph representations (6.006)."
  },
  {
-  "id": "testing",
-  "name": "Testing and asserts",
+  "id": "bfs",
+  "name": "BFS",
   "unit_refs": [
-   "Unit 1: Control and Data"
+   "Unit 0: Introduction"
   ],
   "prerequisites": [
-   "functions",
-   "debugging"
+   "graph-representations"
   ],
   "difficulty": 3,
   "tags": [
-   "assert",
-   "unittest",
-   "pytest"
+   "breadth-first search",
+   "unweighted distances"
   ],
-  "description": "Core concept: Testing and asserts (6.100L)."
+  "description": "Core concept: BFS (6.006)."
  },
  {
-  "id": "exceptions",
-  "name": "Exceptions",
+  "id": "dfs",
+  "name": "DFS",
   "unit_refs": [
-   "Unit 2: Functions and Errors"
+   "Unit 1: Sorting"
   ],
   "prerequisites": [
-   "python-data-model"
+   "graph-representations"
   ],
   "difficulty": 3,
   "tags": [
-   "try/except",
-   "finally",
-   "traceback types"
+   "depth-first search",
+   "topological sort"
   ],
-  "description": "Core concept: Exceptions (6.100L)."
+  "description": "Core concept: DFS (6.006)."
  },
  {
-  "id": "modules-imports",
-  "name": "Modules and imports",
+  "id": "shortest-paths",
+  "name": "Shortest paths",
   "unit_refs": [
-   "Unit 3: Testing"
+   "Unit 2: Graphs and DP"
   ],
   "prerequisites": [
-   "scope-namespaces"
+   "bfs",
+   "dfs"
+  ],
+  "difficulty": 4,
+  "tags": [
+   "Dijkstra",
+   "Bellman-Ford",
+   "relaxation"
+  ],
+  "description": "Core concept: Shortest paths (6.006)."
+ },
+ {
+  "id": "negative-cycles",
+  "name": "Negative cycles",
+  "unit_refs": [
+   "Unit 3: Analysis"
+  ],
+  "prerequisites": [
+   "shortest-paths"
+  ],
+  "difficulty": 4,
+  "tags": [
+   "cycle detection",
+   "SSSP with negatives"
+  ],
+  "description": "Core concept: Negative cycles (6.006)."
+ },
+ {
+  "id": "greedy-algorithms",
+  "name": "Greedy algorithms",
+  "unit_refs": [
+   "Unit 0: Introduction"
+  ],
+  "prerequisites": [
+   "recurrences"
+  ],
+  "difficulty": 4,
+  "tags": [
+   "exchange argument",
+   "optimality"
+  ],
+  "description": "Core concept: Greedy algorithms (6.006)."
+ },
+ {
+  "id": "amortized-analysis",
+  "name": "Amortized analysis",
+  "unit_refs": [
+   "Unit 1: Sorting"
+  ],
+  "prerequisites": [
+   "heap-and-priority-queue"
+  ],
+  "difficulty": 4,
+  "tags": [
+   "potential method",
+   "accounting"
+  ],
+  "description": "Core concept: Amortized analysis (6.006)."
+ },
+ {
+  "id": "dynamic-arrays",
+  "name": "Dynamic arrays",
+  "unit_refs": [
+   "Unit 2: Graphs and DP"
+  ],
+  "prerequisites": [
+   "asymptotic-notation"
   ],
   "difficulty": 3,
   "tags": [
-   "import",
-   "as",
-   "package"
+   "doubling",
+   "amortized O(1) append"
   ],
-  "description": "Core concept: Modules and imports (6.100L)."
+  "description": "Core concept: Dynamic arrays (6.006)."
  },
  {
-  "id": "python-data-model",
-  "name": "Python data model",
+  "id": "quicksort-invariant",
+  "name": "Quicksort invariants",
   "unit_refs": [
-   "Unit 0: Python Basics"
+   "Unit 3: Analysis"
+  ],
+  "prerequisites": [
+   "sorting-algorithms"
+  ],
+  "difficulty": 4,
+  "tags": [
+   "pivot",
+   "partition",
+   "worst case"
+  ],
+  "description": "Core concept: Quicksort invariants (6.006)."
+ },
+ {
+  "id": "mergesort-stability",
+  "name": "Merge sort stability",
+  "unit_refs": [
+   "Unit 0: Introduction"
+  ],
+  "prerequisites": [
+   "sorting-algorithms"
+  ],
+  "difficulty": 3,
+  "tags": [
+   "stable sort",
+   "merge step"
+  ],
+  "description": "Core concept: Merge sort stability (6.006)."
+ },
+ {
+  "id": "heapsort-invariant",
+  "name": "Heapsort invariant",
+  "unit_refs": [
+   "Unit 1: Sorting"
+  ],
+  "prerequisites": [
+   "heap-and-priority-queue"
+  ],
+  "difficulty": 4,
+  "tags": [
+   "heap property",
+   "sift down"
+  ],
+  "description": "Core concept: Heapsort invariant (6.006)."
+ },
+ {
+  "id": "bst-invariant",
+  "name": "BST invariant",
+  "unit_refs": [
+   "Unit 2: Graphs and DP"
+  ],
+  "prerequisites": [
+   "bsts"
+  ],
+  "difficulty": 4,
+  "tags": [
+   "in-order is sorted",
+   "search path"
+  ],
+  "description": "Core concept: BST invariant (6.006)."
+ },
+ {
+  "id": "dp-optimal-substructure",
+  "name": "DP optimal substructure",
+  "unit_refs": [
+   "Unit 3: Analysis"
+  ],
+  "prerequisites": [
+   "recursion-dp"
+  ],
+  "difficulty": 5,
+  "tags": [
+   "optimal substructure",
+   "subproblem overlap"
+  ],
+  "description": "Core concept: DP optimal substructure (6.006)."
+ },
+ {
+  "id": "graph-properties",
+  "name": "Graph properties",
+  "unit_refs": [
+   "Unit 0: Introduction"
+  ],
+  "prerequisites": [
+   "graph-representations"
+  ],
+  "difficulty": 3,
+  "tags": [
+   "diameter",
+   "connectivity",
+   "density"
+  ],
+  "description": "Core concept: Graph properties (6.006)."
+ },
+ {
+  "id": "asymptotic-notation",
+  "name": "Asymptotic notation",
+  "unit_refs": [
+   "Unit 0: Introduction"
   ],
   "prerequisites": [],
-  "difficulty": 2,
-  "tags": [
-   "type()",
-   "class",
-   "dunder"
-  ],
-  "description": "Core concept: Python data model (6.100L)."
- },
- {
-  "id": "numeric-types",
-  "name": "Numeric types",
-  "unit_refs": [
-   "Unit 1: Control and Data"
-  ],
-  "prerequisites": [
-   "python-data-model"
-  ],
-  "difficulty": 2,
-  "tags": [
-   "int",
-   "float",
-   "complex"
-  ],
-  "description": "Core concept: Numeric types (6.100L)."
- },
- {
-  "id": "string-types",
-  "name": "String types",
-  "unit_refs": [
-   "Unit 2: Functions and Errors"
-  ],
-  "prerequisites": [
-   "python-data-model"
-  ],
-  "difficulty": 2,
-  "tags": [
-   "str",
-   "unicode",
-   "immutability"
-  ],
-  "description": "Core concept: String types (6.100L)."
- },
- {
-  "id": "boolean-control-flow",
-  "name": "Control flow (if/else)",
-  "unit_refs": [
-   "Unit 3: Testing"
-  ],
-  "prerequisites": [
-   "python-data-model"
-  ],
-  "difficulty": 2,
-  "tags": [
-   "ternary",
-   "truthiness",
-   "while"
-  ],
-  "description": "Core concept: Control flow (if/else) (6.100L)."
- },
- {
-  "id": "for-loops",
-  "name": "for loops",
-  "unit_refs": [
-   "Unit 0: Python Basics"
-  ],
-  "prerequisites": [
-   "python-data-model"
-  ],
-  "difficulty": 2,
-  "tags": [
-   "range",
-   "iterables",
-   "for-else"
-  ],
-  "description": "Core concept: for loops (6.100L)."
- },
- {
-  "id": "functions",
-  "name": "Functions",
-  "unit_refs": [
-   "Unit 1: Control and Data"
-  ],
-  "prerequisites": [
-   "python-data-model"
-  ],
   "difficulty": 3,
   "tags": [
-   "def",
-   "default args",
-   "lambda"
+   "algorithm analysis",
+   "time complexity",
+   "\u0398/O/\u03a9"
   ],
-  "description": "Core concept: Functions (6.100L)."
+  "description": "Core concept: Asymptotic notation (6.006)."
  },
  {
-  "id": "scope-namespaces",
-  "name": "Scope and namespaces",
+  "id": "recurrences",
+  "name": "Recurrences",
   "unit_refs": [
-   "Unit 2: Functions and Errors"
+   "Unit 1: Sorting"
   ],
   "prerequisites": [
-   "functions"
-  ],
-  "difficulty": 3,
-  "tags": [
-   "local/global/nonlocal",
-   "LEGB",
-   "modules"
-  ],
-  "description": "Core concept: Scope and namespaces (6.100L)."
- },
- {
-  "id": "lists-tuples",
-  "name": "Lists and tuples",
-  "unit_refs": [
-   "Unit 3: Testing"
-  ],
-  "prerequisites": [
-   "python-data-model"
-  ],
-  "difficulty": 3,
-  "tags": [
-   "mutation",
-   "slicing",
-   "tuple immutability"
-  ],
-  "description": "Core concept: Lists and tuples (6.100L)."
- },
- {
-  "id": "dicts",
-  "name": "Dictionaries",
-  "unit_refs": [
-   "Unit 0: Python Basics"
-  ],
-  "prerequisites": [
-   "lists-tuples"
-  ],
-  "difficulty": 3,
-  "tags": [
-   "keys",
-   "values",
-   "items()"
-  ],
-  "description": "Core concept: Dictionaries (6.100L)."
- },
- {
-  "id": "comprehensions",
-  "name": "Comprehensions",
-  "unit_refs": [
-   "Unit 1: Control and Data"
-  ],
-  "prerequisites": [
-   "lists-tuples",
-   "dicts"
-  ],
-  "difficulty": 3,
-  "tags": [
-   "list comp",
-   "dict comp",
-   "generator"
-  ],
-  "description": "Core concept: Comprehensions (6.100L)."
- },
- {
-  "id": "recursion",
-  "name": "Recursion",
-  "unit_refs": [
-   "Unit 2: Functions and Errors"
-  ],
-  "prerequisites": [
-   "functions"
+   "asymptotic-notation"
   ],
   "difficulty": 4,
   "tags": [
-   "base case",
-   "stack",
-   "tail recursion"
+   "recursion",
+   "recurrence relations"
   ],
-  "description": "Core concept: Recursion (6.100L)."
+  "description": "Core concept: Recurrences (6.006)."
  },
  {
-  "id": "classes",
-  "name": "Classes",
+  "id": "sorting-algorithms",
+  "name": "Sorting algorithms",
   "unit_refs": [
-   "Unit 3: Testing"
+   "Unit 2: Graphs and DP"
   ],
   "prerequisites": [
-   "python-data-model"
+   "asymptotic-notation",
+   "recurrences"
+  ],
+  "difficulty": 5,
+  "tags": [
+   "quicksort",
+   "mergesort",
+   "heapsort",
+   "insertion sort"
+  ],
+  "description": "Core concept: Sorting algorithms (6.006)."
+ },
+ {
+  "id": "heap-and-priority-queue",
+  "name": "Heaps and priority queues",
+  "unit_refs": [
+   "Unit 3: Analysis"
+  ],
+  "prerequisites": [
+   "recurrences"
   ],
   "difficulty": 4,
   "tags": [
-   "__init__",
-   "self",
-   "inheritance"
+   "heapify",
+   "heap sort",
+   "priority queue"
   ],
-  "description": "Core concept: Classes (6.100L)."
+  "description": "Core concept: Heaps and priority queues (6.006)."
  },
  {
-  "id": "debugging",
-  "name": "Debugging in Python",
+  "id": "hash-tables",
+  "name": "Hash tables",
   "unit_refs": [
-   "Unit 0: Python Basics"
+   "Unit 0: Introduction"
   ],
   "prerequisites": [
-   "functions",
-   "scope-namespaces"
+   "asymptotic-notation"
+  ],
+  "difficulty": 4,
+  "tags": [
+   "chaining",
+   "open addressing",
+   "load factor"
+  ],
+  "description": "Core concept: Hash tables (6.006)."
+ },
+ {
+  "id": "bsts",
+  "name": "Binary search trees",
+  "unit_refs": [
+   "Unit 1: Sorting"
+  ],
+  "prerequisites": [
+   "hash-tables"
+  ],
+  "difficulty": 4,
+  "tags": [
+   "BST",
+   "AVL",
+   "in-order traversal"
+  ],
+  "description": "Core concept: Binary search trees (6.006)."
+ },
+ {
+  "id": "recursion-dp",
+  "name": "Recursion and dynamic programming",
+  "unit_refs": [
+   "Unit 2: Graphs and DP"
+  ],
+  "prerequisites": [
+   "recurrences",
+   "bsts"
+  ],
+  "difficulty": 5,
+  "tags": [
+   "subproblems",
+   "memoization",
+   "overlapping subproblems"
+  ],
+  "description": "Core concept: Recursion and dynamic programming (6.006)."
+ },
+ {
+  "id": "graph-representations",
+  "name": "Graph representations",
+  "unit_refs": [
+   "Unit 3: Analysis"
+  ],
+  "prerequisites": [
+   "hash-tables"
   ],
   "difficulty": 3,
   "tags": [
-   "print debugging",
-   "breakpoints",
-   "traceback"
+   "adjacency lists",
+   "matrices"
   ],
-  "description": "Core concept: Debugging in Python (6.100L)."
+  "description": "Core concept: Graph representations (6.006)."
  },
  {
-  "id": "testing",
-  "name": "Testing and asserts",
+  "id": "bfs",
+  "name": "BFS",
   "unit_refs": [
-   "Unit 1: Control and Data"
+   "Unit 0: Introduction"
   ],
   "prerequisites": [
-   "functions",
-   "debugging"
+   "graph-representations"
   ],
   "difficulty": 3,
   "tags": [
-   "assert",
-   "unittest",
-   "pytest"
+   "breadth-first search",
+   "unweighted distances"
   ],
-  "description": "Core concept: Testing and asserts (6.100L)."
+  "description": "Core concept: BFS (6.006)."
  },
  {
-  "id": "exceptions",
-  "name": "Exceptions",
+  "id": "dfs",
+  "name": "DFS",
   "unit_refs": [
-   "Unit 2: Functions and Errors"
+   "Unit 1: Sorting"
   ],
   "prerequisites": [
-   "python-data-model"
+   "graph-representations"
   ],
   "difficulty": 3,
   "tags": [
-   "try/except",
-   "finally",
-   "traceback types"
+   "depth-first search",
+   "topological sort"
   ],
-  "description": "Core concept: Exceptions (6.100L)."
+  "description": "Core concept: DFS (6.006)."
  },
  {
-  "id": "modules-imports",
-  "name": "Modules and imports",
+  "id": "shortest-paths",
+  "name": "Shortest paths",
   "unit_refs": [
-   "Unit 3: Testing"
+   "Unit 2: Graphs and DP"
   ],
   "prerequisites": [
-   "scope-namespaces"
+   "bfs",
+   "dfs"
+  ],
+  "difficulty": 4,
+  "tags": [
+   "Dijkstra",
+   "Bellman-Ford",
+   "relaxation"
+  ],
+  "description": "Core concept: Shortest paths (6.006)."
+ },
+ {
+  "id": "negative-cycles",
+  "name": "Negative cycles",
+  "unit_refs": [
+   "Unit 3: Analysis"
+  ],
+  "prerequisites": [
+   "shortest-paths"
+  ],
+  "difficulty": 4,
+  "tags": [
+   "cycle detection",
+   "SSSP with negatives"
+  ],
+  "description": "Core concept: Negative cycles (6.006)."
+ },
+ {
+  "id": "greedy-algorithms",
+  "name": "Greedy algorithms",
+  "unit_refs": [
+   "Unit 0: Introduction"
+  ],
+  "prerequisites": [
+   "recurrences"
+  ],
+  "difficulty": 4,
+  "tags": [
+   "exchange argument",
+   "optimality"
+  ],
+  "description": "Core concept: Greedy algorithms (6.006)."
+ },
+ {
+  "id": "amortized-analysis",
+  "name": "Amortized analysis",
+  "unit_refs": [
+   "Unit 1: Sorting"
+  ],
+  "prerequisites": [
+   "heap-and-priority-queue"
+  ],
+  "difficulty": 4,
+  "tags": [
+   "potential method",
+   "accounting"
+  ],
+  "description": "Core concept: Amortized analysis (6.006)."
+ },
+ {
+  "id": "dynamic-arrays",
+  "name": "Dynamic arrays",
+  "unit_refs": [
+   "Unit 2: Graphs and DP"
+  ],
+  "prerequisites": [
+   "asymptotic-notation"
   ],
   "difficulty": 3,
   "tags": [
-   "import",
-   "as",
-   "package"
+   "doubling",
+   "amortized O(1) append"
   ],
-  "description": "Core concept: Modules and imports (6.100L)."
+  "description": "Core concept: Dynamic arrays (6.006)."
+ },
+ {
+  "id": "quicksort-invariant",
+  "name": "Quicksort invariants",
+  "unit_refs": [
+   "Unit 3: Analysis"
+  ],
+  "prerequisites": [
+   "sorting-algorithms"
+  ],
+  "difficulty": 4,
+  "tags": [
+   "pivot",
+   "partition",
+   "worst case"
+  ],
+  "description": "Core concept: Quicksort invariants (6.006)."
+ },
+ {
+  "id": "mergesort-stability",
+  "name": "Merge sort stability",
+  "unit_refs": [
+   "Unit 0: Introduction"
+  ],
+  "prerequisites": [
+   "sorting-algorithms"
+  ],
+  "difficulty": 3,
+  "tags": [
+   "stable sort",
+   "merge step"
+  ],
+  "description": "Core concept: Merge sort stability (6.006)."
+ },
+ {
+  "id": "heapsort-invariant",
+  "name": "Heapsort invariant",
+  "unit_refs": [
+   "Unit 1: Sorting"
+  ],
+  "prerequisites": [
+   "heap-and-priority-queue"
+  ],
+  "difficulty": 4,
+  "tags": [
+   "heap property",
+   "sift down"
+  ],
+  "description": "Core concept: Heapsort invariant (6.006)."
+ },
+ {
+  "id": "bst-invariant",
+  "name": "BST invariant",
+  "unit_refs": [
+   "Unit 2: Graphs and DP"
+  ],
+  "prerequisites": [
+   "bsts"
+  ],
+  "difficulty": 4,
+  "tags": [
+   "in-order is sorted",
+   "search path"
+  ],
+  "description": "Core concept: BST invariant (6.006)."
+ },
+ {
+  "id": "dp-optimal-substructure",
+  "name": "DP optimal substructure",
+  "unit_refs": [
+   "Unit 3: Analysis"
+  ],
+  "prerequisites": [
+   "recursion-dp"
+  ],
+  "difficulty": 5,
+  "tags": [
+   "optimal substructure",
+   "subproblem overlap"
+  ],
+  "description": "Core concept: DP optimal substructure (6.006)."
+ },
+ {
+  "id": "graph-properties",
+  "name": "Graph properties",
+  "unit_refs": [
+   "Unit 0: Introduction"
+  ],
+  "prerequisites": [
+   "graph-representations"
+  ],
+  "difficulty": 3,
+  "tags": [
+   "diameter",
+   "connectivity",
+   "density"
+  ],
+  "description": "Core concept: Graph properties (6.006)."
  }
 ]
