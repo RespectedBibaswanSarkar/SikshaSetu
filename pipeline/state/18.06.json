@@ -1,0 +1,79 @@
+{
+ "slug": "18.06",
+ "stages": {
+  "resolve": {
+   "meta": {
+    "slug": "18.06",
+    "title": "Linear Algebra | Mathematics | MIT OpenCourseWare",
+    "term": "18 06 linear algebra spring 2010",
+    "ocw_url": "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/",
+    "license": "CC BY-NC-SA 4.0",
+    "attribution": {
+     "course_page": "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/",
+     "license": "CC BY-NC-SA",
+     "date_accessed": "2026-11-22"
+    }
+   },
+   "units": [
+    {
+     "id": "18.06/u01",
+     "title": "Gil Strang's Final 18.06 Linear Algebra Lecture",
+     "ocw_url": null,
+     "yt_id": "lUUte2o2Sn8",
+     "assets": {
+      "video_360p": {
+       "path": "/run/media/bibaswansarkar/B0D2AF47D2AF1120/MASTER_BIBASWAN_SARKAR/IIIT MANIPUR/SEM III/HACK FOR SOCIAL CAUSE NIT MANIPUR/sikshasetu/pipeline/cache/18.06/18.06/u01_video_360p.mp4",
+       "yt_id": "lUUte2o2Sn8",
+       "sha256": "dd578dda0c11bad1b074b2b23327d18ff38414c0ed553ec2ef1ce641346b023a",
+       "size": 111031931,
+       "tier": "video_360p",
+       "machine_generated": true,
+       "reviewed": false
+      }
+     },
+     "desc": ""
+    }
+   ]
+  },
+  "fetch": {
+   "units": 1
+  },
+  "package": {
+   "units": 1,
+   "concepts": 0,
+   "questions": 0
+  }
+ },
+ "units": [
+  {
+   "id": "18.06/u01",
+   "title": "Gil Strang's Final 18.06 Linear Algebra Lecture",
+   "ocw_url": null,
+   "yt_id": "lUUte2o2Sn8",
+   "assets": {
+    "video_360p": {
+     "path": "/run/media/bibaswansarkar/B0D2AF47D2AF1120/MASTER_BIBASWAN_SARKAR/IIIT MANIPUR/SEM III/HACK FOR SOCIAL CAUSE NIT MANIPUR/sikshasetu/pipeline/cache/18.06/18.06/u01_video_360p.mp4",
+     "yt_id": "lUUte2o2Sn8",
+     "sha256": "dd578dda0c11bad1b074b2b23327d18ff38414c0ed553ec2ef1ce641346b023a",
+     "size": 111031931,
+     "tier": "video_360p",
+     "machine_generated": true,
+     "reviewed": false
+    }
+   },
+   "desc": ""
+  }
+ ],
+ "meta": {
+  "slug": "18.06",
+  "title": "Linear Algebra | Mathematics | MIT OpenCourseWare",
+  "term": "18 06 linear algebra spring 2010",
+  "ocw_url": "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/",
+  "license": "CC BY-NC-SA 4.0",
+  "attribution": {
+   "course_page": "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/",
+   "license": "CC BY-NC-SA",
+   "date_accessed": "2026-11-22"
+  }
+ }
+}

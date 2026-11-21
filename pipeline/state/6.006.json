@@ -21,17 +21,9 @@
      "ocw_url": null,
      "yt_id": "Kg4bqzAqRBM",
      "assets": {
-      "video_360p": {
-       "path": "/run/media/bibaswansarkar/B0D2AF47D2AF1120/MASTER_BIBASWAN_SARKAR/IIIT MANIPUR/SEM III/HACK FOR SOCIAL CAUSE NIT MANIPUR/sikshasetu/pipeline/cache/6.006/6.006/u01_video_360p.mp4",
-       "yt_id": "Kg4bqzAqRBM",
-       "sha256": "3456a405af073a897698c1d39188809f566facc842909abbbc55201c9f07d19d",
-       "size": 103405659,
-       "tier": "video_360p",
-       "machine_generated": true,
-       "reviewed": false
-      }
+      "video_360p": "Kg4bqzAqRBM"
      },
-     "desc": "MIT 6.006 Introduction to Algorithms, Fall 2011 View the complete course: http://ocw.mit.edu/6-006F11 Instructor: Srini Devadas\u00a0..."
+     "desc": ""
     }
    ]
   },

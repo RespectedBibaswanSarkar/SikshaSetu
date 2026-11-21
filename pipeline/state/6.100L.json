@@ -1,0 +1,115 @@
+{
+ "slug": "6.100L",
+ "stages": {
+  "resolve": {
+   "meta": {
+    "slug": "6.100L",
+    "title": "Introduction to CS and Programming using Python | Electrical Engineering and Computer Science | MIT OpenCourseWare",
+    "term": "6 100l introduction to cs and programming using python fall 2022",
+    "ocw_url": "https://ocw.mit.edu/courses/6-100l-introduction-to-cs-and-programming-using-python-fall-2022/",
+    "license": "CC BY-NC-SA 4.0",
+    "attribution": {
+     "course_page": "https://ocw.mit.edu/courses/6-100l-introduction-to-cs-and-programming-using-python-fall-2022/",
+     "license": "CC BY-NC-SA",
+     "date_accessed": "2026-11-22"
+    }
+   },
+   "units": [
+    {
+     "id": "6.100L/u01",
+     "title": "Lecture 2: Strings, Input/Output, and Branching",
+     "ocw_url": null,
+     "yt_id": "UdEX0E9lIQM",
+     "assets": {
+      "video_360p": {
+       "path": "/run/media/bibaswansarkar/B0D2AF47D2AF1120/MASTER_BIBASWAN_SARKAR/IIIT MANIPUR/SEM III/HACK FOR SOCIAL CAUSE NIT MANIPUR/sikshasetu/pipeline/cache/6.100L/6.100L/u01_video_360p.mp4",
+       "yt_id": "UdEX0E9lIQM",
+       "sha256": "dd14630cd6fc7a17560b2cff8d0dce294f678f6403080ac43978bd437b43566d",
+       "size": 83950750,
+       "tier": "video_360p",
+       "machine_generated": true,
+       "reviewed": false
+      }
+     },
+     "desc": "MIT 6.100L Introduction to CS and Programming using Python, Fall 2022 Instructor: Ana Bell View the complete course:\u00a0..."
+    },
+    {
+     "id": "6.100L/u02",
+     "title": "Lecture 1: Introduction to CS and Programming Using Python",
+     "ocw_url": null,
+     "yt_id": "xAcTmDO6NTI",
+     "assets": {
+      "video_360p": {
+       "path": "/run/media/bibaswansarkar/B0D2AF47D2AF1120/MASTER_BIBASWAN_SARKAR/IIIT MANIPUR/SEM III/HACK FOR SOCIAL CAUSE NIT MANIPUR/sikshasetu/pipeline/cache/6.100L/6.100L/u02_video_360p.mp4",
+       "yt_id": "xAcTmDO6NTI",
+       "sha256": "dd14630cd6fc7a17560b2cff8d0dce294f678f6403080ac43978bd437b43566d",
+       "size": 83950750,
+       "tier": "video_360p",
+       "machine_generated": true,
+       "reviewed": false
+      }
+     },
+     "desc": "MIT 6.100L Introduction to CS and Programming using Python, Fall 2022 Instructor: Ana Bell View the complete course:\u00a0..."
+    }
+   ]
+  },
+  "fetch": {
+   "units": 2
+  },
+  "package": {
+   "units": 2,
+   "concepts": 0,
+   "questions": 0
+  }
+ },
+ "units": [
+  {
+   "id": "6.100L/u01",
+   "title": "Lecture 2: Strings, Input/Output, and Branching",
+   "ocw_url": null,
+   "yt_id": "UdEX0E9lIQM",
+   "assets": {
+    "video_360p": {
+     "path": "/run/media/bibaswansarkar/B0D2AF47D2AF1120/MASTER_BIBASWAN_SARKAR/IIIT MANIPUR/SEM III/HACK FOR SOCIAL CAUSE NIT MANIPUR/sikshasetu/pipeline/cache/6.100L/6.100L/u01_video_360p.mp4",
+     "yt_id": "UdEX0E9lIQM",
+     "sha256": "dd14630cd6fc7a17560b2cff8d0dce294f678f6403080ac43978bd437b43566d",
+     "size": 83950750,
+     "tier": "video_360p",
+     "machine_generated": true,
+     "reviewed": false
+    }
+   },
+   "desc": "MIT 6.100L Introduction to CS and Programming using Python, Fall 2022 Instructor: Ana Bell View the complete course:\u00a0..."
+  },
+  {
+   "id": "6.100L/u02",
+   "title": "Lecture 1: Introduction to CS and Programming Using Python",
+   "ocw_url": null,
+   "yt_id": "xAcTmDO6NTI",
+   "assets": {
+    "video_360p": {
+     "path": "/run/media/bibaswansarkar/B0D2AF47D2AF1120/MASTER_BIBASWAN_SARKAR/IIIT MANIPUR/SEM III/HACK FOR SOCIAL CAUSE NIT MANIPUR/sikshasetu/pipeline/cache/6.100L/6.100L/u02_video_360p.mp4",
+     "yt_id": "xAcTmDO6NTI",
+     "sha256": "dd14630cd6fc7a17560b2cff8d0dce294f678f6403080ac43978bd437b43566d",
+     "size": 83950750,
+     "tier": "video_360p",
+     "machine_generated": true,
+     "reviewed": false
+    }
+   },
+   "desc": "MIT 6.100L Introduction to CS and Programming using Python, Fall 2022 Instructor: Ana Bell View the complete course:\u00a0..."
+  }
+ ],
+ "meta": {
+  "slug": "6.100L",
+  "title": "Introduction to CS and Programming using Python | Electrical Engineering and Computer Science | MIT OpenCourseWare",
+  "term": "6 100l introduction to cs and programming using python fall 2022",
+  "ocw_url": "https://ocw.mit.edu/courses/6-100l-introduction-to-cs-and-programming-using-python-fall-2022/",
+  "license": "CC BY-NC-SA 4.0",
+  "attribution": {
+   "course_page": "https://ocw.mit.edu/courses/6-100l-introduction-to-cs-and-programming-using-python-fall-2022/",
+   "license": "CC BY-NC-SA",
+   "date_accessed": "2026-11-22"
+  }
+ }
+}
