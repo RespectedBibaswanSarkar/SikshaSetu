@@ -1,0 +1,195 @@
+concepts:
+- id: python-data-model
+  name: Python data model
+  unit_refs:
+  - 'Unit 0: Python Basics'
+  prerequisites: []
+  difficulty: 2
+  tags:
+  - type()
+  - class
+  - dunder
+  description: 'Core concept: Python data model (6.100L).'
+- id: numeric-types
+  name: Numeric types
+  unit_refs:
+  - 'Unit 1: Control and Data'
+  prerequisites:
+  - python-data-model
+  difficulty: 2
+  tags:
+  - int
+  - float
+  - complex
+  description: 'Core concept: Numeric types (6.100L).'
+- id: string-types
+  name: String types
+  unit_refs:
+  - 'Unit 2: Functions and Errors'
+  prerequisites:
+  - python-data-model
+  difficulty: 2
+  tags:
+  - str
+  - unicode
+  - immutability
+  description: 'Core concept: String types (6.100L).'
+- id: boolean-control-flow
+  name: Control flow (if/else)
+  unit_refs:
+  - 'Unit 3: Testing'
+  prerequisites:
+  - python-data-model
+  difficulty: 2
+  tags:
+  - ternary
+  - truthiness
+  - while
+  description: 'Core concept: Control flow (if/else) (6.100L).'
+- id: for-loops
+  name: for loops
+  unit_refs:
+  - 'Unit 0: Python Basics'
+  prerequisites:
+  - python-data-model
+  difficulty: 2
+  tags:
+  - range
+  - iterables
+  - for-else
+  description: 'Core concept: for loops (6.100L).'
+- id: functions
+  name: Functions
+  unit_refs:
+  - 'Unit 1: Control and Data'
+  prerequisites:
+  - python-data-model
+  difficulty: 3
+  tags:
+  - def
+  - default args
+  - lambda
+  description: 'Core concept: Functions (6.100L).'
+- id: scope-namespaces
+  name: Scope and namespaces
+  unit_refs:
+  - 'Unit 2: Functions and Errors'
+  prerequisites:
+  - functions
+  difficulty: 3
+  tags:
+  - local/global/nonlocal
+  - LEGB
+  - modules
+  description: 'Core concept: Scope and namespaces (6.100L).'
+- id: lists-tuples
+  name: Lists and tuples
+  unit_refs:
+  - 'Unit 3: Testing'
+  prerequisites:
+  - python-data-model
+  difficulty: 3
+  tags:
+  - mutation
+  - slicing
+  - tuple immutability
+  description: 'Core concept: Lists and tuples (6.100L).'
+- id: dicts
+  name: Dictionaries
+  unit_refs:
+  - 'Unit 0: Python Basics'
+  prerequisites:
+  - lists-tuples
+  difficulty: 3
+  tags:
+  - keys
+  - values
+  - items()
+  description: 'Core concept: Dictionaries (6.100L).'
+- id: comprehensions
+  name: Comprehensions
+  unit_refs:
+  - 'Unit 1: Control and Data'
+  prerequisites:
+  - lists-tuples
+  - dicts
+  difficulty: 3
+  tags:
+  - list comp
+  - dict comp
+  - generator
+  description: 'Core concept: Comprehensions (6.100L).'
+- id: recursion
+  name: Recursion
+  unit_refs:
+  - 'Unit 2: Functions and Errors'
+  prerequisites:
+  - functions
+  difficulty: 4
+  tags:
+  - base case
+  - stack
+  - tail recursion
+  description: 'Core concept: Recursion (6.100L).'
+- id: classes
+  name: Classes
+  unit_refs:
+  - 'Unit 3: Testing'
+  prerequisites:
+  - python-data-model
+  difficulty: 4
+  tags:
+  - __init__
+  - self
+  - inheritance
+  description: 'Core concept: Classes (6.100L).'
+- id: debugging
+  name: Debugging in Python
+  unit_refs:
+  - 'Unit 0: Python Basics'
+  prerequisites:
+  - functions
+  - scope-namespaces
+  difficulty: 3
+  tags:
+  - print debugging
+  - breakpoints
+  - traceback
+  description: 'Core concept: Debugging in Python (6.100L).'
+- id: testing
+  name: Testing and asserts
+  unit_refs:
+  - 'Unit 1: Control and Data'
+  prerequisites:
+  - functions
+  - debugging
+  difficulty: 3
+  tags:
+  - assert
+  - unittest
+  - pytest
+  description: 'Core concept: Testing and asserts (6.100L).'
+- id: exceptions
+  name: Exceptions
+  unit_refs:
+  - 'Unit 2: Functions and Errors'
+  prerequisites:
+  - python-data-model
+  difficulty: 3
+  tags:
+  - try/except
+  - finally
+  - traceback types
+  description: 'Core concept: Exceptions (6.100L).'
+- id: modules-imports
+  name: Modules and imports
+  unit_refs:
+  - 'Unit 3: Testing'
+  prerequisites:
+  - scope-namespaces
+  difficulty: 3
+  tags:
+  - import
+  - as
+  - package
+  description: 'Core concept: Modules and imports (6.100L).'

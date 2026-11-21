@@ -2,8 +2,10 @@
 Deterministic template Qs generated from segments/transcripts. reviewed:false.
 """
 import re
-
+import yaml
+from pathlib import Path
 from pipeline import state
+ROOT = Path(__file__).resolve().parent.parent.parent
 
 
 def ngrams(text, n=2):
@@ -26,6 +28,9 @@ def draft_q(text, qid):
 def run(slug, resume=False):
     st = state.load(slug)
     qs = []
+    qpath = ROOT / "content" / slug / "questions.yaml"
+    if qpath.exists():
+        qs = yaml.safe_load(qpath.read_text())["questions"]
     for c in st.get("concepts", []):
         seg_ids = c.get("segment_refs", [])[:3]
         texts = []

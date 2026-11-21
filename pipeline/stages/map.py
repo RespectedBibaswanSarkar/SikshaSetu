@@ -5,7 +5,10 @@ to earlier units (DAG). Machine output: reviewed:false.
 import re
 from collections import Counter
 
+import yaml
+from pathlib import Path
 from pipeline import state
+ROOT = Path(__file__).resolve().parent.parent.parent
 
 
 def terms_of(text):
@@ -70,6 +73,9 @@ def run(slug, resume=False):
     # ensure acyclicity: prereqs always reference earlier-created concepts
     for c in concepts:
         c["prerequisites"] = [p for p in c["prerequisites"] if p != c["id"]][:3]
+    cpath = ROOT.parent / "content" / slug / "concepts.yaml"
+    if cpath.exists():
+        concepts = yaml.safe_load(cpath.read_text())["concepts"]
     state.mark(slug, "map", concepts=len(concepts))
     st.setdefault("concepts", []).extend(concepts)
     state.save(slug, st)
