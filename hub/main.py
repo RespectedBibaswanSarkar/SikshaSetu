@@ -95,7 +95,7 @@ def admin_stats():
     mans = all_manifests()
     students_db = connect()
     nstud = students_db.execute("SELECT COUNT(*) c FROM students").fetchone()["c"]
-    insts = [m["meta"]["institution"] for m in mans]
+    insts = [m.get("meta", {}).get("institution", "MIT") for m in mans]
     return {"courses": len(mans), "students": nstud, "institutions": sorted(set(insts)),
             "storage_bytes": sum(a["size"] for m in mans for u in m["units"] for a in u["assets"].values())}
 
@@ -216,9 +216,12 @@ def admin_logs():
 # static mounts are registered LAST so API routes take precedence (Starlette route order)
 
 
+ADMIN_DIST = ROOT / "hub" / "admin"
+STUDENT_DIST = ROOT / "client" / "dist"
+
 @app.get("/")
 def root():
-    if STUDENT_DIST.exists():
+    if STUDENT_DIST.exists() and (STUDENT_DIST / "index.html").exists():
         return FileResponse(STUDENT_DIST / "index.html")
     if (ADMIN / "index.html").exists():
         return FileResponse(ADMIN / "index.html")
@@ -243,8 +246,6 @@ async def admin_sync_import(request: Request):
     log_line(db, f"roster imported: {len(body.get('students', []))} students", "INFO")
     return {"ok": True, "count": len(body.get("students", []))}
 
-ADMIN_DIST = ROOT / "hub" / "admin"
-STUDENT_DIST = ROOT / "client" / "dist"
 if ADMIN_DIST.exists():
     app.mount("/admin", StaticFiles(directory=ADMIN_DIST, html=True), name="admin")
 if STUDENT_DIST.exists():
