@@ -1,24 +1,47 @@
 import { useEffect, useState } from "react";
-import { getCatalog, getManifest, getConcepts } from "./api";
+import { getCatalog, getManifest } from "./api";
 import * as storage from "./storage";
-import { Bandit } from "./bandit";
+import { Engine } from "./engine";
 
 const WEEK = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
 export default function StudentApp({ page, setPage, setName }) {
   const [st, setSt] = useState<storage.StoredState>(() => storage.initialState());
   const [mans, setMans] = useState<Record<string, storage.Manifest>>({});
-  const [cat, setCat] = useState<storage.Catalog | null>(null);
-  const [bandit] = useState(() => new Bandit());
-  const [plan, setPlan] = useState<{ unit: string; title: string; dur: number; why: string }[]>([]);
+  const [eng] = useState(() => new Engine([]));
+  const [plan, setPlan] = useState<string[]>([]);
   const [report, setReport] = useState("");
-  const [greeting, setGreeting] = useState(`Welcome back`);
-  const [searchQ, setSearchQ] = useState("");
   const [searchOut, setSearchOut] = useState<any[]>([]);
+  const [showReport, setShowReport] = useState(false);
 
-  const totalMastery = Object.values(st.mastery).reduce((a, b) => a + b, 0);
-  const total = Object.keys(mans).flatMap(k => mans[k].units).length;
-  const done = st.completedUnits.length;
-  const minutes = storage.weeklyHours(st);
+  const unitTitle = (id: string) => Object.values(mans).flatMap(m => m.units).find(u => u.id === id)?.title ?? id;
+
+  const progress = eng.concepts.length ? Math.round((eng.concepts.map(c => eng.pL(c.id)).reduce((a, b) => a + b, 0) / eng.concepts.length) * 100) : 0;
+  const accEntries = Object.values(st.questionAcc).filter((a: any) => a.total > 0);
+  const accuracy = accEntries.length ? Math.round((accEntries.reduce((s: number, a: any) => s + a.ok / a.total, 0) / accEntries.length) * 100) : 0;
+  const tests = Object.values(st.questionAcc).filter((a: any) => a.total >= 12).length;
+  const minutes = Object.values(st.dailyMinutes).reduce((a, b) => a + b, 0);
+  const prevWeek = Object.entries(st.dailyMinutes).filter(([d]) => d <= new Date(Date.now() - 7 * 86400000).toISOString().slice(0, 10)).reduce((a, [, b]) => a + b, 0);
+  const dPct = Math.round(accuracy - (Object.entries(st.dailyMinutes).filter(([d]) => d > new Date(Date.now() - 7 * 86400000).toISOString().slice(0, 10)).reduce((s: number, [d, b]) => { const pl = eng.concepts.length; const recentGain = 0; return s + b; }, 0))); // simplified below
+  const weekAvgP = () => { const xs: number[] = []; Object.entries(st.dailyMinutes).forEach(([d]) => {}); return 0; };
+  const streak = (() => { let s = 0; const keys = Object.keys(st.dailyMinutes).sort((a, b) => b > a ? 1 : -1); const last = new Date(Date.now() - 86400000).toISOString().slice(0, 10); for (const k of keys) { const min = st.dailyMinutes[k]; if (new Date(k) <= new Date(last)) { if (min >= 10) s++; else break; } else { if (min >= 10) s++; else break; } } return s; })();
+  const planIds = eng.recommend(60);
+
+  useEffect(() => {
+    (async () => {
+      setSt(await storage.loadState());
+      const c = await getCatalog();
+      setMans({});
+      const ms: Record<string, storage.Manifest> = {};
+      for (const m of c.courses) { try { ms[m.slug] = await getManifest(m.slug); } catch {} }
+      setMans(ms);
+      eng.concepts.push(...Object.values(ms).flatMap(m => m.units.flatMap(u => u.concepts)));
+      setPlan(eng.recommend(60));
+      document.title = "SikshaSetu — Learn • Analyse • Grow";
+    })();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
+  useEffect(() => { setPlan(eng.recommend(60)); }, [eng.concepts.length]);
 
   useEffect(() => {
     (async () => {
@@ -53,19 +76,19 @@ export default function StudentApp({ page, setPage, setName }) {
   return (
     <div>
       <h1>Dashboard · Learn • Analyse • Grow</h1>
-      <div className="streak">🔥 Streak: 2 days</div>
+      <div className="streak">🔥 Streak: {streak} day{streak === 1 ? "" : "s"}</div>
       <div className="stats">
-        {stat("Overall Progress", `${Math.round(total ? totalMastery / (total * 10) * 100 : 0)}%`, "indigo")}
-        {stat("Mock Tests Taken", String(done))}
-        {stat("Accuracy", `${total ? Math.round((Object.values(st.questionAcc).reduce((s: number, a: any) => s + (a.ok / a.total || 0), 0) / Object.keys(st.questionAcc).length || 0) * 100) : 0}%`, "green")}
-        {stat("Study Time", `${minutes}h`, "amber")}
+        {stat("Overall Progress", `${progress}%`, "indigo")}
+        {stat("Mock Tests Taken", String(tests), "amber")}
+        {stat("Accuracy", `${accuracy}%`, "green")}
+        {stat("Study Time", `${Math.round(minutes / 60)}h`, "blue")}
       </div>
       <h2 className="section">Personalised Learning Path (recommended next)</h2>
       <div className="panel">
         <ul className="timeline">
-          {plan.length ? plan.map((p, i) => <li key={p.unit} className={i === 0 ? "done" : ""}><b>{p.title}</b><span className="muted">· {p.dur} min · {p.why}</span></li>) : <li className="muted">Load lessons from the catalog to see recommendations</li>}
+          {plan.length ? plan.map((u, i) => <li key={u} className={i === 0 ? "done" : ""}><b>{unitTitle(u)}</b><span className="muted">· {i + 1}. recommend · prerequisite readiness</span></li>) : <li className="muted">Load lessons from the catalog to see recommendations</li>}
         </ul>
-        <button className="btn primary" onClick={() => { for (const p of plan) setPlan(p); setPage("library"); }}>View Plan</button>
+        <button className="btn primary" onClick={() => setPage("planner")}>View Plan</button>
       </div>
       <h2 className="section">AI Performance Analysis · Powered by RL</h2>
       <div className="panel">

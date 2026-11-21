@@ -14,6 +14,9 @@ export default function Diagnostic({ setPage }) {
   useEffect(() => {
     (async () => {
       const m = await getManifest("6.006");
+      const { getCatalog } = await import("./api");
+      const cat = await getCatalog();
+      for (const slug of cat.courses.map(c => c.slug)) { try { await getManifest(slug); } catch {} }
       setMs(await storage.loadState());
       const qs = (await getQuestions()).filter(x => x.concept_ids.some(c => m.units.some(u => u.concepts.includes(c)))).slice(0, 12);
       setTodo(qs);

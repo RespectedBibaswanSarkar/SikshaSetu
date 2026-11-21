@@ -14,12 +14,10 @@ export default function MockTest({ setPage }) {
   useEffect(() => {
     (async () => {
       setMs(await storage.loadState());
-      const m = await getManifest("6.006");
-      const concepts = await getConcepts();
+      const [cat, m, concepts] = await Promise.all([getCatalog(), getManifest("6.006"), getConcepts()]);
       const conIds = new Set(m.units.flatMap(u => u.concepts));
       const pool = (await getQuestions()).filter(q => q.concept_ids.some(c => conIds.has(c)));
       const weak = concepts.filter(c => (storage.getMastery(ms, c.id) < 5));
-      const have = new Set(pool.map(q => q.id));
       const picked = [...pool.filter(q => weak.some(c => q.concept_ids.includes(c.id)))];
       setQs(picked.length ? picked.slice(0, 12) : pool.slice(0, 12));
     })();
