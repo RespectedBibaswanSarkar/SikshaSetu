@@ -22,10 +22,11 @@ export default defineConfig({
       },
       workbox: {
         globDirectory: "dist",
-        globPatterns: ["**/*.{js,css,html,svg,png,jpg,json,vtt,pdf,opus,mp4}"],
+        globPatterns: ["**/*.{js,css,html,svg,png,jpg,json}"],
+        navigateFallbackDenylist: [/^\/admin/, /^\/api/],
         runtimeCaching: [
-          { urlPattern: /^https:\/\/.*\.hub\.lan|^\/objects\//, handler: "NetworkFirst",
-            options: { cacheName: "ocw-content", networkTimeoutSeconds: 2 } },
+          { urlPattern: /^\/api\//, handler: "NetworkFirst",
+            options: { cacheName: "api-cache", networkTimeoutSeconds: 2 } },
         ],
       },
     }),

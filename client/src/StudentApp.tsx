@@ -52,7 +52,7 @@ export default function StudentApp({ setPage }: StudentAppProps) {
           </div>
           <div className="streak-badge-mobile">
             <Flame size={16} className="flame-icon" />
-            <div className="streak-num-mobile">12</div>
+            <div className="streak-num-mobile">0</div>
             <div className="streak-sub-mobile">Day Streak</div>
           </div>
         </div>
@@ -61,7 +61,7 @@ export default function StudentApp({ setPage }: StudentAppProps) {
         <div className="mobile-progress-card">
           <div className="mobile-progress-left">
             <div className="mobile-progress-label">Progress</div>
-            <div className="mobile-progress-val">72%</div>
+            <div className="mobile-progress-val">0%</div>
             <div className="mobile-progress-next">Next: Revise Calculus (30 min)</div>
           </div>
           <div className="mobile-progress-donut">
@@ -127,10 +127,10 @@ export default function StudentApp({ setPage }: StudentAppProps) {
             <div className="metric-details">
               <span className="metric-label">Overall Progress</span>
               <div className="metric-value-row">
-                <span className="metric-value">72%</span>
+                <span className="metric-value">0%</span>
               </div>
               <div className="progress-bar-track">
-                <div className="progress-bar-fill" style={{ width: "72%" }}></div>
+                <div className="progress-bar-fill" style={{ width: "0%" }}></div>
               </div>
             </div>
           </div>
@@ -143,7 +143,7 @@ export default function StudentApp({ setPage }: StudentAppProps) {
             <div className="metric-details">
               <span className="metric-label">Mock Tests Taken</span>
               <div className="metric-value-row">
-                <span className="metric-value">8</span>
+                <span className="metric-value">0</span>
                 <span className="delta-pill green-pill">↑ +2</span>
               </div>
             </div>
@@ -157,7 +157,7 @@ export default function StudentApp({ setPage }: StudentAppProps) {
             <div className="metric-details">
               <span className="metric-label">Accuracy</span>
               <div className="metric-value-row">
-                <span className="metric-value">87%</span>
+                <span className="metric-value">0%</span>
                 <span className="delta-pill amber-pill">↑ +5%</span>
               </div>
             </div>

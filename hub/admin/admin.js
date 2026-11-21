@@ -1,6 +1,11 @@
 // SikshaSetu Admin Panel Client
-async function api(path, opts) {
+async function api(path, opts = {}) {
   try {
+    opts.headers = {
+      "Content-Type": "application/json",
+      "X-Admin-PIN": "1234",
+      ...(opts.headers || {})
+    };
     const r = await fetch(path, opts);
     if (!r.ok) return null;
     return await r.json();
