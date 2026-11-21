@@ -59,6 +59,20 @@
      "tier": "video_360p",
      "machine_generated": true,
      "reviewed": false
+    },
+    "notes_pdf": {
+     "path": "/run/media/bibaswansarkar/B0D2AF47D2AF1120/MASTER_BIBASWAN_SARKAR/IIIT MANIPUR/SEM III/HACK FOR SOCIAL CAUSE NIT MANIPUR/sikshasetu/pipeline/cache/18.06/18.06/u01_notes.pdf",
+     "tier": "notes_pdf",
+     "sha256": "11f431faa67e462518426832efded3073cb225c96b248739cca8635750765040",
+     "size": 695,
+     "machine_generated": true,
+     "reviewed": false,
+     "url": null,
+     "attribution": {
+      "course": "18.06",
+      "url": null,
+      "license": "CC BY-NC-SA 4.0"
+     }
     }
    },
    "desc": ""
@@ -75,5 +89,6 @@
    "license": "CC BY-NC-SA",
    "date_accessed": "2026-11-22"
   }
- }
+ },
+ "concepts": []
 }
