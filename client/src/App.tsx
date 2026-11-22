@@ -1,37 +1,144 @@
-import { useEffect, useState } from "react";
-import StudentApp from "./StudentApp";
-import Offline from "./Offline";
-import Diagnostic from "./Diagnostic";
-import MockTest from "./MockTest";
-import Misc from "./Misc";
-import { useTheme } from "./theme";
+import { useEffect, useState, useCallback } from "react";
 import {
   BookOpen, LayoutDashboard, FileCheck2, Sparkles, Calendar,
-  FolderGit2, BookMarked, Settings, Bell, Search, ChevronDown,
-  Home, BarChart3, MoreHorizontal
+  BookMarked, Settings, Bell, Search, ChevronDown,
+  Home, BarChart3, MoreHorizontal, X
 } from "lucide-react";
+import { useStore, fetchDashboard, getSid } from "./store";
+import DashboardPage from "./pages/DashboardPage";
+import PracticePage from "./pages/PracticePage";
+import CoursesPage from "./pages/CoursesPage";
+import TestsPage from "./pages/TestsPage";
+import AnalyticsPage from "./pages/AnalyticsPage";
+import PlannerPage from "./pages/PlannerPage";
+import NotesPage from "./pages/NotesPage";
+import SettingsPage from "./pages/SettingsPage";
+import ConceptPage from "./pages/ConceptPage";
+import TestDetailPage from "./pages/TestDetailPage";
+import OnboardingPage from "./pages/OnboardingPage";
+import ErrorState from "./components/ErrorState";
 
-type Page = "dashboard" | "library" | "player" | "diagnostic" | "test" | "analytics" | "planner" | "resources" | "settings" | "sync";
+export type NavPage =
+  | "dashboard" | "courses" | "practice" | "tests" | "analytics"
+  | "planner" | "notes" | "settings";
+
+export type AnyPage =
+  | { name: NavPage }
+  | { name: "concept"; cid: string }
+  | { name: "test-detail"; tid: string };
 
 export default function App() {
-  const [page, setPage] = useState<Page>("dashboard");
-  const [name, setName] = useState("Bibaswan");
-  const { online } = useTheme();
+  const store = useStore();
+  const [page, setPage] = useState<AnyPage>({ name: "dashboard" });
+  const [searchOpen, setSearchOpen] = useState(false);
+  const [searchQ, setSearchQ] = useState("");
 
   useEffect(() => {
-    document.title = "SikshaSetu — Learn • Analyse • Grow";
+    document.title = "SikshaSetu — Learn · Analyse · Grow";
   }, []);
 
-  const Props = { page, setPage, setName };
+  const navigate = useCallback((p: AnyPage) => setPage(p), []);
+
+  // Handle error state
+  if (store.status === "error") {
+    return (
+      <div className="app-container">
+        <div style={{ display: "flex", alignItems: "center", justifyContent: "center", minHeight: "100vh" }}>
+          <ErrorState message={store.message} onRetry={fetchDashboard} />
+        </div>
+      </div>
+    );
+  }
+
+  if (store.status === "onboarding") {
+    return <OnboardingPage onComplete={fetchDashboard} />;
+  }
+
+  const dashboard = store.status === "ok" ? store.data : null;
+  const sid = getSid() ?? "";
+  const name = dashboard?.name ?? "Student";
+  const initials = name.split(" ").map((w: string) => w[0]).join("").slice(0, 2).toUpperCase();
+
+  const navPage = page.name === "concept" || page.name === "test-detail"
+    ? "courses"
+    : page.name as NavPage;
+
+  const navItems: { key: NavPage; label: string; icon: React.ReactNode }[] = [
+    { key: "dashboard",  label: "Dashboard",     icon: <LayoutDashboard size={18} /> },
+    { key: "courses",    label: "My Courses",     icon: <BookOpen size={18} /> },
+    { key: "practice",  label: "Practice",        icon: <BookMarked size={18} /> },
+    { key: "tests",     label: "Mock Tests",      icon: <FileCheck2 size={18} /> },
+    { key: "analytics", label: "AI Analytics",    icon: <Sparkles size={18} /> },
+    { key: "planner",   label: "Study Planner",   icon: <Calendar size={18} /> },
+    { key: "notes",     label: "Notes",           icon: <BookOpen size={18} /> },
+    { key: "settings",  label: "Settings",        icon: <Settings size={18} /> },
+  ];
+
+  const mobileNavItems: { key: NavPage; label: string; icon: React.ReactNode; testid: string }[] = [
+    { key: "dashboard", label: "Home",      icon: <Home size={20} />,     testid: "nav-dashboard" },
+    { key: "practice",  label: "Practice",  icon: <BookMarked size={20}/>, testid: "nav-practice" },
+    { key: "tests",     label: "Tests",     icon: <FileCheck2 size={20}/>, testid: "nav-tests" },
+    { key: "analytics", label: "Analytics", icon: <BarChart3 size={20}/>, testid: "nav-analytics" },
+    { key: "settings",  label: "More",      icon: <MoreHorizontal size={20}/>, testid: "nav-more" },
+  ];
+
+  function renderPage() {
+    if (store.status === "loading") {
+      return <div className="loading-spinner" aria-label="Loading…"><div className="spinner" /></div>;
+    }
+    if (!dashboard) return null;
+    if (page.name === "concept") {
+      return <ConceptPage cid={page.cid} sid={sid} navigate={navigate} />;
+    }
+    if (page.name === "test-detail") {
+      return <TestDetailPage sid={sid} tid={page.tid} navigate={navigate} />;
+    }
+    switch (page.name) {
+      case "dashboard":  return <DashboardPage dashboard={dashboard} navigate={navigate} />;
+      case "courses":    return <CoursesPage sid={sid} navigate={navigate} />;
+      case "practice":   return <PracticePage sid={sid} />;
+      case "tests":      return <TestsPage sid={sid} navigate={navigate} />;
+      case "analytics":  return <AnalyticsPage sid={sid} />;
+      case "planner":    return <PlannerPage sid={sid} />;
+      case "notes":      return <NotesPage sid={sid} />;
+      case "settings":   return <SettingsPage sid={sid} dashboard={dashboard} navigate={navigate} />;
+      default:           return <DashboardPage dashboard={dashboard} navigate={navigate} />;
+    }
+  }
+
+  const notifCount = dashboard?.notifications?.length ?? 0;
 
   return (
     <div className="app-container">
+      {/* Search overlay */}
+      {searchOpen && (
+        <div className="search-overlay" role="dialog" aria-label="Search">
+          <div className="search-modal">
+            <div className="search-modal-inner">
+              <Search size={18} className="search-modal-icon" />
+              <input
+                className="search-modal-input"
+                autoFocus
+                placeholder="Search courses, topics…"
+                value={searchQ}
+                onChange={e => setSearchQ(e.target.value)}
+                aria-label="Search query"
+              />
+              <button onClick={() => setSearchOpen(false)} aria-label="Close search" className="search-close-btn">
+                <X size={18} />
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
+
       {/* Top Header */}
-      <header className="app-topbar">
+      <header className="app-topbar" role="banner">
         <div className="topbar-left-mobile">
-          <div className="brand-logo-wrap" onClick={() => setPage("dashboard")}>
+          <div className="brand-logo-wrap" onClick={() => navigate({ name: "dashboard" })} role="button" tabIndex={0}
+            onKeyDown={e => e.key === "Enter" && navigate({ name: "dashboard" })} aria-label="SikshaSetu home">
             <div className="brand-icon-box">
-              <BookOpen size={22} className="brand-icon-svg" />
+              <BookOpen size={22} className="brand-icon-svg" aria-hidden="true" />
             </div>
             <div className="brand-titles">
               <span className="brand-main">SikshaSetu</span>
@@ -41,36 +148,42 @@ export default function App() {
         </div>
 
         <div className="search-bar-container">
-          <Search size={16} className="search-lens-icon" />
+          <Search size={16} className="search-lens-icon" aria-hidden="true" />
           <input
             className="search-input-field"
-            placeholder="Search courses, topics, or ask SikshaSetu..."
+            placeholder="Search courses, topics, or ask SikshaSetu…"
             aria-label="Search"
+            onClick={() => setSearchOpen(true)}
+            onFocus={() => setSearchOpen(true)}
+            readOnly
           />
           <span className="search-shortcut-badge">Ctrl + K</span>
         </div>
 
         <div className="topbar-right-actions">
-          <button className="icon-bell-btn" aria-label="Notifications">
-            <Bell size={18} />
-            <span className="notification-indicator-dot"></span>
+          <button className="icon-bell-btn" aria-label={`Notifications (${notifCount})`}
+            onClick={() => navigate({ name: "dashboard" })}>
+            <Bell size={18} aria-hidden="true" />
+            {notifCount > 0 && <span className="notification-indicator-dot" aria-hidden="true" />}
           </button>
-
-          <div className="user-profile-badge">
-            <div className="user-avatar-circle">BS</div>
-            <span className="user-display-name">Bibaswan</span>
-            <ChevronDown size={14} className="dropdown-arrow" />
+          <div className="user-profile-badge" role="button" tabIndex={0} aria-label={`User: ${name}`}
+            onClick={() => navigate({ name: "settings" })}
+            onKeyDown={e => e.key === "Enter" && navigate({ name: "settings" })}>
+            <div className="user-avatar-circle" aria-hidden="true">{initials}</div>
+            <span className="user-display-name">{name}</span>
+            <ChevronDown size={14} className="dropdown-arrow" aria-hidden="true" />
           </div>
         </div>
       </header>
 
       <div className="app-main-layout">
         {/* Left Sidebar */}
-        <aside className="app-sidebar">
-          {/* Logo on desktop sidebar */}
-          <div className="sidebar-brand-box" onClick={() => setPage("dashboard")}>
+        <aside className="app-sidebar" role="navigation" aria-label="Main navigation">
+          <div className="sidebar-brand-box" onClick={() => navigate({ name: "dashboard" })}
+            role="button" tabIndex={0} onKeyDown={e => e.key === "Enter" && navigate({ name: "dashboard" })}
+            aria-label="SikshaSetu home">
             <div className="brand-icon-box">
-              <BookOpen size={24} className="brand-icon-svg" />
+              <BookOpen size={24} className="brand-icon-svg" aria-hidden="true" />
             </div>
             <div className="brand-titles">
               <span className="brand-main">SikshaSetu</span>
@@ -78,131 +191,43 @@ export default function App() {
             </div>
           </div>
 
-          {/* Navigation Links */}
-          <nav className="sidebar-nav-links">
-            <button
-              className={`nav-btn ${page === "dashboard" ? "active" : ""}`}
-              onClick={() => setPage("dashboard")}
-            >
-              <LayoutDashboard size={18} />
-              <span>Dashboard</span>
-            </button>
-
-            <button
-              className={`nav-btn ${page === "library" ? "active" : ""}`}
-              onClick={() => setPage("library")}
-            >
-              <BookOpen size={18} />
-              <span>My Courses</span>
-            </button>
-
-            <button
-              className={`nav-btn ${page === "test" ? "active" : ""}`}
-              onClick={() => setPage("test")}
-            >
-              <FileCheck2 size={18} />
-              <span>Mock Tests</span>
-            </button>
-
-            <button
-              className={`nav-btn ${page === "analytics" ? "active" : ""}`}
-              onClick={() => setPage("analytics")}
-            >
-              <Sparkles size={18} />
-              <span>AI Analytics</span>
-            </button>
-
-            <button
-              className={`nav-btn ${page === "planner" ? "active" : ""}`}
-              onClick={() => setPage("planner")}
-            >
-              <Calendar size={18} />
-              <span>Study Planner</span>
-            </button>
-
-            <button
-              className={`nav-btn ${page === "resources" ? "active" : ""}`}
-              onClick={() => setPage("resources")}
-            >
-              <FolderGit2 size={18} />
-              <span>Resources</span>
-            </button>
-
-            <button
-              className={`nav-btn ${page === "player" ? "active" : ""}`}
-              onClick={() => setPage("player")}
-            >
-              <BookMarked size={18} />
-              <span>Offline Library</span>
-            </button>
-
-            <button
-              className={`nav-btn ${page === "settings" ? "active" : ""}`}
-              onClick={() => setPage("settings")}
-            >
-              <Settings size={18} />
-              <span>Settings</span>
-            </button>
+          <nav className="sidebar-nav-links" aria-label="Sidebar navigation">
+            {navItems.map(item => (
+              <button
+                key={item.key}
+                className={`nav-btn ${navPage === item.key ? "active" : ""}`}
+                onClick={() => navigate({ name: item.key })}
+                data-testid={`nav-${item.key}`}
+                aria-current={navPage === item.key ? "page" : undefined}
+              >
+                {item.icon}
+                <span>{item.label}</span>
+              </button>
+            ))}
           </nav>
-
-          {/* Bottom Offline Badge */}
-          <div className="sidebar-bottom-offline">
-            <div className="offline-pulse-dot"></div>
-            <div className="offline-status-text">
-              <div className="offline-status-heading">Offline Mode</div>
-              <div className="offline-status-desc">All features available</div>
-            </div>
-          </div>
         </aside>
 
-        {/* Main Content Area */}
-        <main className="app-main-viewport">
-          {page === "dashboard" && <StudentApp {...Props} />}
-          {page === "library" && <Offline {...Props} />}
-          {page === "player" && <Offline {...Props} playerOnly />}
-          {page === "diagnostic" && <Diagnostic {...Props} />}
-          {page === "test" && <MockTest {...Props} />}
-          {page === "analytics" && <Misc section="analytics" {...Props} />}
-          {page === "planner" && <Misc section="planner" {...Props} />}
-          {page === "resources" && <Misc section="resources" {...Props} />}
-          {page === "sync" && <Misc section="sync" {...Props} />}
-          {page === "settings" && <Misc section="settings" {...Props} />}
+        {/* Main Content */}
+        <main className="main-content-area" id="main-content">
+          {renderPage()}
         </main>
       </div>
 
-      {/* Mobile Bottom Tab Bar */}
-      <nav className="mobile-bottom-tabs">
-        <button
-          className={`mobile-tab-btn ${page === "dashboard" ? "active" : ""}`}
-          onClick={() => setPage("dashboard")}
-        >
-          <Home size={20} />
-          <span>Home</span>
-        </button>
-
-        <button
-          className={`mobile-tab-btn ${page === "test" ? "active" : ""}`}
-          onClick={() => setPage("test")}
-        >
-          <FileCheck2 size={20} />
-          <span>Tests</span>
-        </button>
-
-        <button
-          className={`mobile-tab-btn ${page === "analytics" ? "active" : ""}`}
-          onClick={() => setPage("analytics")}
-        >
-          <BarChart3 size={20} />
-          <span>Analytics</span>
-        </button>
-
-        <button
-          className={`mobile-tab-btn ${page === "settings" || page === "resources" ? "active" : ""}`}
-          onClick={() => setPage("settings")}
-        >
-          <MoreHorizontal size={20} />
-          <span>More</span>
-        </button>
+      {/* Mobile Bottom Nav */}
+      <nav className="mobile-bottom-nav" aria-label="Mobile navigation">
+        {mobileNavItems.map(item => (
+          <button
+            key={item.key}
+            className={`mobile-tab-btn ${navPage === item.key ? "active" : ""}`}
+            onClick={() => navigate({ name: item.key })}
+            data-testid={item.testid}
+            aria-label={item.label}
+            aria-current={navPage === item.key ? "page" : undefined}
+          >
+            {item.icon}
+            <span>{item.label}</span>
+          </button>
+        ))}
       </nav>
     </div>
   );

@@ -1,9 +1,9 @@
 """Hub SQLite DB (imports, logs, activity, students)."""
-import sqlite3, time
+import os, sqlite3, time
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-DB = ROOT / "hub" / "hub.db"
+DB = Path(os.getenv("SIKSHA_HUB_DB", ROOT / "hub" / "hub.db"))
 
 
 def connect():

@@ -1,9 +1,0 @@
-{
- "content_version": "1",
- "seed_report": "pipeline/seed_report.md",
- "courses": [
-  "6.006",
-  "6.100L",
-  "18.06"
- ]
-}

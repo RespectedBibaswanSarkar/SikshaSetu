@@ -1,0 +1,64 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>SikshaSetu — live backend test</title>
+<style>
+:root{color-scheme:dark}*{box-sizing:border-box}body{margin:0;font:15px/1.45 system-ui,sans-serif;background:#0b0d24;color:#e8eaf6;padding:20px;max-width:1100px;margin-inline:auto}
+h1{font-size:20px;margin:0 0 4px}small,.muted{color:#9aa0c0}.grid{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));margin:14px 0}
+.card{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:14px;padding:14px}.big{font-size:28px;font-weight:700}
+.row{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(320px,1fr))}button,select{font:inherit;color:#fff;background:#4b3fe0;border:0;border-radius:10px;padding:10px 14px;cursor:pointer}
+button.opt{display:block;width:100%;text-align:left;margin:6px 0;background:#1a1d44;border:1px solid #333a7a}button.ok{background:#14532d}button.bad{background:#7f1d1d}
+button.ghost{background:#1a1d44;border:1px solid #333a7a}.bar{height:8px;background:#1a1d44;border-radius:9px;overflow:hidden}.bar i{display:block;height:100%;background:#6d4aff}
+.tag{display:inline-block;padding:2px 8px;border-radius:99px;background:#2a2f6b;margin:2px;font-size:12px}ol{padding-left:18px;margin:6px 0}
+</style></head><body>
+<h1>SikshaSetu — live backend test</h1><small>Every number below comes from <code>/api/learn/…</code>. Answer questions and watch it change without reloading.</small>
+<div id="who" class="muted" style="margin:8px 0"></div>
+<div class="grid" id="stats"></div>
+<div class="row">
+ <div class="card"><b>Practice</b> <select id="course"></select> <button id="next">Next question</button> <button class="ghost" id="diag">Diagnostic</button> <button class="ghost" id="reset">Reset progress</button>
+  <div id="q" style="margin-top:10px" class="muted">Press “Next question”.</div><div id="fb"></div></div>
+ <div class="card"><b>Weak areas</b><div id="weak" class="muted">—</div><b style="display:block;margin-top:12px">Learning path</b><ol id="path"></ol>
+  <b>Next mock test</b><div id="mock" class="muted"></div><button class="ghost" id="test">Take mock test</button></div>
+</div>
+<div class="card" style="margin-top:12px"><b>Courses</b><div id="courses"></div></div>
+<script>
+const $=id=>document.getElementById(id), api=(p,o)=>fetch('/api/learn'+p,o).then(r=>r.json());
+let sid=localStorage.sid, cur=null, t0=0, mode='practice';
+const J=(m,b)=>({method:m,headers:{'Content-Type':'application/json'},body:JSON.stringify(b||{})});
+const v=(x,s='')=>x==null?'—':x+s, dl=(x,s='')=>x==null?'':`<small>${x>0?'+':''}${x}${s}</small>`;
+async function boot(){
+ if(!sid||(await fetch('/api/learn/students/'+sid+'/dashboard')).status!==200){const n=prompt('Your name?','Bibaswan')||'Student';sid=(await api('/students',J('POST',{name:n}))).student_id;localStorage.sid=sid}
+ const cs=await api('/courses'); $('course').innerHTML='<option value="">All courses</option>'+cs.map(c=>`<option value="${c.slug}">${c.slug} — ${c.title}</option>`).join('');
+ render(await api(`/students/${sid}/dashboard`));
+}
+function render(d){
+ const s=d.stats; $('who').textContent=`${d.student.name} (${d.student.id}) · ability θ=${d.theta}`;
+ $('stats').innerHTML=[['Overall progress',s.overall_progress+'%',''],['Mock tests',s.tests_taken,dl(s.tests_delta)],['Accuracy',v(s.accuracy,'%'),dl(s.accuracy_delta,'pp')],
+  ['Study time',s.study_hours+' h',dl(s.study_delta,'h')],['Streak',s.streak+' d',s.streak_at_risk?'<small>at risk</small>':''],['Focus score',v(s.focus_score),''],['Answered',s.answered,'']]
+  .map(([k,val,x])=>`<div class="card"><small>${k}</small><div class="big">${val} ${x}</div></div>`).join('');
+ $('weak').innerHTML=d.weak_areas.length?d.weak_areas.map(w=>`<span class="tag">${w.name} · ${Math.round(w.mastery*100)}%${w.root_cause?' ← '+w.root_cause.name:''}</span>`).join(''):'None yet — take the diagnostic';
+ $('path').innerHTML=d.learning_path.map(p=>`<li><b>${p.label}</b>: ${p.title} <small>(${p.minutes} min)</small></li>`).join('');
+ $('mock').textContent=`${d.next_mock_test.topic} · ${d.next_mock_test.date}${d.next_mock_test.due?' (ready)':''}`;
+ $('courses').innerHTML=d.courses.map(c=>`<div style="margin:8px 0">${c.slug} — ${c.title} <small>${c.attempted}/${c.concepts} concepts started</small><div class="bar"><i style="width:${c.progress}%"></i></div><small>${c.progress}%</small></div>`).join('');
+}
+async function load(){
+ $('fb').innerHTML=''; const url=`/students/${sid}/next?mode=${mode}`+($('course').value?`&course=${$('course').value}`:'');
+ cur=await api(url); if(cur.done){$('q').innerHTML='<b>Diagnostic complete.</b> Weak areas: '+cur.weak_areas.map(w=>w.name).join(', ');mode='practice';return}
+ if(cur.detail){$('q').textContent=cur.detail;return}
+ t0=Date.now(); $('q').innerHTML=`<small>${cur.course} · ${cur.concept} · difficulty ${cur.difficulty}</small><p><b>${cur.stem}</b></p>`+cur.options.map((o,i)=>`<button class="opt" data-i="${i}">${o}</button>`).join('')+
+  `<small>Why this question: mastery ${Math.round(cur.why.mastery*100)}%, exploit ${cur.why.exploit}, exploration +${cur.why.exploration_bonus}</small>`;
+ document.querySelectorAll('.opt').forEach(b=>b.onclick=()=>answer(b));
+}
+async function answer(b){
+ document.querySelectorAll('.opt').forEach(x=>x.disabled=true);
+ const r=await api(`/students/${sid}/answer`,J('POST',{question_id:cur.question_id,choice:b.textContent,seconds:(Date.now()-t0)/1000,ctx:mode}));
+ b.classList.add(r.correct?'ok':'bad'); document.querySelectorAll('.opt').forEach(x=>{if(x.textContent===r.correct_answer)x.classList.add('ok')});
+ $('fb').innerHTML=`<p>${r.correct?'✅ Correct':'❌ Not quite'} — <b>${r.concept.name}</b> mastery ${Math.round(r.concept.mastery_before*100)}% → ${Math.round(r.concept.mastery_after*100)}% (${r.concept.delta>=0?'+':''}${Math.round(r.concept.delta*100)}%)</p><p class="muted">${r.explanation||''}</p><button id="go">Next</button>`;
+ $('go').onclick=load; render(await api(`/students/${sid}/dashboard`));
+}
+$('next').onclick=()=>{mode='practice';load()}; $('diag').onclick=()=>{mode='diagnostic';load()};
+$('reset').onclick=async()=>{if(confirm('Reset all progress?')){await api(`/students/${sid}/reset`,J('POST'));$('q').textContent='Reset.';render(await api(`/students/${sid}/dashboard`))}};
+$('test').onclick=async()=>{const t=await api(`/students/${sid}/tests`+($('course').value?`?course=${$('course').value}`:''),J('POST'));
+ const answers=[];for(const q of t.questions){const pick=q.options[Math.floor(Math.random()*q.options.length)];answers.push({question_id:q.question_id,choice:pick,seconds:20})}
+ if(!confirm(`Mock test built with ${t.questions.length} questions. Auto-answer randomly and submit (to demo grading)?`))return;
+ const r=await api(`/students/${sid}/tests/${t.test_id}/submit`,J('POST',{answers}));$('fb').innerHTML=`<p><b>Mock test:</b> ${r.correct}/${r.total} (${r.score_pct}%). Weak points: ${r.weak_points.map(w=>w.name).join(', ')||'none'}</p>`;render(r.dashboard)};
+boot();
+</script></body></html>

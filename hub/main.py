@@ -15,6 +15,7 @@ from fastapi.responses import FileResponse, JSONResponse, RedirectResponse
 from fastapi.staticfiles import StaticFiles
 
 from hub.db import connect, log_line
+from hub.learn import router as learn_router, reload_content
 
 ROOT = Path(__file__).resolve().parent.parent
 DB_CONTENT = ROOT / "content" / "sikshasetu_content.sqlite"
@@ -25,6 +26,7 @@ STUDENT_DIST = ROOT / "client" / "dist"
 ADMIN_PIN = os.getenv("ADMIN_PIN", "1234")
 
 app = FastAPI(title="SikshaSetu Hub")
+app.include_router(learn_router)
 
 # ----------------- Health & Content APIs -----------------
 
@@ -156,10 +158,10 @@ def admin_stats(request: Request):
         con.close()
 
     return {
-        "students": max(n_students, 2430),
-        "courses": n_courses or 3,
-        "active_users": max(n_active, 1892),
-        "storage_bytes": storage_bytes or 12600000000,
+        "students": n_students,
+        "courses": n_courses,
+        "active_users": n_active,
+        "storage_bytes": storage_bytes,
         "institutions": ["IIIT Senapati", "MIT"]
     }
 
@@ -184,6 +186,7 @@ async def admin_map_course(request: Request):
     
     # Run rebuild to ensure up to date
     subprocess.run([sys.executable, "-m", "pipeline.build_db"], check=True)
+    reload_content()
     
     con = sqlite3.connect(DB_CONTENT)
     docs = con.execute("SELECT COUNT(*) FROM documents WHERE course_slug=?", (slug,)).fetchone()[0]
@@ -195,10 +198,30 @@ async def admin_map_course(request: Request):
         "ok": True,
         "course_slug": slug,
         "message": f"Course {slug} successfully mapped!",
-        "documents": docs or 8,
-        "chunks": chunks or 26,
-        "questions": questions or 156
+        "documents": docs,
+        "chunks": chunks,
+        "questions": questions
     }
+
+@app.get("/api/admin/analytics")
+def admin_analytics(request: Request):
+    check_admin_auth(request)
+    db = connect()
+    rows = db.execute("SELECT ts, student, event FROM activity WHERE ts > ?", (time.time() - 7 * 86400,)).fetchall()
+    days = {}
+    for r in rows:
+        d = time.strftime("%Y-%m-%d", time.localtime(r["ts"]))
+        x = days.setdefault(d, {"date": d, "answers": 0, "tests": 0, "users": set()})
+        ev = json.loads(r["event"])
+        x["users"].add(r["student"])
+        x["answers"] += ev.get("type") == "answer"
+        x["tests"] += ev.get("type") == "test_end"
+    return [{"date": v["date"], "answers": v["answers"], "tests": v["tests"], "active_users": len(v["users"])}
+            for v in sorted(days.values(), key=lambda v: v["date"])]
+
+@app.get("/live-test", include_in_schema=False)
+def live_test_page():
+    return FileResponse(Path(__file__).parent / "live_test.html")
 
 @app.get("/api/admin/logs")
 def admin_logs(request: Request):
